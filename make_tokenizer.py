@@ -10,4 +10,4 @@ tokenizer.train(files=path, vocab_size=52000, min_frequency=2, special_tokens=[
     "<mask>",
 ])
 
-tokenizer.save(".", "saltgpt2")
+tokenizer.save(".", "")
