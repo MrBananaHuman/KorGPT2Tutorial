@@ -4,7 +4,7 @@ Tutorial for pretraining Korean GPT-2 model
 Sample model download: https://drive.google.com/drive/folders/124Uux07pym2YaCeQKQWNhzhLNeIlLm7r?usp=sharing
 
 
-1. make vocab
+1. make vocab from corpus
 - python make_tokenizer
 
 2. GPT-2 training from scratch (if you want to train GPT-2 from existing model, add the argument '--init_model')
