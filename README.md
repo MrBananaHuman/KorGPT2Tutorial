@@ -1,4 +1,4 @@
-# KoGPT2PretraingTutorial
+# KorGPT2PretraingTutorial
 Tutorial for pretraining Korean GPT-2 model
 
 Sample model download: https://drive.google.com/drive/folders/124Uux07pym2YaCeQKQWNhzhLNeIlLm7r?usp=sharing
