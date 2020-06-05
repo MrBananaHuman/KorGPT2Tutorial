@@ -1,8 +1,7 @@
 # KoGPT2PretraingTutorial
 Tutorial for pretraining Korean GPT-2 model
 
-Sample model download
-- https://drive.google.com/drive/folders/124Uux07pym2YaCeQKQWNhzhLNeIlLm7r?usp=sharing
+Sample model download: https://drive.google.com/drive/folders/124Uux07pym2YaCeQKQWNhzhLNeIlLm7r?usp=sharing
 
 
 1. make vocab
