@@ -2,7 +2,7 @@
 Tutorial for pretraining Korean GPT-2 model
 
 Sample model download: https://drive.google.com/drive/folders/124Uux07pym2YaCeQKQWNhzhLNeIlLm7r?usp=sharing
-
+(100,000 sentences, 1 epoch) 
 
 1. make vocab from corpus
 - python make_tokenizer
