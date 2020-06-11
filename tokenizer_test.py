@@ -2,8 +2,8 @@ from tokenizers.implementations import SentencePieceBPETokenizer
 from tokenizers.processors import BertProcessing
 
 tokenizer = SentencePieceBPETokenizer(
-    "./saltgpt2-vocab.json",
-    "./saltgpt2-merges.txt",
+    "tokenizer/vocab.json",
+    "tokenizer/merges.txt",
 )
 tokenizer._tokenizer.post_processor = BertProcessing(
     ("</s>", tokenizer.token_to_id("</s>")),
