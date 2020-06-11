@@ -11,6 +11,7 @@ Sample model download: https://drive.google.com/drive/folders/124Uux07pym2YaCeQK
 - python pretrain_gpt2.py --do_train --do_eval --eval_data_file=pretrain_data/datas/sample_text.txt --model_type=gpt2 --train_data_file=pretrain_data/total_pretrain_data.txt --num_train_epochs=1
 
 3. Text generation test
+- python generation_text.py
 
 4. Paraphrasing finetuning
 
