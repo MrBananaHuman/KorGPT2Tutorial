@@ -36,4 +36,4 @@ beam_output = model.generate(
 )
 print(decoding(beam_output.tolist()))
 
-
+# check https://huggingface.co/blog/how-to-generate :-)
