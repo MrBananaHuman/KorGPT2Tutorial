@@ -26,7 +26,14 @@ def decoding(ids):
     return tokenizer.convert_ids_to_tokens(ids[0])
 
 input_ids = encoding('이순신은 조선')
-greedy_output = model.generate(input_ids, max_length=100, bos_token_id=bos, pad_token_id=pad, eos_token_id=eos, do_sample=True)
-print(decoding(greedy_output.tolist()))
+# greedy_output = model.generate(input_ids, max_length=100, bos_token_id=bos, pad_token_id=pad, eos_token_id=eos, do_sample=True)
+beam_output = model.generate(
+    input_ids, 
+    max_length=200, 
+    num_beams=5, 
+    no_repeat_ngram_size=2, 
+    early_stopping=True
+)
+print(decoding(beam_output.tolist()))
 
 
