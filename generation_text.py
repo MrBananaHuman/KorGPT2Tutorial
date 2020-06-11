@@ -25,9 +25,8 @@ def encoding(text):
 def decoding(ids):
     return tokenizer.convert_ids_to_tokens(ids[0])
 
-input_ids = encoding('오늘도 좋은 하루를')
-greedy_output = model.generate(input_ids, max_length=20, bos_token_id=bos, pad_token_id=pad, eos_token_id=eos)
-
+input_ids = encoding('이순신은 조선')
+greedy_output = model.generate(input_ids, max_length=100, bos_token_id=bos, pad_token_id=pad, eos_token_id=eos, do_sample=True, early_stopping=False)
 print(decoding(greedy_output.tolist()))
 
 
