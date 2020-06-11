@@ -31,6 +31,7 @@ input: 밤하늘의 별
 
 
 4. lyric finetuning
+- Full data is not availabled
 
 5. Machine reading comprehension (MRC) finetuning
 
