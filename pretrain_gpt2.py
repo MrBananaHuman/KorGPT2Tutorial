@@ -592,8 +592,8 @@ def main():
     config = GPT2Config(vocab_size=52000)
     
     from new_tokenizer import MyTokenizer
-    vocab_file_path = 'salt_tokenizer/vocab.json'
-    merge_file_path = 'salt_tokenizer/merges.txt'
+    vocab_file_path = 'tokenizer/vocab.json'
+    merge_file_path = 'tokenizer/merges.txt'
     tokenizer = MyTokenizer(vocab_file_path, merge_file_path)
     
 
