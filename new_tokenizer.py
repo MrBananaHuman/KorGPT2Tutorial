@@ -58,11 +58,14 @@ class MyTokenizer():
         return self.tokenizer.get_vocab_size()
 
     def add_special_tokens(self, new_tokens):
-        cnt = 0
         self.tokenizer.add_special_tokens(new_tokens)
-        return cnt
-    # def save_pretrained(self, save_directory)
-        # self.tokenizer.
+        self.encoder = self.tokenizer.get_vocab()
+        self.decoder = dict(map(reversed, self.encoder.items()))
+
+    def add_tokens(self, new_tokens):
+        self.tokenizer.add_tokens(new_tokens)
+        self.encoder = self.tokenizer.get_vocab()
+        self.decoder = dict(map(reversed, self.encoder.items()))
 
 if __name__ == '__main__':
     vocab_file_path = 'tokenizer/vocab.json'
