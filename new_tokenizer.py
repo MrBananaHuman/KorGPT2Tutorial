@@ -65,8 +65,8 @@ class MyTokenizer():
         # self.tokenizer.
 
 if __name__ == '__main__':
-    vocab_file_path = 'salt_tokenizer/vocab.json'
-    merge_file_path = 'salt_tokenizer/merges.txt'
+    vocab_file_path = 'tokenizer/vocab.json'
+    merge_file_path = 'tokenizer/merges.txt'
     tokenizer = MyTokenizer(vocab_file_path, merge_file_path)
     sentence = "이순신은 조선 중기의 무신이다."
     tokens = tokenizer.tokenize(sentence)
