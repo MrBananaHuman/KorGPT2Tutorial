@@ -32,10 +32,9 @@ input: 밤하늘의 별
 
 4. lyric finetuning
 - Full data is not availabled
+- python lyric_finetuning.py
 
-5. Machine reading comprehension (MRC) finetuning
-
-6. Paraphrasing finetuning
+5. Paraphrasing finetuning
 - https://github.com/MrBananaHuman/KoGPT2ForParaphrasing
 
 
