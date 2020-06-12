@@ -1,5 +1,5 @@
 # KorGPT2Tutorial
-Tutorial for pretraining Korean GPT-2 model
+Tutorial for pretraining and finetuning Korean GPT-2 model
 
 Sample model download: https://drive.google.com/drive/folders/124Uux07pym2YaCeQKQWNhzhLNeIlLm7r?usp=sharing
 (100,000 sentences, 1 epoch) 
