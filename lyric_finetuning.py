@@ -89,7 +89,6 @@ for epoch in range(epochs):
         loss, logits = outputs[:2]
         loss.backward()
         optimizer.step()
-        print('epoch = {} loss = {}' . format(epoch, loss))
 
 torch.save(model.state_dict(), '/'.join(model_dir.split('/')[:-1]) + '/lyric_model.bin' )
         
