@@ -78,8 +78,8 @@ lyric_data_loader = DataLoader(lyric_data, batch_size=4, shuffle=True)
 
 optimizer = AdamW(model.parameters(), lr=1e-4, correct_bias=True)
 
-epoch = 5
-for epoch in range(epoch):
+epochs = 5
+for epoch in range(epochs):
     for data in lyric_data_loader:
         optimizer.zero_grad()
 
