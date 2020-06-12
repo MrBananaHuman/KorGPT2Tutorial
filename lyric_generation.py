@@ -46,10 +46,9 @@ sample_outputs = model.generate(
     max_length=1024, 
     top_k=50, 
     top_p=0.95, 
-    pad_token_id=pad,
     eos_token_id=e_song,
     early_stopping=True,
-    num_return_sequences=3, bad_words_ids=[[unk]]
+    bad_words_ids=[[unk]]
 )
 print(decoding(sample_outputs.tolist()))
 
