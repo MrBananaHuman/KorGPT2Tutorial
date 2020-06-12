@@ -33,6 +33,7 @@ input: 밤하늘의 별
 4. lyric finetuning
 - Full data is not availabled
 - python lyric_finetuning.py
+- python lyric_generation.py
 input: 봄바람이 휘날리며
  봄바람이 휘날리며
 
