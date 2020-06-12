@@ -35,7 +35,8 @@ input: 밤하늘의 별
 - python lyric_finetuning.py
 - python lyric_generation.py
 
-input: 봄바람이 휘날리며
+- input: 봄바람이 휘날리며
+
  봄바람이 휘날리며
 
  살며시 내게 속삭일 때 난 고백하지 못해
@@ -109,7 +110,8 @@ input: 봄바람이 휘날리며
  그대를 기다리는 이 맘
  
  
-input: 비 내리는 등대에서
+- input: 비 내리는 등대에서
+
  비 내리는 등대에서 내리면
 
  그 곳으로 날아가요
