@@ -37,7 +37,7 @@ input: 밤하늘의 별
 
 
 ## 4. lyric finetuning and generation
-Full data is not availabled but you can download sample model from Google drive link above
+Full data is not availabled but you can download sample model from Google drive link above   
 ```python lyric_finetuning.py```   
 ```python lyric_generation.py```   
 
