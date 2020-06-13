@@ -10,7 +10,7 @@ Sample model download: https://drive.google.com/drive/folders/124Uux07pym2YaCeQK
 
 
 ## 1. Make vocab and tokenizer from corpus
-```python make_tokenizer```
+```python make_tokenizer.py```
 
 ## 2. GPT-2 training from scratch   
 if you want to train GPT-2 from existing model, add the argument '--init_model'   
