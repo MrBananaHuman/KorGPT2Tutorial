@@ -4,9 +4,16 @@ Tutorial for pretraining and finetuning Korean GPT-2 model
 Sample model download: https://drive.google.com/drive/folders/124Uux07pym2YaCeQKQWNhzhLNeIlLm7r?usp=sharing   
 (100,000 sentences, 1 epoch)   
 
-- transformers    2.11.0
-- torch    1.4.0
-- tokenizers    0.7.0
+## 0. Setup
+### Virtual Env (Optional)
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+### Install packages
+```bash
+pip install -r requirements
+```
 
 
 ## 1. Make vocab and tokenizer from corpus
