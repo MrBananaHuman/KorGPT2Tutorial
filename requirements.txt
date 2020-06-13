@@ -1,5 +1,4 @@
 tqdm==4.46.0
-apex==0.9.10dev
 numpy==1.18.5
 ptvsd==4.3.2
 tensorboardX==2.0

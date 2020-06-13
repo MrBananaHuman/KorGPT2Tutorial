@@ -12,7 +12,7 @@ source .venv/bin/activate
 ```
 ### Install packages
 ```bash
-pip install -r requirements
+pip install -r requirements.txt
 ```
 
 
