@@ -105,4 +105,4 @@ for epoch in range(epochs):
 			print('epoch no.{0} train no.{1}  loss = {2:.5f} avg_loss = {3:.5f}' . format(epoch, count, loss, avg_loss[0] / avg_loss[1]))
 		count += 1
 
-torch.save(model.state_dict(), '/'.join(model_dir.split('/')[:-1]) + '/lyric_model.bin' )
+torch.save(model.state_dict(), '/'.join(model_dir.split('/')[:-1]) + '/summary_model.bin' )
