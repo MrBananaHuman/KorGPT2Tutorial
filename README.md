@@ -64,6 +64,13 @@ input: 좁고 좁은 저 문으로
 - https://github.com/MrBananaHuman/KoGPT2ForParaphrasing
 
 
+## 6. Summary test
+```python summary_finetuning.py```
+```python summary_generation.py```
+
+input: LG유플러스는 미취학 아동 대상 IPTV·모바일 미디어 플랫폼 ‘U+아이들나라’를 활용한 국내 최초 AI 실험을 바탕으로 유아기 올바른 콘텐츠 시청 습관의 중요성을 알리는 공익 캠페인 영상을 공개했다고 11일 밝혔다.\n디지털 네이티브 세대 아이들의 미디어 노출 시기는 점차 빨라지고 있고, 최근 코로나19 상황으로 노출 시간 역시 늘어나고 있다.\nLG유플러스는 국내 최다 AI 특허를 보유한 솔트룩스와 함께 8주간 실험을 진행했다. 실제 사례자의 5세 아이를 3D 모델링 기술로 복제하고, 인공지능 음성합성 기술로 대화가 가능한 두 명의 AI 아이를 구현했다.
+
+- LG유플러스, AI 음성합성 기술로 대화를 가능토록
 
 
 
