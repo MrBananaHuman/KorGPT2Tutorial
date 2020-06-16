@@ -64,7 +64,7 @@ input: 좁고 좁은 저 문으로
 - https://github.com/MrBananaHuman/KoGPT2ForParaphrasing
 
 
-## 6. Summary test   
+## 6. Summary finetuning   
 ```python summary_finetuning.py```   
 ```python summary_generation.py```   
 
