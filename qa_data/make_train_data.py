@@ -1,8 +1,8 @@
 import json
 
 data = open('KorQuAD_v1.0_train.json', 'r', encoding='utf-8')
-question_output = open('qustion_train_data.text', 'w', encoding='utf-8')
-answer_output = open('answer_train_data.text', 'w', encoding='utf-8')
+question_output = open('qustion_train_data.txt', 'w', encoding='utf-8')
+answer_output = open('answer_train_data.txt', 'w', encoding='utf-8')
 
 data_json = json.load(data)
 
