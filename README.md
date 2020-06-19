@@ -80,6 +80,19 @@ input: \<economy\>, 코로나19 대유행으로 확산했던 재택근무와 개
  
 - 주간 - 신세계백화점 7월 첫만금박자...19년만에 최대 폭(종합)
 
+## 7. Question and answer generation (On going)
+To train question and answer generator, KorQuAD v1.0 data will be used.    
+Therefore, the fineturning requires preprocessing of training data.    
+```cd qa_data```   
+```python make_train_data.py```   
+
+Generation consists of two stages.   
+1. Obtain a candidate group that can be answered by using context as input data.     
+2. The question for each answer candidate group is extracted from the context.   
+   
+```python answer_finetuning.py```   
+```python question_finetuning.py```   
+```python qa_generation.py```   
 
 
 
