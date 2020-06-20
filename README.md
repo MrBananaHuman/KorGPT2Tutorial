@@ -86,9 +86,9 @@ Therefore, the fineturning requires preprocessing of training data.
 ```cd qa_data```   
 ```python make_train_data.py```   
 
-Generation consists of two stages.   
-1. Obtain a candidate group that can be answered by using context as input data.     
-2. The question for each answer candidate group is extracted from the context.   
+Generation consists of two steps.    
+1. Obtain a candidate group that can be answer from context.     
+2. The question for each answer is extracted.   
    
 ```python answer_finetuning.py```   
 ```python question_finetuning.py```   
