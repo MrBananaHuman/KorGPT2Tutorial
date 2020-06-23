@@ -114,5 +114,7 @@ input: 대한민국은 동아시아의 한반도 남부에 있는 민주공화�
 This code can also be used to generate questions and answers from the content.   
 ```python korquad_finetuning.py```   
 
-
+## 9. Korean fix typo finetuning (on going)
+Dataset: https://github.com/mhagiwara/github-typo-corpus   
+   
 
