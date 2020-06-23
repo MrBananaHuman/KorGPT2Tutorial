@@ -1,0 +1,553 @@
+    "NO_MODIFICATION_ALLOWED_ERR_FILE": "파일을 수정할 수있는 권한이 없습니다.",	    "NO_MODIFICATION_ALLOWED_ERR_FILE": "파일을 수정할 수 있는 권한이 없습니다.",
+    "FILE_EXISTS_ERR": "파일 또는 디렉터리가 이미 있습니다.",	    "FILE_EXISTS_ERR": "파일 또는 디렉토리가 이미 있습니다.",
+    "DONT_SAVE": "저장하지 않",	    "DONT_SAVE": "저장하지 않음",
+    "SAVE_FILE_AS": "다른이름으로 저장",	    "SAVE_FILE_AS": "다른 이름으로 저장",
+    "BASEURL_ERROR_UNKNOWN_ERROR": "기본 URL 구문 분석하는 동안 알 수없는 오류가 발생했습니다",	    "BASEURL_ERROR_UNKNOWN_ERROR": "기본 URL의 구문을 분석하는 동안 알 수 없는 오류가 발생했습니다",
+    "CANT_REMOVE_DEV": "dev 폴더 기능은 수동으로 제거해야합니다.",	    "CANT_REMOVE_DEV": "dev 폴더 기능은 수동으로 제거해야 합니다.",
+**NOTE:** OSX에서 virtual environment를 실행하면, matplotlib 에러가 날 수 있습니다([이 문제에 관한 이슈](http://matplotlib.org/faq/virtualenv_faq.html)).  IPython 서버를 `assignment1`폴더의 `start_ipython_osx.sh`로 실행하면 이 문제를 피해갈 수 있습니다; 이 스크립트는 virtual environment가 `.env`라고 되어있다고 가정하고 작성되었습니다.로	**NOTE:** OSX에서 virtual environment를 실행하면, matplotlib 에러가 날 수 있습니다([이 문제에 관한 이슈](http://matplotlib.org/faq/virtualenv_faq.html)).  IPython 서버를 `assignment1`폴더의 `start_ipython_osx.sh`로 실행하면 이 문제를 피해갈 수 있습니다; 이 스크립트는 virtual environment가 `.env`라고 되어있다고 가정하고 작성되었습니다.
+### Working in the cloud on Terminal	### Terminal에서의 가상 환경.
+cd assignment2	cd assignment1
+sudo pip install virtualenv      # This may already be installed	sudo pip install virtualenv      # 아마 먼저 설치되어 있을 겁니다.
+virtualenv .env                  # Create a virtual environment	virtualenv .env                  # virtual environment를 만듭니다.
+source .env/bin/activate         # Activate the virtual environment	source .env/bin/activate         # virtual environment를 활성화 합니다.
+deactivate                       # Exit the virtual environment	deactivate                       # virtual environment를 종료합니다.
+### Q1: Fully-connected Neural Network (30 points)	### Q1: Fully-connected 뉴럴 네트워크 (30 points)
+**Compile the Cython extension:** 컨볼루션 신경망은 매우 효율적인 구현이 필요합니다. [Cython](http://cython.org/)을 사용하여 필요한 기능들을 구현해 두어서, 코드를 돌리기 전에 Cython extension을 컴파일해 주어야 합니다. `cs231n` 디렉토리에서 다음 명령어를 입력하세요.	**Cython extension 컴파일하기:** 컨볼루션 신경망은 매우 효율적인 구현을 필요로 합니다. 이 숙제를 위해서 [Cython](http://cython.org/)을 활용하여 여러 기능들을 구현해 놓았는데, 이를 위해 코드를 돌리기 전에 Cython extension을 컴파일해 주어야 합크니다. `cs231n` 디렉토리에서 아래 명령어를 실행하세요:
+        컨볼루션 신경망: 구조, Convolution / Pooling 레이어	        컨볼루션 신경망: 구조, Convolution / Pooling 레이어들
+들          레이어(층), 공간적 배치, 레이어 패턴, 레이어 사이즈, AlexNet/ZFNet/VGGNet 사례 분석, 계산량에 관한 고려 사항들	        레이어(층), 공간적 배치, 레이어 패턴, 레이어 사이즈, AlexNet/ZFNet/VGGNet 사례 분석, 계산량에 관한 고려 사항들
+- **맞춤형 사용자 여정을 만드십시오.** 로그인 버튼을 제공하고 유료 결제 기반의 콘텐츠라면 [`amp-access`](https://www.ampproject.org/docs/reference/components/amp-access)를 사용하여 규칙과 제안을 구현하십시오. 	- **맞춤형 사용자 여정을 만드십시오.** 로그인 버튼을 제공하고 유료 결제 기반의 콘텐츠라면 [`amp-access`](https://www.ampproject.org/docs/reference/components/amp-access)를 사용하여 규칙과 제안을 구현하십시오.
+- *인라인 정책*을 첨후하기. 인라인 정책은 여러분이 직접 손으로 작성한 사용자 지정 정책입니다.	- *인라인 정책*을 첨부하기. 인라인 정책은 여러분이 직접 손으로 작성한 사용자 지정 정책입니다.
+text.unit.seconds=초ㄹ	text.unit.seconds=초
+text.category.shooting=발사	text.category.shooting=사격
+block.dart-ship-factory.name=다트쉽 공장	block.dart-ship-factory.name=비행기 공장
+block.blast-mixer.name=블래스트 혼합기	block.blast-mixer.name=폭발 화합물 혼합기
+block.javelin-ship-factory.name=창 던지기 선박 공장	block.javelin-ship-factory.name=전투기 공장
+- 그러나 머신러닝이 모든 것을 다 알아서 해주는 것이 아닙니다.	- 그러나 머신러닝이 모든 것을 다 알아서 해주는 것이 아니다.
+A. 일단, 3 종류 인스턴스가 생성됩니다. 노트북은 노트북 실행시, 학습용은 실행시, 엔드포인트는 엔드포인트 배포시에, 그런데 엔드포인트는 정지하지 않으면 계속 운영된다!	A. 일단, 3 종류 인스턴스가 생성됩니다. 노트북은 노트북 실행시, 학습용은 실행시, 엔드포인트는 엔드포인트 배포시에, 그런데 엔드포인트는 정지하지 않으면 계속 운영됩니다!
+A. 자세한 문서가 많지만 [XGBoost](https://brunch.co.kr/@snobberys/137) 여기가 잘 정리해 놓은 것 같습니다.	A. 설명한 문서들이 많지만 [XGBoost](https://brunch.co.kr/@snobberys/137) 여기가 잘 정리해 놓은 것 같습니다.
+    아래 그림에서 `<your_s3_bucket_name_here>` 부분에 전에 생성한 S3 버킷 이름을 넣습니다. `awskurg핸드폰번호` 형식으로 명명했었지요?	    아래 그림에서 `<your_s3_bucket_name_here>` 부분에 전에 생성한 S3 버킷 이름을 넣습니다. `awskrug핸드폰번호` 형식으로 명명했었지요?
+    전체적으로 다 보셔야 하겠지만, 대부분 값이 고르고(정규분포), 눈여겨 봐야 할 부분은	    대부분 값이 고른데 일일이 확인해 보시면 좋겠지만, 눈여겨 봐야 할 부분은
+    이것을 적은 비용으로 개선해서 이익을 증가시키는 것이 목표가 되겠습니다.	    이 비율을 적은 비용으로 개선해서 이익을 증가시키는 것이 **진정한 목표**! 가 되겠습니다. :godmode:
+    전화번호는 고유치가 너무 많고, 다른 통찰을 끌어내기엔 추가 데이터가 없으니 입력 데이터에서는 제거합니다.	    전화번호는 고유치가 너무 많고, 다른 통찰을 끌어내기엔 관련 데이터가 보이니 입력 데이터에서는 제거합니다.
+    요 내용은 19줄에서 처리합니다.	    요 내용은 6줄에서 처리합니다.
+    100% 일치하는 것으로 보이는 컬럼은 제거합니다. 딱 봐도 많이 썼으니까 많이 나오는 당연한 결과입니다만 다소 문제를 일으킬 수 있기 때문에 다음 컬럼은 9줄에서 제거합니다.	    100% 일치하는 것으로 보이는 컬럼은 제거합니다. 딱 봐도 전화를 많이 썼으니까 비용도 많이 나오는 당연한 결과입니다만, 다소 문제(overfit, bias 등)를 일으킬 수 있기 때문에 다음 컬럼은 9줄에서 제거합니다.
+    알고리즘 적용을 위해서 데이터를 가공합니다.	    알고리즘 적용을 위해서 데이터를 가공합니다. libSVM 형식하고 .CSV 
+    - 회귀 알고리즘을 사용시에는 다항식 혹은 버킷형의 개념을 만들어야 하기 때문이기도 하나, XGBoost 는 경사 부스트 트리 방식(gradient boosted trees)은 예측 대상과 다른 변수간에 비선형 관계를 쉽게 풀어줄 수 있다고 합니다.	    - 회귀 알고리즘을 사용시에는 다항식 혹은 버킷형의 개념을 만들어야 하기 때문이기도 하나, XGBoost 는 경사 부스트 트리 방식(gradient boosted trees)은 예측 대상과 다른 변수간에 비선형 관계를 쉽게 풀어줄 수 있다고 합니다. 한때는 만능이라고... :eyes:
+##Part 1. [고객 이탈 예측](churn-prediction.md)	## Part 1. [고객 이탈 예측](churn-prediction.md)
+##Part 2. [색상 분류 모델 만들기](https://github.com/yansonz/2018-handson-data-02)	## Part 2. [색상 분류 모델 만들기](https://github.com/yansonz/2018-handson-data-02)
+> 비주얼하지 않아 와 닿지 않을 수도 있지만(:sweat_smile:), 데이터 분석의 맛을 보여줄 수 있으면서도 훈련 시간이 비교적 짧아서 택함.	> 비주얼하지 않아 와 닿지 않을 수도 있지만(:sweat_smile:), 데이터 분석의 맛을 보여줄 수 있으면서도 훈련 시간이 비교적 짧아서
+참고로, 사용하는 데이터는 다니엘 T라로즈 `Discovering Knowledge in Data`에서 언급된 것으로, 미국 모바일 회사의 이탈을 포함한 일부 기록(약 3333건)입니다.	참고로 사용할 데이터 셋은 다니엘 T라로즈 `Discovering Knowledge in Data`에서 언급된 것으로, 미국 모바일 회사의 고객 이탈과 관련된 일부 기록(약 3333건)입니다.
+그러나 AWS 문서(https://docs.aws.amazon.com/ko_kr/sagemaker/latest/dg/algos.html)를 살펴보면 어떤 것을 선택하실까요?	우리가 사용할 것은 AWS 이니 제공하는 문서(https://docs.aws.amazon.com/ko_kr/sagemaker/latest/dg/algos.html) 를 살펴보면 어떤 것을 선택하실까요?
+  A. 프로그래밍 언어를 사용하지 않는 서비스(*Amazon Machine Learning*)나 (*Amazon Sagemaker"를 웹 콘솔로 동작)도 있습니다만, 지금은 *Amazon Sagemaker* 를 프로그램적으로 쓰기로 했으니...	  A. 프로그래밍 언어를 사용하지 않는 서비스(*Amazon Machine Learning*나 *Amazon Sagemaker"를 웹 콘솔로 동작)도 있습니다만, 지금은 *Amazon Sagemaker* 를 프로그램적으로 쓰기로 했으니...
+      MS Excel 처럼 화면을 셀(cell)이라고 합니다. 컬럼이 1개라는 것이 다릅니다.	      - MS Excel 처럼 화면을 셀(cell)이라고 합니다. 컬럼이 1개라는 것이 다릅니다.
+      셀은 Code(파이썬 코드), Markdown(주석), Raw NBConvert 로 나뉩니다.	      - 셀은 Code(파이썬 코드), Markdown(주석), Raw NBConvert 로 나뉩니다.
+      > 마크다운 셀은 주석이니까 실행은 안됩니다.	        > 마크다운 셀은 주석이니까 실행은 안됩니다.
+      셀 좌측에 파란색이 보이는 것이 현재 선택된 셀, 셀 편집 시에는 녹색으로 바뀝니다.	      - 셀 좌측에 파란색이 보이는 것이 현재 선택된 셀, 셀 편집 시에는 녹색으로 바뀝니다.
+      위,아래 방향키로 선택한 셀을 옮길 수 있습니다.	      - 위,아래 방향키로 선택한 셀을 옮길 수 있습니다.
+      Space 키로 화면 아래로 스크롤, Shift+Space 키로 화면 위로 스크롤 합니다.	      - Space 키로 화면 아래로 스크롤, Shift+Space 키로 화면 위로 스크롤 합니다.
+      Vi 에디터처럼 명령 모드(상태), 편집 모드(상태)가 있습니다.	      - Vi 에디터처럼 명령 모드(상태), 편집 모드(상태)가 있습니다.
+      1. 데이터세 중에서, 미니 배치를 운영하기 위해 쪼개서	      1. 데이터 셋 중에서, 미니 배치를 운영하기 위해 적당한 크기로 행별로 쪼개서
+* `stageing` 과 `production` 관리 repo 를 저장할 계정을 선택 합니다.	* `staging` 과 `production` 관리 repo 를 저장할 계정을 선택 합니다.
+이름은 중복되지 않도록 `${자신의 아이디}-petclinc-www` 로 짓는다. 	이름은 중복되지 않도록 `${자신의 아이디}-petclinic-www` 로 짓는다. 
+QUIC은 스트림은 경량이면서 순서가 있는 바이트 스트림 추상화를 제공한다.	QUIC 스트림은 경량이면서 순서가 있는 바이트 스트림 추상화를 제공한다.
+The important thing is, across the React app, all work is passed through named ‘syntetic’ events. Nothing is special, it's just a few more wrappers for more efficient work. Next thing, the mediator module for managing event listeners is `EventPluginHub` (`src\renderers\shared\stack\event\EventPluginHub.js`). It contains a `listenerBank` map for caching and managing all listeners.	The important thing is, across the React app, all work is passed through named ‘synthetic’ events. Nothing is special, it's just a few more wrappers for more efficient work. Next thing, the mediator module for managing event listeners is `EventPluginHub` (`src\renderers\shared\stack\event\EventPluginHub.js`). It contains a `listenerBank` map for caching and managing all listeners.
+As you know, React implements ‘syntetic events’, some ‘syntax sugar’ which in fact wraps native events. But then, later, they still try to behave how we all used to see events. You can see the comment in the code:	As you know, React implements ‘synthetic events’, some ‘syntax sugar’ which in fact wraps native events. But then, later, they still try to behave how we all used to see events. You can see the comment in the code:
+其中很重要的一点是，纵观 React app，所有的工作都会传入一个名叫 `syntetic` 的事件。没有一个例外。它其实是一些封装器来优化效率的。下一个重要部分是我们处理事件监听器的中介控制模块 `EventPluginHub` (位于源码中`src\renderers\shared\stack\event\EventPluginHub.js`)。它包含一个 `listenerBank` 的映射来缓存并管控所有的监听器。我们准备好了添加我们自己的事件监听器，但是不是现在。这里的关键在于我们应该在组件和 DOM 元素已经准备好处理事件的时候才增加监听器。看上去在这里我们执行迟了。也你许会问，我们如何知道 DOM 已经准备好了？很好，这就引出了下一个问题！你是否还记得我们曾把 `transaction` 传递给每个方法和调用？这就对了，我们那样做就是因为在这种场景它可以很好的帮助我们。让我们从代码中寻找佐证：	其中很重要的一点是，纵观 React app，所有的工作都会传入一个名叫 `synthetic` 的事件。没有一个例外。它其实是一些封装器来优化效率的。下一个重要部分是我们处理事件监听器的中介控制模块 `EventPluginHub` (位于源码中`src\renderers\shared\stack\event\EventPluginHub.js`)。它包含一个 `listenerBank` 的映射来缓存并管控所有的监听器。我们准备好了添加我们自己的事件监听器，但是不是现在。这里的关键在于我们应该在组件和 DOM 元素已经准备好处理事件的时候才增加监听器。看上去在这里我们执行迟了。也你许会问，我们如何知道 DOM 已经准备好了？很好，这就引出了下一个问题！你是否还记得我们曾把 `transaction` 传递给每个方法和调用？这就对了，我们那样做就是因为在这种场景它可以很好的帮助我们。让我们从代码中寻找佐证：
+就像你所知道的那样，React 有实现很多 “syntetic事件”，一些 “语法糖”，实际上包裹着原生事件。随后，他会表现为我们很熟悉的原生事件。你可以看下面的代码注释：	就像你所知道的那样，React 有实现很多 “synthetic事件”，一些 “语法糖”，实际上包裹着原生事件。随后，他会表现为我们很熟悉的原生事件。你可以看下面的代码注释：
+리엑트에서는 모든 작업이 ‘결합(syntetic)’이라는 이벤트를 통과한다는 것이 중요합니다. 좀 더 효율적인 작업을 위한 래퍼일 뿐, 별로 특별할 건 없습니다. 다음으로, 이벤트 리스너를 관리하기 위한 중재인(mediator) 모듈은 `EventPluginHub` (`src\renderers\shared\stack\event\EventPluginHub.js`)입니다. 이것은 모든 리스너를 캐싱하고 관리하기 위한 `listenerBank` 맵을 포함합니다.	리엑트에서는 모든 작업이 ‘결합(synthetic)’이라는 이벤트를 통과한다는 것이 중요합니다. 좀 더 효율적인 작업을 위한 래퍼일 뿐, 별로 특별할 건 없습니다. 다음으로, 이벤트 리스너를 관리하기 위한 중재인(mediator) 모듈은 `EventPluginHub` (`src\renderers\shared\stack\event\EventPluginHub.js`)입니다. 이것은 모든 리스너를 캐싱하고 관리하기 위한 `listenerBank` 맵을 포함합니다.
+아시다시피, 리엑트는 ‘syntetic events’를 구현합니다. 사실 ‘syntax sugar’는 네이트브 이벤트를 래핑하고 있습니다. 그러나 그들은 여전히 우리 모두가 이벤트를 보던 방식대로 행동하려고 합니다. 코드에서 주석을 확인 할 수 있습니다.	아시다시피, 리엑트는 ‘synthetic events’를 구현합니다. 사실 ‘syntax sugar’는 네이트브 이벤트를 래핑하고 있습니다. 그러나 그들은 여전히 우리 모두가 이벤트를 보던 방식대로 행동하려고 합니다. 코드에서 주석을 확인 할 수 있습니다.
+      evt.initEvent(evtType, false, false); 	      evt.initEvent(evtType, false, false);
+    "NO_MODIFICATION_ALLOWED_ERR_FILE": "파일을 수정할 수있는 권한이 없습니다.",	    "NO_MODIFICATION_ALLOWED_ERR_FILE": "파일을 수정할 수 있는 권한이 없습니다.",
+    "FILE_EXISTS_ERR": "파일 또는 디렉터리가 이미 있습니다.",	    "FILE_EXISTS_ERR": "파일 또는 디렉토리가 이미 있습니다.",
+    "DONT_SAVE": "저장하지 않",	    "DONT_SAVE": "저장하지 않음",
+    "SAVE_FILE_AS": "다른이름으로 저장",	    "SAVE_FILE_AS": "다른 이름으로 저장",
+    "BASEURL_ERROR_UNKNOWN_ERROR": "기본 URL 구문 분석하는 동안 알 수없는 오류가 발생했습니다",	    "BASEURL_ERROR_UNKNOWN_ERROR": "기본 URL의 구문을 분석하는 동안 알 수 없는 오류가 발생했습니다",
+    "CANT_REMOVE_DEV": "dev 폴더 기능은 수동으로 제거해야합니다.",	    "CANT_REMOVE_DEV": "dev 폴더 기능은 수동으로 제거해야 합니다.",
+  * `title` String - 메시지 상자의 제목입니다. 몇몇 플랫폼에선 보이지 않을 수 있습니다.	  * `title` String - 대화 상자의 제목입니다. 몇몇 플랫폼에선 보이지 않을 수 있습니다.
+  * `message` String - 메시지 상자의 본문 내용입니다.	  * `message` String - 대화 상자의 본문 내용입니다.
+메시지 상자를 표시합니다. `browserWindow`를 지정하면 메시지 상자가 완전히 닫힐 때까지는 창을 사용할 수 없습니다.	대화 상자를 표시합니다. `browserWindow`를 지정하면 대화 상자가 완전히 닫힐 때까지는 창을 사용할 수 없습니다.
+이를 해결하려면 "Cancel"을 대신 사용하거나 BrowserWindow API를 사용하여 메시지 상자를 직접 구현해야합니다.	이를 해결하려면 "Cancel"을 대신 사용하거나 BrowserWindow API를 사용하여 대화 상자를 직접 구현해야합니다.
+"Announcement.coinfyPromoBody" = "2019年3月31日までにビットコインを100ユーロ購入して、20ユーロのAmazon.deギフトカードをもらおう*";	"Announcement.coinifyPromoBody" = "2019年3月31日までにビットコインを100ユーロ購入して、20ユーロのAmazon.deギフトカードをもらおう*";
+"Announcement.coinfyPromoBody" = "2019년 3월 31까지 100유로의 비트코인을 구매하시면 20유로 짜리 독일 아마존 기프트 카드를 제공해 드립니다.*";	"Announcement.coinifyPromoBody" = "2019년 3월 31까지 100유로의 비트코인을 구매하시면 20유로 짜리 독일 아마존 기프트 카드를 제공해 드립니다.*";
+"Announcement.coinfyPromoBody" = "在2019年3月31日前购买100欧元的比特币并获得一张在Amazon.de网上消费的20欧元礼品卡 ⃰。";	"Announcement.coinifyPromoBody" = "在2019年3月31日前购买100欧元的比特币并获得一张在Amazon.de网上消费的20欧元礼品卡 ⃰。";
+"Announcement.coinfyPromoBody" = "2019 年 3 月 31 日前購買 €100 比特幣，即可獲得 €20 Amazon.de 禮物卡*";	"Announcement.coinifyPromoBody" = "2019 年 3 月 31 日前購買 €100 比特幣，即可獲得 €20 Amazon.de 禮物卡*";
+"Announcement.coinfyPromoBody" = "2019年3月31日までにビットコインを100ユーロ購入して、20ユーロのAmazon.deギフトカードをもらおう*";	"Announcement.coinifyPromoBody" = "2019年3月31日までにビットコインを100ユーロ購入して、20ユーロのAmazon.deギフトカードをもらおう*";
+"Announcement.coinfyPromoBody" = "2019년 3월 31까지 100유로의 비트코인을 구매하시면 20유로 짜리 독일 아마존 기프트 카드를 제공해 드립니다.*";	"Announcement.coinifyPromoBody" = "2019년 3월 31까지 100유로의 비트코인을 구매하시면 20유로 짜리 독일 아마존 기프트 카드를 제공해 드립니다.*";
+"Announcement.coinfyPromoBody" = "在2019年3月31日前购买100欧元的比特币并获得一张在Amazon.de网上消费的20欧元礼品卡 ⃰。";	"Announcement.coinifyPromoBody" = "在2019年3月31日前购买100欧元的比特币并获得一张在Amazon.de网上消费的20欧元礼品卡 ⃰。";
+"Announcement.coinfyPromoBody" = "2019 年 3 月 31 日前購買 €100 比特幣，即可獲得 €20 Amazon.de 禮物卡*";	"Announcement.coinifyPromoBody" = "2019 年 3 月 31 日前購買 €100 比特幣，即可獲得 €20 Amazon.de 禮物卡*";
+발생하는 이벤트 입니다. 따라서 어플리케이션을 완전히 종료하려면 이 이벤트에서	발생하는 이벤트입니다. 따라서 어플리케이션을 완전히 종료하려면 이 이벤트에서
+모든 윈도우들이 종료되고 어플리케이션이 종료되기 시작할 때 발생하는 이벤트 입니다.	모든 윈도우들이 종료되고 어플리케이션이 종료되기 시작할 때 발생하는 이벤트입니다.
+어플리케이션이 활성화 되었을 때 발생하는 이벤트 입니다. 이 이벤트는 사용자가	어플리케이션이 활성화 되었을 때 발생하는 이벤트입니다. 이 이벤트는 사용자가
+[browserWindow](browser-window.md)에 대한 포커스가 사라졌을 때 발생하는 이벤트 입니다.	[browserWindow](browser-window.md)에 대한 포커스가 사라졌을 때 발생하는 이벤트입니다.
+[browserWindow](browser-window.md)에 대한 포커스가 발생했을 때 발생하는 이벤트 입니다.	[browserWindow](browser-window.md)에 대한 포커스가 발생했을 때 발생하는 이벤트입니다.
+새로운 [browserWindow](browser-window.md)가 생성되었을 때 발생하는 이벤트 입니다.	새로운 [browserWindow](browser-window.md)가 생성되었을 때 발생하는 이벤트입니다.
+클라이언트 인증이 요청되었을 때 발생하는 이벤트 입니다.	클라이언트 인증이 요청되었을 때 발생하는 이벤트입니다.
+문서의 제목이 변경될 때 발생하는 이벤트 입니다. `event.preventDefault()`를 호출하여	문서의 제목이 변경될 때 발생하는 이벤트입니다. `event.preventDefault()`를 호출하여
+클라이언트 인증이 요청되었을 때 발생하는 이벤트 입니다.	클라이언트 인증이 요청되었을 때 발생하는 이벤트입니다.
+# Headless CI 시스템에서 테스팅하기 (Travis, Jenkins) (Travis CI, Jenkins)	# Headless CI 시스템에서 테스팅하기 (Travis, Jenkins)
+초기화 해야합니다.	초기화해야 합니다.
+프로세스와 inter-process 통신을 해야합니다. 또한, `remote` 모듈을 사용하면	프로세스와 inter-process 통신을 해야 합니다. 또한, `remote` 모듈을 사용하면
+  appIcon = new Tray('/path/to/my/icon'); // 현재 어플리케이션 디렉터리를 기준으로 하려면 `__dirname + '/images/tray.png'` 형식으로 입력해야합니다.	  appIcon = new Tray('/path/to/my/icon'); // 현재 어플리케이션 디렉터리를 기준으로 하려면 `__dirname + '/images/tray.png'` 형식으로 입력해야 합니다.
+결정하는 이벤트를 리스닝해야합니다.	결정하는 이벤트를 리스닝해야 합니다.
+접근할 수는 없습니다: 디버깅 툴에 심볼의 경로를 추가해야합니다. 아래의 예제를 참고하면	접근할 수는 없습니다: 디버깅 툴에 심볼의 경로를 추가해야 합니다. 아래의 예제를 참고하면
+먼저 해야합니다:	먼저해야 합니다:
+그리고 `browser-window`에 `plugins` 스위치도 추가해야합니다.	그리고 `browser-window`에 `plugins` 스위치도 추가해야 합니다.
+반드시 `main.js`에서 창을 만들고 시스템 이밴트를 처리해야합니다. 대표적인 예제로	반드시 `main.js`에서 창을 만들고 시스템 이벤트를 처리해야합니다. 대표적인 예제로
+만약 사용자가 파일을 저장할 때 파일 이름을 바꿨다면 실제 파일명과 저장 파일명은 서로 달라지게 됩니다.	만약 사용자가 파일을 저장할 때 파일 이름을 바꿨다면 실제 파일 이름과 저장 파일 이름은 서로 달라지게 됩니다.
+Squirrel은 사용해야 하는 업데이트 선택하는 과정을 서버에 의존합니다. [서버 지원](#server-support)을 참고하세요.	Squirrel은 사용해야 하는 업데이트 선택하는 과정을 서버에 의존합니다. [서버 지원](#서버-지원)을 참고하세요.
+업데이트 응답과 본문 포맷에 대한 요구 사항은 [서버 지원](#server-support)를 참고하세요.	업데이트 응답과 본문 포맷에 대한 요구 사항은 [서버 지원](#서버-지원)를 참고하세요.
+업데이트 응답과 본문 포맷에 대한 요구 사항은 [Server Support](#server-support)를 참고하세요.	업데이트 응답과 본문 포맷에 대한 요구 사항은 [서버 지원](#server-support)를 참고하세요.
+### node-gyp을 이용한 방법	### `node-gyp`를 이용한 방법
+`npm`을 통해 `electron-prebuilt` 패키지를 전역에 설치하면 간단한 명령으로 앱을 실행해 볼 수 있습니다.	`npm`을 통해 `electron-prebuilt` 패키지를 전역에 설치하면 간단한 명령으로 앱을 실행할 수 있습니다.
+.. math::  S(t) = \exp\left(\left(\frac{-t}{\lambda}\right)^\rho\right),   \lambda >0, \rho > 0,	.. math::  S(t) = \exp\left(-\left(\frac{t}{\lambda}\right)^\rho\right),   \lambda >0, \rho > 0,
+    .. math::  S(t; x, y) = \exp\left(\left(\frac{-t}{\lambda(x)}\right)^{\rho(y)}\right),	    .. math::  S(t; x, y) = \exp\left(-\left(\frac{t}{\lambda(x)}\right)^{\rho(y)}\right),
+_(이 글은 https://github.com/dwmkerr/hacker-laws의 번역입니다.)_	_(이 글은 https://github.com/dwmkerr/hacker-laws 의 번역입니다.)_
+* [원리](#원리)	* [원칙](#원칙)
+이는 '[[괴델, 에셔, 바흐: 영원한 황금 노끈]](#추천-도서)'에서 나온 말이다.	이는 '[괴델, 에셔, 바흐: 영원한 황금 노끈](#추천-도서)'에서 나온 말이다.
+최초의 노드에서 처음으로 P2P 네으워크를 비롯한 블록체인 엔진을 작동시킴에 따른 시나리오로 다음과 같은 순서로 이루어 진다.	최초의 노드에서 처음으로 P2P 네트워크를 비롯한 블록체인 엔진을 작동시킴에 따른 시나리오로 다음과 같은 순서로 이루어 진다.
+5.  서비스별 브런치에서 작업	5.  서비스별 브랜치에서 작업
+    2.  서비스별 브런치를 구성하는 것으로 추천	    2.  서비스별 브랜치를 구성하는 것으로 추천
+발생하는 이벤트 입니다. 따라서 어플리케이션을 완전히 종료하려면 이 이벤트에서	발생하는 이벤트입니다. 따라서 어플리케이션을 완전히 종료하려면 이 이벤트에서
+모든 윈도우들이 종료되고 어플리케이션이 종료되기 시작할 때 발생하는 이벤트 입니다.	모든 윈도우들이 종료되고 어플리케이션이 종료되기 시작할 때 발생하는 이벤트입니다.
+어플리케이션이 활성화 되었을 때 발생하는 이벤트 입니다. 이 이벤트는 사용자가	어플리케이션이 활성화 되었을 때 발생하는 이벤트입니다. 이 이벤트는 사용자가
+[browserWindow](browser-window.md)에 대한 포커스가 사라졌을 때 발생하는 이벤트 입니다.	[browserWindow](browser-window.md)에 대한 포커스가 사라졌을 때 발생하는 이벤트입니다.
+[browserWindow](browser-window.md)에 대한 포커스가 발생했을 때 발생하는 이벤트 입니다.	[browserWindow](browser-window.md)에 대한 포커스가 발생했을 때 발생하는 이벤트입니다.
+새로운 [browserWindow](browser-window.md)가 생성되었을 때 발생하는 이벤트 입니다.	새로운 [browserWindow](browser-window.md)가 생성되었을 때 발생하는 이벤트입니다.
+클라이언트 인증이 요청되었을 때 발생하는 이벤트 입니다.	클라이언트 인증이 요청되었을 때 발생하는 이벤트입니다.
+문서의 제목이 변경될 때 발생하는 이벤트 입니다. `event.preventDefault()`를 호출하여	문서의 제목이 변경될 때 발생하는 이벤트입니다. `event.preventDefault()`를 호출하여
+클라이언트 인증이 요청되었을 때 발생하는 이벤트 입니다.	클라이언트 인증이 요청되었을 때 발생하는 이벤트입니다.
+# Headless CI 시스템에서 테스팅하기 (Travis, Jenkins) (Travis CI, Jenkins)	# Headless CI 시스템에서 테스팅하기 (Travis, Jenkins)
+초기화 해야합니다.	초기화해야 합니다.
+프로세스와 inter-process 통신을 해야합니다. 또한, `remote` 모듈을 사용하면	프로세스와 inter-process 통신을 해야 합니다. 또한, `remote` 모듈을 사용하면
+  appIcon = new Tray('/path/to/my/icon'); // 현재 어플리케이션 디렉터리를 기준으로 하려면 `__dirname + '/images/tray.png'` 형식으로 입력해야합니다.	  appIcon = new Tray('/path/to/my/icon'); // 현재 어플리케이션 디렉터리를 기준으로 하려면 `__dirname + '/images/tray.png'` 형식으로 입력해야 합니다.
+결정하는 이벤트를 리스닝해야합니다.	결정하는 이벤트를 리스닝해야 합니다.
+접근할 수는 없습니다: 디버깅 툴에 심볼의 경로를 추가해야합니다. 아래의 예제를 참고하면	접근할 수는 없습니다: 디버깅 툴에 심볼의 경로를 추가해야 합니다. 아래의 예제를 참고하면
+먼저 해야합니다:	먼저해야 합니다:
+그리고 `browser-window`에 `plugins` 스위치도 추가해야합니다.	그리고 `browser-window`에 `plugins` 스위치도 추가해야 합니다.
+반드시 `main.js`에서 창을 만들고 시스템 이밴트를 처리해야합니다. 대표적인 예제로	반드시 `main.js`에서 창을 만들고 시스템 이벤트를 처리해야합니다. 대표적인 예제로
+만약 사용자가 파일을 저장할 때 파일 이름을 바꿨다면 실제 파일명과 저장 파일명은 서로 달라지게 됩니다.	만약 사용자가 파일을 저장할 때 파일 이름을 바꿨다면 실제 파일 이름과 저장 파일 이름은 서로 달라지게 됩니다.
+Squirrel은 사용해야 하는 업데이트 선택하는 과정을 서버에 의존합니다. [서버 지원](#server-support)을 참고하세요.	Squirrel은 사용해야 하는 업데이트 선택하는 과정을 서버에 의존합니다. [서버 지원](#서버-지원)을 참고하세요.
+업데이트 응답과 본문 포맷에 대한 요구 사항은 [서버 지원](#server-support)를 참고하세요.	업데이트 응답과 본문 포맷에 대한 요구 사항은 [서버 지원](#서버-지원)를 참고하세요.
+업데이트 응답과 본문 포맷에 대한 요구 사항은 [Server Support](#server-support)를 참고하세요.	업데이트 응답과 본문 포맷에 대한 요구 사항은 [서버 지원](#server-support)를 참고하세요.
+### node-gyp을 이용한 방법	### `node-gyp`를 이용한 방법
+`npm`을 통해 `electron-prebuilt` 패키지를 전역에 설치하면 간단한 명령으로 앱을 실행해 볼 수 있습니다.	`npm`을 통해 `electron-prebuilt` 패키지를 전역에 설치하면 간단한 명령으로 앱을 실행할 수 있습니다.
+  * `title` String - 메시지 상자의 제목입니다. 몇몇 플랫폼에선 보이지 않을 수 있습니다.	  * `title` String - 대화 상자의 제목입니다. 몇몇 플랫폼에선 보이지 않을 수 있습니다.
+  * `message` String - 메시지 상자의 본문 내용입니다.	  * `message` String - 대화 상자의 본문 내용입니다.
+메시지 상자를 표시합니다. `browserWindow`를 지정하면 메시지 상자가 완전히 닫힐 때까지는 창을 사용할 수 없습니다.	대화 상자를 표시합니다. `browserWindow`를 지정하면 대화 상자가 완전히 닫힐 때까지는 창을 사용할 수 없습니다.
+이를 해결하려면 "Cancel"을 대신 사용하거나 BrowserWindow API를 사용하여 메시지 상자를 직접 구현해야합니다.	이를 해결하려면 "Cancel"을 대신 사용하거나 BrowserWindow API를 사용하여 대화 상자를 직접 구현해야합니다.
+> 커스텀 프로토콜을 등록하거나 이미 존재하능 프로토콜의 요청의 동작을 변경합니다.	> 커스텀 프로토콜을 등록하거나 이미 존재하는 프로토콜의 요청의 동작을 변경합니다.
+앞서 언급한 함수들과 더불어서, 파이프 연산자 `|`를 이용할 수도 있습니다. 이러한 패턴은 차후 레슨에서 보게 될 것입니다.	앞서 언급한 함수들과 더불어서, `cons` 연산자 `|`를 이용할 수도 있습니다. 이러한 패턴은 차후 레슨에서 보게 될 것입니다.
+함수를 호출하여 응답을 기다리면서 GenServer와 동기적으로 데이터를 주고 받는 것이 정말 중요합니다. 동기 요청을 다루기 위해, `GenServer.handle_call/3` 콜백을 구현해야 합니다. 이는 요청, 호출하는 함수의 PID, 현재 상태를 인자로 가집니다. `{:reply, response, state}` 같은 튜플을 응답으로 반환하길 기대합니다.	함수를 호출하여 응답을 기다리면서 GenServer와 동기적으로 데이터를 주고 받는 것이 정말 중요합니다. 동기 요청을 다루기 위해, `GenServer.handle_call/3` 콜백을 구현해야 합니다. 이는 요청, 함수를 호출하는 프로세스의 PID, 현재 상태를 인자로 가집니다. `{:reply, response, state}` 같은 튜플을 응답으로 반환하길 기대합니다.
+비동기적인 요청은 `handle_cast/2` 콜백으로 다룰 수 있습니다. `handle_call/3`처럼 작동하지만, 호출하는 함수를 인자로 받지 않으며, 응답도 보내지 않습니다.	비동기적인 요청은 `handle_cast/2` 콜백으로 다룰 수 있습니다. `handle_call/3`처럼 작동하지만, 함수를 호출하는 프로세스를 인자로 받지 않으며, 응답도 보내지 않습니다.
+이를 충족하기 위해, `@spec`과 비슷한 `@callback` 디렉티브를 사용하겠습니다. 이 디렉티브는 메서드가 반드시 __필요__합니다. 매크로는 `@macrocallback`를 사용해서 할 수 있습니다. 워커를 위해 `init/1`, `perform/2` 매서드를 정의해 봅니다.	이를 충족하기 위해, `@spec`과 비슷한 `@callback` 디렉티브를 사용하겠습니다. 이 디렉티브는 메서드가 반드시 **필요**합니다. 매크로는 `@macrocallback`를 사용해서 할 수 있습니다. 워커를 위해 `init/1`, `perform/2` 매서드를 정의해 봅니다.
+이제 비헤이비어를 정의했으니 공개 API를 공유하는 다양안 모듈에서 이를 사용할 수 있습니다. 비헤이비어를 모듈에 추가하는 것은 `@behaviour` 속성을 사용하면 쉽습니다.	이제 비헤이비어를 정의했으니 공개 API를 공유하는 다양한 모듈에서 이를 사용할 수 있습니다. 비헤이비어를 모듈에 추가하는 것은 `@behaviour` 속성을 사용하면 쉽습니다.
+GenServer와 동기적(함수를 호출하여 응답을 기다리림)으로 데이터를 주고 받아야 할 때가 종종 있습니다. 동기 요청을 다루기 위해, `GenServer.handle_call/3` 콜백을 구현해야 합니다. 이는 요청, 함수를 호출하는 프로세스의 PID, 현재 상태를 인자로 가집니다. `{:reply, response, state}` 같은 튜플을 응답으로 반환하길 기대합니다.	GenServer와 동기적(함수를 호출하여 응답을 기다림)으로 데이터를 주고 받아야 할 때가 종종 있습니다. 동기 요청을 다루기 위해, `GenServer.handle_call/3` 콜백을 구현해야 합니다. 이는 요청, 함수를 호출하는 프로세스의 PID, 현재 상태를 인자로 가집니다. `{:reply, response, state}` 같은 튜플을 응답으로 반환하길 기대합니다.
+자세한 내용은 [GenServer]((https://hexdocs.pm/elixir/GenServer.html#content) 공식 문서에서 확인해보세요.	자세한 내용은 [GenServer](https://hexdocs.pm/elixir/GenServer.html#content) 공식 문서에서 확인해보세요.
+`handle_events/3` 메소드는 들어오는 이벤트를 받고, 처리하고, 변형 된 세트를 반환하는 주력 도구입니다. 앞으로 보실 컨슈머는 거의 같은 방식으로 구현되지만 중요한 차이점은 `handle_events/2` 메서드가 반환하는 것과 사용 방법입니다. 프로세스의 레이블을 process-consumer라 표시할 때, 튜플의 두 번째 인자인 숫자는 다운스트림 컨슈머의 요구를 충족시키는 데 사용되지만, 컨슈머는 이 값을 버립니다.	`handle_events/3` 메소드는 들어오는 이벤트를 받고, 처리하고, 변형 된 세트를 반환하는 주력 도구입니다. 앞으로 보실 컨슈머는 거의 같은 방식으로 구현되지만 중요한 차이점은 `handle_events/2` 메서드가 반환하는 것과 사용 방법입니다. 프로세스의 레이블을 producer_consumer라 표시할 때, 튜플의 두 번째 인자인 숫자는 다운스트림 컨슈머의 요구를 충족시키는 데 사용되지만, 컨슈머는 이 값을 버립니다.
+The `handle_events/3` method is our workhorse, where we receive our incoming events, process them, and return our transformed set.  As we'll see consumers are implemented in much the same way, but the important difference is what our `handle_events/3` method returns and how it's used.   When we label our process a process-consumer, the second argument of our tuple — `numbers` in our case — is used to meet the demand of consumers downstream.  In consumers this value is discarded.	The `handle_events/3` method is our workhorse, where we receive our incoming events, process them, and return our transformed set.  As we'll see consumers are implemented in much the same way, but the important difference is what our `handle_events/3` method returns and how it's used.   When we label our process a producer_consumer, the second argument of our tuple — `numbers` in our case — is used to meet the demand of consumers downstream.  In consumers this value is discarded.
+조금 꼬아 볼까요? Elixir에서 `=`는 사실 대수에서 등호와 같은 역활을 하는 매치 연산자입니다. 이것을 쓰면 전체 표현식이 방정식으로 바뀌고 Elixir가 왼쪽의 값과 오른쪽의 값을 매치시킵니다. 매치가 성공하면 방정식의 값을 반환하고, 그렇지 않을 경우 에러를 발생시킵니다. 아래 코드를 보십시오.	조금 꼬아 볼까요? Elixir에서 `=`는 사실 대수에서 등호와 같은 역할을 하는 매치 연산자입니다. 이것을 쓰면 전체 표현식이 방정식으로 바뀌고 Elixir가 왼쪽의 값과 오른쪽의 값을 매치시킵니다. 매치가 성공하면 방정식의 값을 반환하고, 그렇지 않을 경우 에러를 발생시킵니다. 아래 코드를 보십시오.
+p(x\mid z) & = \mathcal{N}(x; \vec\mu(z), \diag(\vec\sigma(x))^2) \\	p(x\mid z) & = \mathcal{N}(x; \vec\mu(z), \diag(\vec\sigma(z))^2) \\
+Facebook이 실제로 사용하는를 dispatcher를 [npm](https://www.npmjs.com/package/flux), [Bower](http://bower.io/), 또는 [GitHub](https://github.com/facebook/flux)에서 확인할 수 있다.	Facebook이 실제로 사용하는 dispatcher는 [npm](https://www.npmjs.com/package/flux), [Bower](http://bower.io/), 또는 [GitHub](https://github.com/facebook/flux)에서 확인할 수 있다.
+어렵습니다. 처음으로 뭔가를 하는 것은 언제나 어렵습니다. 특히 공동 작업을 할 때 실수를 하기라도 하면 마음이 편치 않습니다. 그러나 협업과 협력은 오픈 소스의 전부입니다. 우리는 새로운 오픈 소스 기여자가 처음 배우고 기여하는 방식을 단순화하고자 했습니다.	어렵습니다. 처음으로 뭔가를 하는 것은 언제나 어렵습니다. 특히 공동 작업을 할 때 실수를 하기라도 하면 마음이 편치 않습니다. 그러나 협업과 협력은 오픈 소스의 전부입니다. 우리는 새로운 오픈 소스 기여자가 처음 배우고 기여하는 방식을 단순화하고자했습니다.
+관련 글을 읽거나 튜토리얼을 보는 것이 도움이 될 수 있습니다. 하지만 연습 삼아 직접 시도해보는 것보다 나을 수는 없을 겁니다. 이 프로젝트는 초보자가 처음으로 기여하는 방법을 안내하고 단순화하는 것을 목표로 합니다. 기억하십시오: 편안하게 임할수록 더 잘 배울 수 있습니다. 첫 번째 기여를 하려면 그저 아래의 간단한 단계를 따르면 됩니다.	관련 글을 읽거나 투토리얼을 보는 것이 도움이 될 수 있습니다. 하지만 연습삼아 직접 시도해보는 것보다 나을 수는 없을 겁니다. 이 프로젝트는 초보자가 처음으로 기여하는 방법을 안내하고 단순화하는 것을 목표로 합니다. 기억하십시오: 편안하게 임할수록 더 잘 배울 수 있습니다. 첫 번째 기여를 하려면 그저 아래의 간단한 단계를 따르면 됩니다.
+`this-is-you`는 당신의 깃허브 계정입니다. 여기서 깃허브에 있는	`this-is-you` 는 당신의 깃허브 계정입니다. 여기서 깃허브에 있는
+아직 저장소 디렉터리에 있지 않다면 그곳으로 변경합니다.	아직 저장소 디렉토리에 있지 않다면 그곳으로 변경합니다.
+프로젝트 디렉터리에서 `git status` 명령을 실행하면 변경사항을 볼 수 있습니다. 변경사항을 아래 `git add` 명령으로 추가합니다.	프로젝트 디렉토리에서 `git status` 명령을 실행하면 변경사항을 볼 수 있습니다. 변경사항을 아래 `git add` 명령으로 추가합니다.
+이제 여러분의 변경사항을 제가 확인 후에  마스터 브랜치에 머지 하게 되면 알림 메일을 받으실 수 있습니다.	이제 여러분의 변경사항을 제가 확인 후에  마스터 브랜치에 머지하게되면 알림메일을 받으실 수 있습니다.
+이제 다른 프로젝트에 기여해보십시오. 시작하기 쉬운 문제가 있는 프로젝트 목록을 작성했습니다. [웹 앱에 있는 프로젝트 목록](https://roshanjossey.github.io/first-contributions/#project-list)을 확인하세요.	이제 다른 프로젝트에 기여해보십시오. 시작하기 쉬운 문제가있는 프로젝트 목록을 작성했습니다. [웹 앱에 있는 프로젝트 목록](https://roshanjossey.github.io/first-contributions/#project-list)을 확인하세요.
+## 다른 도구를 이용하는 튜토리얼	## 다른 도구를 이용하는 투토리얼
+특히 도움이 되고자 하신다면 [Twitter](https://twitter.com/sudo__bangbang)와 [GitHub](https://github.com/roshanjossey)의 [Roshan](https://roshanjossey.github.io/)을 팔로우해주세요.	특히 도움이 되고자하신다면 [Twitter](https://twitter.com/sudo__bangbang)와 [GitHub](https://github.com/roshanjossey)의 [Roshan](https://roshanjossey.github.io/)을 팔로우해주세요.
+어렵습니다. 처음으로 뭔가를 하는 것은 언제나 어렵습니다. 특히 공동 작업을 할 때 실수를 하기라도 하면 마음이 편치 않습니다. 그러나 협업과 협력은 오픈 소스의 전부입니다. 우리는 새로운 오픈 소스 기여자가 처음 배우고 기여하는 방식을 단순화하고자했습니다.	어렵습니다. 처음으로 뭔가를 하는 것은 언제나 어렵습니다. 특히 공동 작업을 할 때 실수를 하기라도 하면 마음이 편치 않습니다. 그러나 협업과 협력은 오픈 소스의 전부입니다. 우리는 새로운 오픈 소스 기여자가 처음 배우고 기여하는 방식을 단순화하고자 했습니다.
+관련 글을 읽거나 투토리얼을 보는 것이 도움이 될 수 있습니다. 하지만 연습삼아 직접 시도해보는 것보다 나을 수는 없을 겁니다. 이 프로젝트는 초보자가 처음으로 기여하는 방법을 안내하고 단순화하는 것을 목표로 합니다. 기억하십시오: 편안하게 임할수록 더 잘 배울 수 있습니다. 첫 번째 기여를 하려면 그저 아래의 간단한 단계를 따르면 됩니다.	관련 글을 읽거나 튜토리얼을 보는 것이 도움이 될 수 있습니다. 하지만 연습 삼아 직접 시도해보는 것보다 나을 수는 없을 겁니다. 이 프로젝트는 초보자가 처음으로 기여하는 방법을 안내하고 단순화하는 것을 목표로 합니다. 기억하십시오: 편안하게 임할수록 더 잘 배울 수 있습니다. 첫 번째 기여를 하려면 그저 아래의 간단한 단계를 따르면 됩니다.
+`this-is-you` 는 당신의 깃허브 계정입니다. 여기서 깃허브에 있는	`this-is-you`는 당신의 깃허브 계정입니다. 여기서 깃허브에 있는
+아직 저장소 디렉토리에 있지 않다면 그곳으로 변경합니다.	아직 저장소 디렉터리에 있지 않다면 그곳으로 변경합니다.
+프로젝트 디렉토리에서 `git status` 명령을 실행하면 변경사항을 볼 수 있습니다. 변경사항을 아래 `git add` 명령으로 추가합니다.	프로젝트 디렉터리에서 `git status` 명령을 실행하면 변경사항을 볼 수 있습니다. 변경사항을 아래 `git add` 명령으로 추가합니다.
+이제 여러분의 변경사항을 제가 확인 후에  마스터 브랜치에 머지하게되면 알림메일을 받으실 수 있습니다.	이제 여러분의 변경사항을 제가 확인 후에  마스터 브랜치에 머지 하게 되면 알림 메일을 받으실 수 있습니다.
+이제 다른 프로젝트에 기여해보십시오. 시작하기 쉬운 문제가있는 프로젝트 목록을 작성했습니다. [웹 앱에 있는 프로젝트 목록](https://roshanjossey.github.io/first-contributions/#project-list)을 확인하세요.	이제 다른 프로젝트에 기여해보십시오. 시작하기 쉬운 문제가 있는 프로젝트 목록을 작성했습니다. [웹 앱에 있는 프로젝트 목록](https://roshanjossey.github.io/first-contributions/#project-list)을 확인하세요.
+## 다른 도구를 이용하는 투토리얼	## 다른 도구를 이용하는 튜토리얼
+특히 도움이 되고자하신다면 [Twitter](https://twitter.com/sudo__bangbang)와 [GitHub](https://github.com/roshanjossey)의 [Roshan](https://roshanjossey.github.io/)을 팔로우해주세요.	특히 도움이 되고자 하신다면 [Twitter](https://twitter.com/sudo__bangbang)와 [GitHub](https://github.com/roshanjossey)의 [Roshan](https://roshanjossey.github.io/)을 팔로우해주세요.
+msgstr "%(part), non e' un numero: %(number)r"	msgstr "%(part)s, non e' un numero: %(number)r"
+msgstr "% の値を入力してください"	msgstr "%s の値を入力してください"
+msgstr "URL에 접속 시도중 오류가 발생했습니다: $(error)s"	msgstr "URL에 접속 시도중 오류가 발생했습니다: %(error)s"
+msgstr "Ongeldig emailadres: het deel vóór de \"@\" is incorrect"	msgstr "Ongeldig emailadres: het deel vóór de \"@: %(username)s\" is incorrect"
+"Ongeldig emailadres: het \"domain\" (het deel achter de \"@\") is incorrect"	"Ongeldig emailadres: het \"domain\" (het deel achter de \"@: %(domain)s\") "
+"Ongeldig emailadres: het \"domain\" (het deel achter de \"@\") bestaat niet"	"Ongeldig emailadres: het \"domain\" (het deel achter de \"@: %(domain)s\") "
+msgstr "Inmatningsfältet %(namn) var inte förväntat."	msgstr "Inmatningsfältet %(name)s var inte förväntat."
+msgstr "Du måste ange ett komplett domännamn (som %(domän)er.com"	msgstr "Du måste ange ett komplett domännamn (som %(domain)s.com"
+`default.properties` 라는 Java 프로퍼티 파일이 템플릿 필드 및 기본 값을 정의 합니다. プロパティファイルがテンプレートのフィールドとそのデフォルト値を定義する。	`default.properties` 라는 Java 프로퍼티 파일이 템플릿 필드 및 기본 값을 정의 합니다. 
+* **회복력(Resilience).** 곤충학자라면 버그를 좋아할 수도 있지만, 아마 프로그램에서 보는 것을 좋아하지는 않을 것입니다. 그러나 일부 버그는 필연적으로 제품에 들어갑니다. 그그럼 어떤 일이 벌어지나요? 일부 버그는 잘못되었지만 잘 정의된 동작을 유발합니다. 예를 들어, 일부 조건에서 코드가 잘못된 시각적 결과를 표시할 수 있습니다. 그러나 렌더링 코드가 *멈춘다(crash)*면 어떨까요? 시각적 결과가 일관되지 않아 의미있는 결과를 얻을 수 없습니다. 단일 게시물을 렌더링에서의 멈춤가 전체 피드를 “쓰러트리거나” 추가적인 멈춤을 일으키는 약간 부서진 상태(semi-broken state)가 되지 않아야합니다. 어떻게 코드를 짜야 렌더링과 가져오기(fetching) 실페를 분리하고 나머지 앱을 계속 실행할 수 있을까요? 사용자 인터페이스에 대한 내결함성이란 무엇일까요?	* **회복력(Resilience).** 곤충학자라면 버그를 좋아할 수도 있지만, 아마 프로그램에서 보는 것을 좋아하지는 않을 것입니다. 그러나 일부 버그는 필연적으로 제품에 들어갑니다. 그럼 어떤 일이 벌어지나요? 일부 버그는 잘못되었지만 잘 정의된 동작을 유발합니다. 예를 들어, 일부 조건에서 코드가 잘못된 시각적 결과를 표시할 수 있습니다. 그러나 렌더링 코드가 *멈춘다(crash)*면 어떨까요? 시각적 결과가 일관되지 않아 의미있는 결과를 얻을 수 없습니다. 단일 게시물을 렌더링에서의 멈춤가 전체 피드를 “쓰러트리거나” 추가적인 멈춤을 일으키는 약간 부서진 상태(semi-broken state)가 되지 않아야합니다. 어떻게 코드를 짜야 렌더링과 가져오기(fetching) 실페를 분리하고 나머지 앱을 계속 실행할 수 있을까요? 사용자 인터페이스에 대한 내결함성이란 무엇일까요?
+게댜가, 당신은 아무리 경험이 많더라도, 당신 스스로 능력있다고 느끼거나, 부족하다고 느끼거나(가면 증후군 (imposter syndrome)), 지나치게 자만한 상태(더닝-크루거 효과(Dunning–Kruger effect))를 왔다갔다 하는 자신을 볼 수 있을 것입니다. 이는 성격, 환경, 직업, 팀원, 정신상태, 시간 등에 따라 달라집니다.	게다가, 당신은 아무리 경험이 많더라도, 당신 스스로 능력있다고 느끼거나, 부족하다고 느끼거나(가면 증후군 (imposter syndrome)), 지나치게 자만한 상태(더닝-크루거 효과(Dunning–Kruger effect))를 왔다갔다 하는 자신을 볼 수 있을 것입니다. 이는 성격, 환경, 직업, 팀원, 정신상태, 시간 등에 따라 달라집니다.
+langs: ['en', 'zh-hant', 'ko', 'sv']	langs: ['en', 'zh-hant', 'ko', 'sv', 'es']
+* **마이크로서비스(Microservices)** 제가 바르게 이해했다면, 이는 그저 "많은 API 엔드포인트들이 서로 통신하는 것"을 뜻합니다. 저는 이 방법을 사용해보지 않았기 때문에 이 접근 방식의 실질적인 장점이나 단점이 무엇인지 모릅니다. 	* **마이크로서비스(Microservices)** 제가 바르게 이해했다면, 이는 그저 "많은 API 엔드포인트들이 서로 통신하는 것"을 뜻합니다. 저는 이 방법을 사용해보지 않았기 때문에 이 접근 방식의 실질적인 장점이나 단점이 무엇인지 모릅니다.
+* **최신 CSS(Modern CSS)** Flexbox나 Grid에 대해 모릅니다. Float만으로도 어렵습니다. 	* **최신 CSS(Modern CSS)** Flexbox나 Grid에 대해 모릅니다. Float만으로도 어렵습니다.
+* **그래픽스(Graphics)** Canvas, SVG, WebGL, low-level 그래픽 뭐든간에, 저는 이것들에 그다지 생산적이지 못합니다. 	* **그래픽스(Graphics)** Canvas, SVG, WebGL, low-level 그래픽 뭐든간에, 저는 이것들에 그다지 생산적이지 못합니다.
+langs: ['en', 'zh-hant', 'ko', 'sv']	langs: ['en', 'zh-hant', 'ko', 'sv', 'es']
+langs: ['en', 'zh-hant', 'ko', 'sv']	langs: ['en', 'zh-hant', 'ko', 'sv', 'es']
+langs: ['en', 'zh-hant', 'ko', 'sv']	langs: ['en', 'zh-hant', 'ko', 'sv', 'es']
+예를 들어 @hueniverse는, [Walmart의 오픈소스에 대한 투자](http://www.infoworld.com/article/2608897/open-source-software/walmart-s-investment-in-open-source-isn-t-cheap.html)를 정당화 할 재정적인 이유가 있음을 발견했습니다. 그리고 @jamesgpearce는 Facebook의 오픈 소스 프로그램이 채용에서 [차이를 만들었다](https://opensource.com/business/14/10/head-of-open-source-facebook-oscon)는 사실을 발견했습니다:	예를 들어 @hueniverse는, [Walmart의 오픈소스에 대한 투자](http://www.infoworld.com/article/2608897/open-source-software/walmart-s-investment-in-open-source-isn-t-cheap.html)를 정당화 할 재정적인 이유가 있음을 발견했습니다. 그리고 @jamesgpearce는 Facebook의 오픈소스 프로그램이 채용에서 [차이를 만들었다](https://opensource.com/business/14/10/head-of-open-source-facebook-oscon)는 사실을 발견했습니다:
+  lead: 오픈 소스 소프트웨어는 당신과 비슷한 사람들이 만듭니다. 프로젝트를 시작하고 성장시키는 방법에 대해 배워보십시오.	  lead: 오픈소스 소프트웨어는 당신과 비슷한 사람들이 만듭니다. 프로젝트를 시작하고 성장시키는 방법에 대해 배워보십시오.
+    description: 제안 하기 원하시나요? 이 내용은 오픈 소스입니다.개선 할 수 있도록 도와주세요.	    description: 제안 하기 원하시나요? 이 내용은 오픈소스입니다.개선 할 수 있도록 도와주세요.
+    description: GitHub의 최신 오픈 소스 팁과 리소스에 대해 먼저 들어보십시오.	    description: GitHub의 최신 오픈소스 팁과 리소스에 대해 먼저 들어보십시오.
+description: 성공을 측정하고 추적함으로써 오픈소스 프로젝트가 성공할 수 있도록 정보에 입각한 의사 결정을하십시오.	description: 성공을 측정하고 추적함으로써 오픈소스 프로젝트가 성공할 수 있도록 정보에 입각한 의사 결정을 하십시오.
+description: 오픈소스의 법적 측면과 당신이 하지 않은 몇가지 사항에 대해 궁금해하는 모든 것.	description: 오픈소스의 법적 측면과 당신이 하지 않은 몇가지 사항에 대해 궁금해하는 모든 것입니다.
+예를 들어, @lord는 프로젝트 비전을 가짐으로써 시간을 보낼 요청을 파악하는 데 도움이 된다는 것을 발견했습니다. 새로운 관리자인, 그는 [Slate](https://github.com/lord/slate)에 대한 첫 번째 기능 요청을 받았을 때 프로젝트의 범위를 고수하지 않은 것을 후회했습니다.	예를 들어, @lord는 프로젝트 비전을 가짐으로써 시간을 보낼 요청을 파악하는 데 도움이 된다는 것을 발견했습니다. 새로운 메인테이너인, 그는 [Slate](https://github.com/lord/slate)에 대한 첫 번째 기능 요청을 받았을 때 프로젝트의 범위를 고수하지 않은 것을 후회했습니다.
+다른 관리자와 만나거나, 비공개로 중요한 결정을 내릴 경우, 또는 메모를 게시하는 경우에도 마찬가지로, 공개적으로 문서를 기록하십시오.	다른 메인테이너와 만나거나, 비공개로 중요한 결정을 내릴 경우, 또는 메모를 게시하는 경우에도 마찬가지로, 공개적으로 문서를 기록하십시오.
+커뮤니티를 구축하면서 깔때기의 맨 위에 있는 누군가(잠재 사용자)가 이론적으로 맨 아래(활동중인 관리자)로 나아갈 수있는 방법을 생각해보십시오. 목표는 기여자 환경의 각 단계에서 마찰을 줄이는 것입니다. 사람들이 쉽게 이를 이겨낸다면, 더 많은 일을 하도록 동기 부여를 느낄 것입니다.	커뮤니티를 구축하면서 깔때기의 맨 위에 있는 누군가(잠재 사용자)가 이론적으로 맨 아래(활동중인 메인테이너)로 나아갈 수있는 방법을 생각해보십시오. 목표는 기여자 환경의 각 단계에서 마찰을 줄이는 것입니다. 사람들이 쉽게 이를 이겨낸다면, 더 많은 일을 하도록 동기 부여를 느낄 것입니다.
+* 만약 프로젝트가 깃허브에 있는 경우, .**프로젝트를 개인 계정에서 [조직](https://help.github.com/articles/creating-a-new-organization-account/)으로 옮기고** 하나 이상의 백업 관리자를 추가하십시오. 조직에서는 외부 공동 작업자와 함께 프로젝트를 보다 쉽게 ​​작업 할 수 있습니다.	* 만약 프로젝트가 깃허브에 있는 경우, .**프로젝트를 개인 계정에서 [조직](https://help.github.com/articles/creating-a-new-organization-account/)으로 옮기고** 하나 이상의 백업 메인테이너를 추가하십시오. 조직에서는 외부 공동 작업자와 함께 프로젝트를 보다 쉽게 ​​작업 할 수 있습니다.
+tiebreaker는 프로젝트의 주요 관리자가 될 수도 있고, 투표를 기반으로 결정을 내릴 수 있는 소규모 그룹 일 수도 있습니다. 이상적으로, 당신은 tiebreaker와 관련 프로세스를 GOVERNANCE 파일에서 식별하여 사용해야합니다.	tiebreaker는 프로젝트의 주요 메인테이너가 될 수도 있고, 투표를 기반으로 결정을 내릴 수 있는 소규모 그룹 일 수도 있습니다. 이상적으로, 당신은 tiebreaker와 관련 프로세스를 GOVERNANCE 파일에서 식별하여 사용해야합니다.
+					Component:   "Cloud Formation",						Component:   "CloudFormation",
+					Description: "All AWS resources use Cloud Formation except KMS and S3.",						Description: "All AWS resources use CloudFormation except KMS and S3.",
+					Description: "Updated to 0.10.2",						Description: "Updated to 0.10.2.",
+			WIP:          true,				WIP:          false,
+I bring all of this up because these article are written from the POV of a programmer, not a math person. That means like very other single dimensional array that is treated as a 2 dimensional array, rows go across.	I bring all of this up because these article are written from the POV of a programmer, not a math person. That means like every other single dimensional array that is treated as a 2 dimensional array, rows go across.
+  255, 255, 255, 255,  // row 0	    0, 255, 255, 255, 255, 255,   0,  // row 0
+  255,   0,   0, 255,  // row 1	  255,   0,   0,   0,   0,   0, 255,  // row 1
+I bring all of this up because these article are written from the POV of a programmer, not a math person. That means like very other single dimensional array that is treated as a 2 dimensional array, rows go across.	I bring all of this up because these article are written from the POV of a programmer, not a math person. That means like every other single dimensional array that is treated as a 2 dimensional array, rows go across.
+  255, 255, 255, 255,  // row 0	    0, 255, 255, 255, 255, 255,   0,  // row 0
+  255,   0,   0, 255,  // row 1	  255,   0,   0,   0,   0,   0, 255,  // row 1
+    "account_remove_error": "계정을 제거할 수 없슶니다",	    "account_remove_error": "계정을 제거할 수 없습니다",
+HEACHI LABS에서 사용하는 여러 library들이 추가되어 있습니다.	HAECHI LABS에서 사용하는 여러 library들이 추가되어 있습니다.
+Several libraries used by HEACHI LABS have been added.	Several libraries used by HAECHI LABS have been added.
+이 설정은 세션 수명을(브라우저면 닫힐 때 삭제) 가지고 있고, secure와 HTTP only 두 플래그가 설정되었으며(이 플래그에 대해서 더욱 자세한 정보는 ([RFC 6265](http://tools.ietf.org/html/rfc6265), 특히 [4.1.2.5](http://tools.ietf.org/html/rfc6265#section-4.1.2.5) 장과 and [4.1.2.6](http://tools.ietf.org/html/rfc6265#section-4.1.2.6) 장을 봐주세요) hapi에게 값은 base64로 인코딩된 JSON 문자열이라는 것을 알려주는 `data`라는 쿠키를 만듭니다. `server.state()` 옵션 관련 전체 문서는 [the API reference](/api#serverstatename-options)에서 찾을 수 있습니다.	이 설정은 세션 수명을(브라우저가 닫힐 때 삭제) 가지고 있고, secure와 HTTP only 두 플래그가 설정되었으며(이 플래그에 대해서 더욱 자세한 정보는 [RFC 6265](http://tools.ietf.org/html/rfc6265), 특히 [4.1.2.5](http://tools.ietf.org/html/rfc6265#section-4.1.2.5) 장과 and [4.1.2.6](http://tools.ietf.org/html/rfc6265#section-4.1.2.6) 장을 봐주세요) hapi에게 값은 base64로 인코딩된 JSON 문자열이라는 것을 알려주는 `data`라는 쿠키를 만듭니다. `server.state()` 옵션 관련 전체 문서는 [the API reference](/api#serverstatename-options)에서 찾을 수 있습니다.
+## IV. 백엑드 서비스	## IV. 백엔드 서비스
+데이터 저장소와 같은 백엔드 서비스들은 통상적으로 배포된 애플리케이션과 같은 시스템 관리자에 의해서 관리되고 있었습니다.  애플리케이션은 이런 로컬에서 관리하는 서비스 대신, 서드파티에 의해서 제공되고 관리되는 서비스를 이용할 수 있습니다. 예를 들어, SMTP 서비스 (예: [Postmark](http://postmarkapp.com/)), 지표 수집 서비스 (예: [New Relic](http://newrelic.com/), [Loggly](http://www.loggly.com/)), 스토리지 서비스 (예: [Amazon S3](http://aws.amazon.com/s3/)), API로 접근 가능한 소비자 서비스 (예: [Twitter](http://dev.twitter.com/), [Google Maps](http://code.google.com/apis/maps/index.html), [Last.fm](http://www.last.fm/api))등이 있습니다.	데이터베이스와 같은 백엔드 서비스들은 통상적으로 배포된 애플리케이션과 같은 시스템 관리자에 의해서 관리되고 있었습니다.  애플리케이션은 이런 로컬에서 관리하는 서비스 대신, 서드파티에 의해서 제공되고 관리되는 서비스를 이용할 수 있습니다. 예를 들어, SMTP 서비스 (예: [Postmark](http://postmarkapp.com/)), 지표 수집 서비스 (예: [New Relic](http://newrelic.com/), [Loggly](http://www.loggly.com/)), 스토리지 서비스 (예: [Amazon S3](http://aws.amazon.com/s3/)), API로 접근 가능한 소비자 서비스 (예: [Twitter](http://dev.twitter.com/), [Google Maps](http://code.google.com/apis/maps/index.html), [Last.fm](http://www.last.fm/api))등이 있습니다.
+**Twelve-Factor App의 코드는 로컬 서비스와 서드파티 서비스를 구별하지 않습니다.** 애플리케이션에게는 양 쪽 모두 연결된 리소스이며, [설정](./config)에 있는 URL 혹은 다른 로케이터와 인증 정보를 사용해서 접근 됩니다. Twelve-Factor App의 [배포](./codebase)는 애플리케이션 코드를 수정하지 않고 로컬에서 관리되는 MySQL DB를 서드파티에서 관리되는 DB(예: [Amazon RDS](http://aws.amazon.com/rds/))로 전환할 수 있어야 합니다. 마찬가지로, 로컬 SMTP 서버는 서드파티 SMTP 서비스(예: Postmark)로 코드 수정 없이 전환이 가능해야 합니다. 두 경우 모두 설정에 있는 리소스 핸들만 변경하면 됩니다. 	**Twelve-Factor App의 코드는 로컬 서비스와 서드파티 서비스를 구별하지 않습니다.** 애플리케이션에게는 양 쪽 모두 연결된 리소스이며, [설정](./config)에 있는 URL 혹은 다른 로케이터와 인증 정보를 사용해서 접근 됩니다. Twelve-Factor App의 [배포](./codebase)는 애플리케이션 코드를 수정하지 않고 로컬에서 관리되는 MySQL DB를 서드파티에서 관리되는 DB(예: [Amazon RDS](http://aws.amazon.com/rds/))로 전환할 수 있어야 합니다. 마찬가지로, 로컬 SMTP 서버는 서드파티 SMTP 서비스(예: Postmark)로 코드 수정 없이 전환이 가능해야 합니다. 두 경우 모두 설정에 있는 리소스 핸들만 변경하면 됩니다.
+애플리케이션은 종종 설정을 상수로 코드에 저장합니다. 이것은 Twelve-Factor를 위한하며, Twelve-Factor는 **설정을 코드에서 엄격하게 분리하는 것**을 요구합니다. 설정은 배치마다 크게 다르지만, 코드는 그렇지 않습니다.	애플리케이션은 종종 설정을 상수로 코드에 저장합니다. 이것은 Twelve-Factor를 위반하며, Twelve-Factor는 **설정을 코드에서 엄격하게 분리하는 것**을 요구합니다. 설정은 배치마다 크게 다르지만, 코드는 그렇지 않습니다.
+* **담당자의 차이**: 개발자는 작성한 코드를 시스템 엔지니어가 배포합니다.	* **담당자의 차이**: 개발자가 작성한 코드를 시스템 엔지니어가 배포합니다.
+**Twelve Factor App은 개발 환경과 production 환경의 차이를 작게 유지하여 [지속적인 배포](http://avc.com/2011/02/continuous-deployment/)가 가능하도록 디자인 되었습니다. 위에서 언급한 3가지 차이에 대한 대응책은 아래와 같습니다. 	**Twelve Factor App은 개발 환경과 production 환경의 차이를 작게 유지하여 [지속적인 배포](http://avc.com/2011/02/continuous-deployment/)가 가능하도록 디자인 되었습니다.** 위에서 언급한 3가지 차이에 대한 대응책은 아래와 같습니다. 
+데이터베이스, 큐잉 시스템, 캐시와 같은 [백엔드 서비스](./backing-services)는 dev/prod 일치가 중요한 영역 중 하나 입니다. 많은 언어들은 다른 종류의 서비스에 대한 *어댑터*를 포함되어 있는 간단하게 백엔드 서비스에 접근할 수 있는 라이브러리들을 제공합니다. 	데이터베이스, 큐잉 시스템, 캐시와 같은 [백엔드 서비스](./backing-services)는 dev/prod 일치가 중요한 영역 중 하나 입니다. 많은 언어들은 다른 종류의 서비스에 대한 *어댑터*를 포함하고 간단하게 백엔드 서비스에 접근할 수 있는 라이브러리들을 제공합니다. 아래의 표에 몇가지 예가 나와있습니다. 
+    <th>Type</th>	    <th>종류</th>
+    <th>Adapters</th>	    <th>언어</th>
+    <td>Database</td>	    <td>데이터 베이스</td>
+    <td>Queue</td>	    <td>큐(Queue)</td>
+    <td>Cache</td>	    <td>캐쉬</td>
+    <td>Memory, filesystem, Memcached</td>	    <td>메모리, 파일시스템, Memcached</td>
+프로세스는 프로세스 매니저로부터 **[SIGTERM]((http://en.wikipedia.org/wiki/SIGTERM)) 신호를 받았을 때 그레이스풀 셧다운(graceful shutdown)을 합니다. ** 웹프로세스의 그레이스풀 셧다운 과정에서는 서비스 포트의 수신을 중지하고(그럼으로써 새로운 요청을 거절함), 현재 처리 중인 요청이 끝나길 기다린 뒤에 프로세스가 종료 되게 됩니다. 이 모델은 암묵적으로 HTTP 요청이 짧다는 가정(기껏해야 몇 초)을 깔고 있습니다. long polling의 경우에는 클라이언트가 연결이 끊긴 시점에 바로 다시 연결을 시도해야 합니다. 	프로세스는 프로세스 매니저로부터 **[SIGTERM]((http://en.wikipedia.org/wiki/SIGTERM) 신호를 받았을 때 그레이스풀 셧다운(graceful shutdown)을 합니다. ** 웹프로세스의 그레이스풀 셧다운 과정에서는 서비스 포트의 수신을 중지하고(그럼으로써 새로운 요청을 거절함), 현재 처리 중인 요청이 끝나길 기다린 뒤에 프로세스가 종료 되게 됩니다. 이 모델은 암묵적으로 HTTP 요청이 짧다는 가정(기껏해야 몇 초)을 깔고 있습니다. long polling의 경우에는 클라이언트가 연결이 끊긴 시점에 바로 다시 연결을 시도해야 합니다. 
+**Twelve-Factor App은 설정을 *환경 변수*** (envvars나 env라고도 불림)에 저장합니다. 환경 변수는 코드 변경 없이 쉽게 배포 떄마다 쉽게 변경할 수 있습니다. 설정 파일과 달리, 잘못해서 코드 저장소에 올라갈 가능성도 낮습니다. 또한, 커스텀 설정 파일이나 Java System Property와 같은 다른 설정 매커니즘과 달리 언어나 OS에 의존하지 않는 표준입니다.	**Twelve-Factor App은 설정을 *환경 변수*** (envvars나 env라고도 불림)에 저장합니다. 환경 변수는 코드 변경 없이 쉽게 배포 때마다 쉽게 변경할 수 있습니다. 설정 파일과 달리, 잘못해서 코드 저장소에 올라갈 가능성도 낮습니다. 또한, 커스텀 설정 파일이나 Java System Property와 같은 다른 설정 매커니즘과 달리 언어나 OS에 의존하지 않는 표준입니다.
+[Harry Roberts](http://csswizardry.com), [Dave Rupert](http://daverupert.com), [Chris Coyier](http://css-tricks.com)에 의해 알려진 흥미로운 개념이 있습니다. 이는 모든 CSS  선언과 핵, 그리고 우리가 자랑스럽게 여기지 않는 것들을 *수치 파일*에 넣는 것으로 이루어집니다. 이 파일은, 극적이게도 `_shame.scss`라고 불리며, 스타일시트의 맨 끝에서, 다른 모든 파일들 다음으로 불러들여질 것입니다.	[Harry Roberts](http://csswizardry.com), [Dave Rupert](http://daverupert.com), [Chris Coyier](http://css-tricks.com)에 의해 알려진 흥미로운 개념이 있습니다. 이는 모든 CSS 선언과 핵, 그리고 우리가 자랑스럽게 여기지 않는 것들을 *수치 파일*에 넣는 것으로 이루어집니다. 이 파일은, 극적이게도 `_shame.scss`라고 불리며, 스타일시트의 맨 끝에서, 다른 모든 파일들 다음으로 불러들여질 것입니다.
+지원이 미비하거나 부분적으로 지원되는 CSS 속성을 위한 벤더 프리픽스 처리용 믹신을 정의하는 것은 솔깃한 일일 수 있습니다. 그러나 그건 좋은 생각이 아닙니다.  우선, [Autoprefixer](https://github.com/postcss/autoprefixer)를 사용할 수 있다면 Autoprefixer를 사용하세요. 여러분의 프로젝트에서 Sass 코드를 없애 주고, 항상 최신 정보를 반영하며, 프리픽스를 처리하는 데에는 여러분보다 훨씬 나을 것입니다.	지원이 미비하거나 부분적으로 지원되는 CSS 속성을 위한 벤더 프리픽스 처리용 믹신을 정의하는 것은 솔깃한 일일 수 있습니다. 그러나 그건 좋은 생각이 아닙니다. 우선, [Autoprefixer](https://github.com/postcss/autoprefixer)를 사용할 수 있다면 Autoprefixer를 사용하세요. 여러분의 프로젝트에서 Sass 코드를 없애 주고, 항상 최신 정보를 반영하며, 프리픽스를 처리하는 데에는 여러분보다 훨씬 나을 것입니다.
+미디어 쿼리가 특정 기기에 의존해서는 안된다고 말해도 과언은 아닐 거라 생각합니다. 예를 들면, 아이패드나 블렉베리 폰을 특정해서 겨냥하는 것은 분명 나쁜 생각입니다. 디자인이 깨지고 다음 미디어 쿼리가 넘겨받기 전까지, 미디어 쿼리는 다양한 스크린 크기를 처리해야 합니다.	미디어 쿼리가 특정 기기에 의존해서는 안된다고 말해도 과언은 아닐 거라 생각합니다. 예를 들면, 아이패드나 블랙베리 폰을 특정해서 겨냥하는 것은 분명 나쁜 생각입니다. 디자인이 깨지고 다음 미디어 쿼리가 넘겨받기 전까지, 미디어 쿼리는 다양한 스크린 크기를 처리해야 합니다.
+여러분의 컴파일러를 선택하는 것으로 돌아가겠습니다. 사실, 이건 여러분의 프로젝트에 달려있습니다. Ruby on Rails 프로젝트라면, Ruby Sass를 사용하는 게 나을 겁니다.  Ruby Sass가 이 경우에 완벽하게 적합하죠. 또한, Ruby Sass가 언제나 참조 구현이 될 것이며 기능에 있어 LibSass를 선도할 것이라는 점을 알아두십시오.	여러분의 컴파일러를 선택하는 것으로 돌아가겠습니다. 사실, 이건 여러분의 프로젝트에 달려있습니다. Ruby on Rails 프로젝트라면, Ruby Sass를 사용하는 게 나을 겁니다. Ruby Sass가 이 경우에 완벽하게 적합하죠. 또한, Ruby Sass가 언제나 참조 구현이 될 것이며 기능에 있어 LibSass를 선도할 것이라는 점을 알아두십시오.
+제가 Sass에서 좋아하는 점은 CSS에 대한 보수적인 접근입니다. Sass의 디자인은 강력한 원칙에 기반하고 있습니다: 디자인 접근법의 큰 부분은 다음과 같은 중심 팀의 믿음으로부터 나옵니다. a) 추가 기능을 더하는 것은 유용성에 의해 정당화되어야만 하는 복잡성의 비용을  가진다. b) 따로 떨어져있는 스타일 블록 하나만을 보는 것으로도 주어진 블록이 무엇을 하고 있는지 추론하는 것이 쉬워야 한다. 또한, Sass는 다른 전처리기에 비해 세부사항에 대한 훨씬 날카로운 관심을 갖고 있습니다. 제가 아는 한, 핵심 디자이너들은 간과하기 쉬운 모든 CSS 호환성에 대한 지원까지 신경 쓰고 전반적인 동작들이 모두 일관성을 유지하도록 합니다.	제가 Sass에서 좋아하는 점은 CSS에 대한 보수적인 접근입니다. Sass의 디자인은 강력한 원칙에 기반하고 있습니다: 디자인 접근법의 큰 부분은 다음과 같은 중심 팀의 믿음으로부터 나옵니다. a) 추가 기능을 더하는 것은 유용성에 의해 정당화되어야만 하는 복잡성의 비용을 가진다. b) 따로 떨어져있는 스타일 블록 하나만을 보는 것으로도 주어진 블록이 무엇을 하고 있는지 추론하는 것이 쉬워야 한다. 또한, Sass는 다른 전처리기에 비해 세부사항에 대한 훨씬 날카로운 관심을 갖고 있습니다. 제가 아는 한, 핵심 디자이너들은 간과하기 쉬운 모든 CSS 호환성에 대한 지원까지 신경 쓰고 전반적인 동작들이 모두 일관성을 유지하도록 합니다.
+  <p>반드시 그런 건 아닐 수도 있지만, 현재 선택자 인용(`&`)으로 새로운 선택자를 생성하면 그 선택자 자체가 코드베이스에 존재하지 않기 때문에 검색을 할 수 없게 됩니다.</p>	  <p>반드시 그런 건 아닐 수도 있지만, 현재 선택자 인용(<code>&</code>)으로 새로운 선택자를 생성하면 그 선택자 자체가 코드베이스에 존재하지 않기 때문에 검색을 할 수 없게 됩니다.</p>
+선택자가 길어지고 현재 선택자(`&`)를 더 자주 인용할수록 더더욱 그러합니다. 어느 순간이 되면, 선택자를 파악하고 무슨 일이 일어나고 있는지 더이상 이해하기가 힘들어질 위험이 너무 커지기 때문에 무릎쓸 만한 가치가 없습니다.	선택자가 길어지고 현재 선택자(`&`)를 더 자주 인용할수록 더더욱 그러합니다. 어느 순간이 되면, 선택자를 파악하고 무슨 일이 일어나고 있는지 더이상 이해하기가 힘들어질 위험이 너무 커지기 때문에 무릅쓸 만한 가치가 없습니다.
+다음의 코드 스니펫은 *변수 가림* 개념을 설명하고 있다.	다음의 코드 스니펫은 *변수 가림* 개념을 설명하고 있습니다.
+이 덕분에, 개발자는 여러분의 라이브러리를 import하기 *전에* 재정의될 걱정 없이 자신의 `$baseline` 변수를 정의할 수 있다.	이 덕분에, 개발자는 여러분의 라이브러리를 import하기 *전에* 재정의될 걱정 없이 자신의 `$baseline` 변수를 정의할 수 있습니다.
+앞서 언급한 두 펑션보다 ` mix`를 사용하는 것의 이점은 색의 비율을 감소시킴에 따라 점진적으로 검은 색(혹은 흰 색)으로 나아간다는 점입니다. 반면 `darken`과 `lighten`은 색을 순식간에 완전한 검은 색이나 흰 색으로 보내버릴 것입니다.	앞서 언급한 두 펑션보다 `mix`를 사용하는 것의 이점은 색의 비율을 감소시킴에 따라 점진적으로 검은 색(혹은 흰 색)으로 나아간다는 점입니다. 반면 `darken`과 `lighten`은 색을 순식간에 완전한 검은 색이나 흰 색으로 보내버릴 것입니다.
+  <p><a href="http://sass-lang.com/documentation/Sass/Script/Functions.html#scale_color-instance_method"><code>scale-color</code></a> 펑션은  속성들이 이미 얼마나 높거나 낮은지를 고려함으로써 그 크기를 보다 유동적으로 변경하도록 디자인되었습니다. 이 펑션은 <code>mix</code> 만큼이나 좋은 결과물과 함께 보다 명확한 호출 관례를 제공합니다. 그렇지만 비례 계수는 정확히 같지 않습니다.</p>	  <p><a href="http://sass-lang.com/documentation/Sass/Script/Functions.html#scale_color-instance_method"><code>scale-color</code></a> 펑션은 속성들이 이미 얼마나 높거나 낮은지를 고려함으로써 그 크기를 보다 유동적으로 변경하도록 디자인되었습니다. 이 펑션은 <code>mix</code> 만큼이나 좋은 결과물과 함께 보다 명확한 호출 관례를 제공합니다. 그렇지만 비례 계수는 정확히 같지 않습니다.</p>
+`@debug`는 분명히 SassScript 디버그를 의해 의도된 것이므로 제쳐두겠습니다. 그건 지금 우리에게 중요한 게 아니니까요. 그럼 이제 하나는 컴파일러를 멈춰세우는 반면 다른 하나는 그렇지 않다는 점만 빼고 똑 닮은 `@warn`과 `@error`가 남았습니다. 무엇이 무엇인지 한 번 맞춰보세요.	`@debug`는 분명히 SassScript 디버그를 위해 의도된 것이므로 제쳐두겠습니다. 그건 지금 우리에게 중요한 게 아니니까요. 그럼 이제 하나는 컴파일러를 멈춰세우는 반면 다른 하나는 그렇지 않다는 점만 빼고 똑 닮은 `@warn`과 `@error`가 남았습니다. 무엇이 무엇인지 한 번 맞춰보세요.
+믹신은 Sass 언어 전체에서 가장 많이 사용되는 기능 중 하나이며, 재사용성과 DRY 컴퍼넌트의 핵심입니다. 그리고 거기엔 그럴 만한 이유가 있습니다: 믹신은 작성자가 `.float-left` 같은 시맨틱하지 않은 클래스에 기대지 않고도 스타일시트트 내내 재사용할 수 있는 스타일을 정의할 수 있게 해 줍니다.	믹신은 Sass 언어 전체에서 가장 많이 사용되는 기능 중 하나이며, 재사용성과 DRY 컴퍼넌트의 핵심입니다. 그리고 거기엔 그럴 만한 이유가 있습니다: 믹신은 작성자가 `.float-left` 같은 시맨틱하지 않은 클래스에 기대지 않고도 스타일시트 내내 재사용할 수 있는 스타일을 정의할 수 있게 해 줍니다.
+### 참고고	### 참고
+전처리기 외에도, 우리는 후처리기 역시 언급해야합니다. 이들은 주로 [PostCSS](https://github.com/postcss/postcss)와 [cssnext](https://cssnext.github.io/) 덕분에, 지난 몇 달 동안 상당한 노출을 받았죠. 후처리기는 오직 새로 추가될 CSS 구문만을 제공한다는 점을 제외하면 전처리기와 거의 동일합니다.	전처리기 외에도, 우리는 후처리기 역시 언급해야 합니다. 이들은 주로 [PostCSS](https://github.com/postcss/postcss)와 [cssnext](https://cssnext.github.io/) 덕분에, 지난 몇 달 동안 상당한 노출을 받았죠. 후처리기는 오직 새로 추가될 CSS 구문만을 제공한다는 점을 제외하면 전처리기와 거의 동일합니다.
+  <p>The <a href="http://sass-lang.com/documentation/Sass/Script/Functions.html#scale_color-instance_method"><code>scale-color</code></a> 펑션은  속성들이 이미 얼마나 높거나 낮은지를 고려함으로써 그 크기를 보다 유동적으로 변경하도록 디자인되었습니다. 이 펑션은 <code>mix</code> 만큼이나 좋은 결과물과 함께 보다 명확한 호출 관례를 제공합니다. 그렇지만 비례 계수는 정확히 같지 않습니다.</p>	  <p><a href="http://sass-lang.com/documentation/Sass/Script/Functions.html#scale_color-instance_method"><code>scale-color</code></a> 펑션은  속성들이 이미 얼마나 높거나 낮은지를 고려함으로써 그 크기를 보다 유동적으로 변경하도록 디자인되었습니다. 이 펑션은 <code>mix</code> 만큼이나 좋은 결과물과 함께 보다 명확한 호출 관례를 제공합니다. 그렇지만 비례 계수는 정확히 같지 않습니다.</p>
+CSS를 프로젝트를 위한 잘 알려진 설계 양식들이 많이 있습니다: [OOCSS](http://oocss.org/), [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/), [Bootstrap](http://getbootstrap.com/)류, [Foundation](http://foundation.zurb.com/)류... 이들 모두 훌륭하며, 장단점을 갖고 있습니다.	CSS 프로젝트를 위한 잘 알려진 설계 양식들이 많이 있습니다: [OOCSS](http://oocss.org/), [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/), [Bootstrap](http://getbootstrap.com/)류, [Foundation](http://foundation.zurb.com/)류... 이들 모두 훌륭하며, 장단점을 갖고 있습니다.
+훈련용 컴퓨터 머신이 고성능이 아닌 경우, 좀 더 적은양의 라벨 세트를 사용하는 것이 나중에 전체 모델의 훈련 시할 수간을 줄이는 데 도움이 될 수 있습니다.	훈련용 컴퓨터 머신이 고성능이 아닌 경우, 좀 더 적은양의 라벨 세트를 사용하는 것이 나중에 전체 모델의 훈련 시간을 줄이는 데 도움이 될 수 있습니다.
+[fonts](./fonts) 폴더는 현재는 비어있는데, 한글 데이터 세트를 생성하기 전에 fonts 디렉토리에 있는 [README](./fonts/README.md)에 설명해 놓은 글꼴 파일을 반드시 먼저 다운로드 해 놓아야 합니다.	[fonts](./fonts) 폴더는 현재는 비어있는데, 한글 데이터 세트를 생성하기 전에 fonts 디렉토리에 있는 [README](./fonts/README-ko.md)에 설명해 놓은 글꼴 파일을 반드시 먼저 다운로드 해 놓아야 합니다.
+이 훈련을 실해하려면, 이 프로젝트의 최상위 디렉토리에서 다음과 같이 실행하십시오:	이 훈련을 실행하려면, 이 프로젝트의 최상위 디렉토리에서 다음과 같이 실행하십시오:
+이 웹사이트에서 글꼴을 다운로드 하려면 원하는 글꼴을 클릭만하면 되는데, 실제 ttf 파일을 다운로드하게 될 때까지 커다란 파란색 다운로드 버튼을 계속 클릭해야 합니다.	이 웹사이트에서 글꼴을 다운로드하려면 원하는 글꼴을 클릭만하면 되는데, 실제 ttf 파일을 다운로드하게 될 때까지 커다란 파란색 다운로드 버튼을 계속 클릭해야 합니다.
+그리고 tutorial도 아주 주의깊에 읽어보시기 바랍니다.	그리고 tutorial도 아주 주의 깊게 읽어보시기 바랍니다.
+하지만 이 달라진 픽셀 값도 여전리	하지만 이 달라진 픽셀 값도 여전히
+우리가 상상할 수 있는 어떤 객에라도 잘 다룰 수 있어야만 한다면,	우리가 상상할 수 있는 어떤 객체라도 잘 다룰 수 있어야만 한다면,
+이 문제는 아주 판타스틱하게 어려운 문제입니다.	하지만 이는 아주 어려운 문제입니다.
+Train Setp에서는 아무 일도 하지 않습니다.	Train Step에서는 아무 일도 하지 않습니다.
+앞유리 같군요. 하지막 조금 이상합니다.	앞유리 같군요. 하지만 조금 이상합니다.
+Softmas 뿐만 아니라 2-layer 신경망도 구현할 것입니다.	Softmax 뿐만 아니라 2-layer 신경망도 구현할 것입니다.
+반면 0보다 수가 짝수 개면 빨간 카테고리로 분류합니다.	반면 0보다 큰 수가 짝수 개면 빨간 카테고리로 분류합니다.
+최초의 노드에서 처음으로 P2P 네으워크를 비롯한 블록체인 엔진을 작동시킴에 따른 시나리오로 다음과 같은 순서로 이루어 진다.	최초의 노드에서 처음으로 P2P 네트워크를 비롯한 블록체인 엔진을 작동시킴에 따른 시나리오로 다음과 같은 순서로 이루어 진다.
+5.  서비스별 브런치에서 작업	5.  서비스별 브랜치에서 작업
+    1.  포맷 브런치 예시: `feature/consensus`, `feature/blockchain` 등등	    1.  포맷 브랜치 예시: `feature/consensus`, `feature/blockchain` 등등
+    2.  서비스별 브런치를 구성하는 것으로 추천	    2.  서비스별 브랜치를 구성하는 것으로 추천
+최초의 노드에서 처음으로 P2P 네으워크를 비롯한 블록체인 엔진을 작동시킴에 따른 시나리오로 다음과 같은 순서로 이루어 진다.	최초의 노드에서 처음으로 P2P 네트워크를 비롯한 블록체인 엔진을 작동시킴에 따른 시나리오로 다음과 같은 순서로 이루어 진다.
+5.  서비스별 브런치에서 작업	5.  서비스별 브랜치에서 작업
+    2.  서비스별 브런치를 구성하는 것으로 추천	    2.  서비스별 브랜치를 구성하는 것으로 추천
+의존 라이브러리 없이 구현한 카누젤(Carrousel) 라이브러리입니다.	의존 라이브러리 없이 구현한 캐러셀(Carrousel) 라이브러리입니다.
+`setTimeout`는 새심한 처리에도 영향을 받기 쉽다는 이야기가 작성돼 있습니다.	`setTimeout`는 세심한 처리에도 영향을 받기 쉽다는 이야기가 작성돼 있습니다.
+페이지를 완전하게 출력하기 위한 필요한 리소스를 먼저 불러오는 [link rel="preload"](https://w3c.github.io/preload/ "link rel=&#34;preload&#34;")를 지원합니다.	페이지를 출력하기 위해 필요한 리소스를 먼저 불러오는 [link rel="preload"](https://w3c.github.io/preload/ "link rel=&#34;preload&#34;")를 지원합니다.
+HTML-JS syntax라는 JavaScript 처럼 작성한 템플릿 표현을 지원하고 컴파일 시의 최적화를 진행하는 등 다양한 변경 사항이 있습니다.	HTML-JS syntax라는 JavaScript 스러운 표현을 지원하고 컴파일 시의 최적화를 진행하는 등 다양한 변경 사항이 있습니다.
+Node.js에서 예전부터 지원하는 `node debug` 명령어의 사용 방법에 관해 작성돼 있습니다.	Node.js에서 예전부터 지원하던 `node debug` 명령어의 사용 방법에 관해 작성돼 있습니다.
+왜 DOM 라이브러리를 React/AngularJS 등 특정 프레임워크에 의존하지 않고 Pure한 DOM 라이브러리로써 개발하는지 이야기합니다.	왜 React/AngularJS 등 특정 프레임워크에 의존하지 않고 Pure하게 DOM 라이브러리로 개발하는지 이야기합니다.
+별도 의존하는 라이브러리 없이 개발한 특정 요소를 애니메이션 처리하는 라이브러리입니다.	별도 의존하는 라이브러리 없이 개발된 특정 요소를 애니메이션 처리하는 라이브러리입니다.
+テンプレート 관련 기능이 개선됐고 비추천하는 API가 삭제됐습니다. 그리고 초기 렌더링 속도도 보다 빠르게 개선됐습니다.	템플릿 관련 기능이 개선됐고 비추천하는 API가 삭제됐습니다. 그리고 초기 렌더링 속도도 보다 빠르게 개선됐습니다.
+title: "2015-10-16のJS: Node.js 4.2.0 LTS、ES6、CSS.next"	title: "2015-10-16 JS: Node.js 4.2.0 LTS, ES6, CSS.next"
+`.eslintrc`내에 `"extends": "./foo.js"`를 작성하여 자바스크립트 파일을 상속할 수 있도록 됐습니다.	`.eslintrc`내에 `"extends": "./foo.js"`를 작성하여 자바스크립트 파일을 상속하여 옵션을 확장할 수 있도록 됐습니다.
+ESlint를 처음 사용할 때 도움이 될 것 같습니다.	ESLint를 처음 사용할 때 도움이 될 것 같습니다.
+[공식 사이트](http://rollupjs.org)에서 결합을 실제로 시헙해볼 수 있습니다. 다른 번들 도구와 다르게 각각의 모듈을 랩핑한 함수 등이 없이 깨끗하게 결합됩니다.	[공식 사이트](http://rollupjs.org)에서 결합을 실제로 시험해볼 수 있습니다. 다른 번들 도구와 다르게 각각의 모듈을 랩핑한 함수 등이 없이 깨끗하게 결합됩니다.
+웹팩과 롤업을 사용해 번들한 소스를 [nolanlawson/rollup-comparison](https://github.com/nolanlawson/rollup-comparison "nolanlawson/rollup-comparison")에서 공개하고 있습니다(Webpack2에서도 [ES6 Modules를 기초로 하고 있지 않은 코드 삭제](https://github.com/webpack/webpack/pull/861#issuecomment-149997270)를 예정하고 있습니다)	웹팩과 롤업을 사용해 번들한 소스를 [nolanlawson/rollup-comparison](https://github.com/nolanlawson/rollup-comparison "nolanlawson/rollup-comparison")에서 공개하고 있습니다(Webpack2에서도 [ES6 Modules를 기반으로 하고, 사용하고 있지 않은 함수 코드 삭제](https://github.com/webpack/webpack/pull/861#issuecomment-149997270)를 예정하고 있습니다)
+`let {} = {};`가 ES6에서 유효한 것은 혼란을 일으킨다는 이야기, 현재 ECMAScript 사양의 이슈로써 수정할 것인지 의논되고 있다.	`let {} = {};`가 ES6에서 유효한 것은 혼란을 일으킨다는 이야기, 현재 ECMAScript 사양의 이슈로써 수정할 것인지 의논되고 있습니다.
+에 대응한 라이브러리의 공개 방법과 설정에 관해서 이야기합니다.	bower, npm, jspm에 대응하여 라이브러리를 공개하는 방법과 설정에 관해서 이야기합니다.
+Browserify、Webpack、rollup.js에서의 라이브러리 빌드에 관해서도 작성돼 있습니다.	Browserify, Webpack, rollup.js에서의 라이브러리 빌드에 관해서도 작성돼 있습니다.
+사용하지 않는 함수는 무시하며, 쓸대없는 랩핑 함수 없이 코드를 결합합니다. 	사용하지 않는 함수는 무시하며, 부차적인 랩핑 함수 없이 코드를 결합합니다. 
+title: "2015-08-17의 JS: Redux 1.0.0、flux-utils、Firefox 40"	title: "2015-08-17의 JS: Redux 1.0.0, flux-utils, Firefox 40"
+FluxUtils와 Reflux는 서로 영향을 받은 듯한 느낌이 들 수 있습니다. [Redux의 개발자](https://twitter.com/dan_abramov)와 [Flux의 개발자](https://twitter.com/fisherwebdev)의 대화를 한번 읽어보면 재미있을거 같습니다.	FluxUtils와 Redux는 서로 영향을 받은 듯한 느낌이 들 수 있습니다. [Redux의 개발자](https://twitter.com/dan_abramov)와 [Flux의 개발자](https://twitter.com/fisherwebdev)의 대화를 한번 읽어보면 재미있을거 같습니다.
+또, 현재 `npm link`에 관한 문제나 `npm install` 시 시간이 걸린다 등의 npm v3.x 관련한 issue가 올라와 있습니다.	또, 현재 `npm link`에 관한 문제나 `npm install` 시 시간이 걸리는 등의 npm v3.x 관련한 이슈가 등록돼 있습니다.
+CSS의 세로쓰기 문장에 관한 레이아웃 기능이 디폴트로 활성화 됐으며 `Symbol.species`, `new.target`의 지원하고 Notifications API를 Web Worker 내에서 이용 가능하도록 변경돼는 등 여러가지 변경 사항이 있습니다.	CSS의 세로쓰기 문장에 관한 레이아웃 기능이 디폴트로 활성화 됐으며 `Symbol.species`, `new.target`의 지원하고 Notifications API를 Web Worker 내에서 이용 가능하도록 변경되는 등 여러가지 변경 사항이 있습니다.
+Buffer 작성 방법과 fs.WriteStream의 기입(bulk writes) 속도가 개선 되는 등 다양한 변경 사항이 있습니다.	Buffer의 작성 방법과 fs.WriteStream의 기입(bulk writes) 속도가 개선 되는 등 다양한 변경 사항이 있습니다.
+정규표현식을 확장한 라이브러리인 XRegExp 3.0.0이 릴리즈됐습니다.	확장된 정규표현식을 제공하는 라이브러리인 XRegExp 3.0.0이 릴리즈됐습니다.
+Unicode에 관한 지원을 개선했으며 `A`(astral) 플래그를 추가했습니다. 또한 ES6를 대응해 변경했습니다.	Unicode에 관한 지원을 개선했으며 `A`(astral) 플래그를 추가했습니다. 또한 ES6에 사양에 맞춰 변경됐습니다.
+GitHub저장소의 URL을 등록하면 ESDoc에 의해 문서가 생성됩니다. `esdoc.json` 설정 파일이 없는 경우에는 `src/`의 코드를 기초로 문서를 생성합니다.	GitHub 저장소의 URL을 등록하면 ESDoc에 의해 문서가 생성됩니다. `esdoc.json` 설정 파일이 없는 경우에는 `src/`의 코드를 기초로 문서를 생성합니다.
+### What we've Learnd	### What we've learned
+- Out-dated tech (chrom extention, react, mobx, ...)	- Out-dated tech (Chrome extension, react, mobx, ...)
+개발자가 Code 를 공유할 때 또는 Code 에 대해 질문할 때, Facebook 에 Code 를 평문으로 붙여 넣는 일은 너무 끔찍하죠. 그렇다고 Gist 나 Codepen 등의 서비스를 이용하는 것은 복잡합니다. 이 문제를 다양한 Open-source 기술과 Github Gist 를 이용하여 멋지게 해킹해 봅시다. 개발자들의 Code Share 와 토론이 가능하고, 원하는 Code 검색을 도와주는 Static Web service 를 Open-source 로 개발합니다.	개발자가 Code 를 공유할 때 또는 Code 에 대해 질문할 때, Facebook 에 Code 를 평문으로 붙여 넣는 일은 너무 끔찍하죠. 그렇다고 Gist 나 Codepen 등의 서비스를 이용하는 것은 복잡합니다. 이 문제를 다양한 Open-source 기술과 GitHub Gist 를 이용하여 멋지게 해킹해 봅시다. 개발자들의 Code Share 와 토론이 가능하고, 원하는 Code 검색을 도와주는 Static Web service 를 Open-source 로 개발합니다.
+[기본 이전의 기초지식 - Back to Basics CSS 2015-08-30](http://unformedbuilding.com/slide/back-to-basics-2015-08-30/#/ "기본 이전의 기초지식 - Back to Basics CSS 2015-08-30")[한국어 문서](http://techhtml.github.io/TR/) 슬라이드에서, CSS 스펙을 어떻게 읽어야하는 지 설명하고 있습니다.	[기본 이전의 기초지식 - Back to Basics CSS 2015-08-30](http://unformedbuilding.com/slide/back-to-basics-2015-08-30/#/ "기본 이전의 기초지식 - Back to Basics CSS 2015-08-30")([한국어문서](http://techhtml.github.io/TR/)) 슬라이드에서, CSS 스펙을 어떻게 읽어야 하는지 설명하고 있습니다.
+스펙문서는 어디에 있는 지, 스펙문서에 나오는 CSS 기본구문 읽는 법, 기호의 의미 등을 자세히 설명합니다.	스펙문서는 어디에 있는지, 스펙문서에 나오는 CSS 기본구문 읽는 법, 기호의 의미 등을 자세히 설명합니다.
+ES6の Spread operator, `new.target` 대응, TypedArray 개선 등	ES6의 Spread operator, `new.target` 대응, TypedArray 개선 등
+Less에서 Sass로 전환, IE8 지원 종료, `rem` 단위 이용, flexbox를 옵셔널하게 이요할 수 있도록 변경됐고, 플러그인을 ES6로 재작성 했으며 재정의 스타일을 Reboot로 정리하는 등 다양한 변경 사항이 있습니다.	Less에서 Sass로 전환, IE8 지원 종료, `rem` 단위 이용, flexbox를 옵셔널하게 이용할 수 있도록 변경됐고, 플러그인을 ES6로 재작성 했으며 재정의 스타일을 Reboot로 정리하는 등 다양한 변경 사항이 있습니다.
+Iterator, Iterable, Generator 각각이 무엇인지, 어떤시긍로 사용하는지 설명하고 있습니다.	Iterator, Iterable, Generator 각각이 무엇인지, 어떤식으로 사용하는지 설명하고 있습니다.
+Node.js의 역사ㅡ io.js가 출범하게된 원인 그리고 Node.js와 io.js가 통합하게된 경위에 대해서 소개합니다.	Node.js의 역사 io.js가 출범하게된 원인 그리고 Node.js와 io.js가 통합하게된 경위에 대해서 소개합니다.
+성능과 매트릭스(Metrics)에 관해 소개하는 발표 영상입니다.	성능과 측정 항목(Metrics)에 관해 소개하는 발표 영상입니다.
+로드 완료가 아닌 상호 작용(Interactive)된 시간(TTI)를 측정하는 방법과 Hero Elements, UX와 메트리크스에 관해 이야기하며 Long Tasks(50ms)를 PerformanceObserver로 감지하는 방법과 조작 지연 측정, 개선을 위한 패턴에 대해서도 소개합니다.	로드 완료가 아닌 상호 작용(Interactive)된 시간(TTI)를 측정하는 방법과 Hero Elements, UX를 측정 항목에 기준하여 이야기하며 Long Tasks(50ms)를 PerformanceObserver로 감지하는 방법과 조작 지연 측정, 개선을 위한 패턴에 대해서도 소개합니다.
+title: "2017-07-03 JS: ECMAScript 2017, Prettier 1.5.0, UX의 성능 지표"	title: "2017-07-03 JS: ECMAScript 2017, Prettier 1.5.0, UX의 성능 측정 지표"
+[Leveraging the Performance Metrics that Most Affect User Experience  |  Web  |  Google Developers](https://developers.google.com/web/updates/2017/06/user-centric-performance-metrics)에는  사용자 경험에 영향을 주는 성능 지표에 관해 작성돼 있습니다.	[Leveraging the Performance Metrics that Most Affect User Experience  |  Web  |  Google Developers](https://developers.google.com/web/updates/2017/06/user-centric-performance-metrics)에는  사용자 경험에 영향을 주는 성능 측정 항목에 관해 작성돼 있습니다.
+때문에 First Paint / First Meaningful Paing / Time to Interactive(TTI) / Longtasks 등의 지표나 그 의미에 대해 소개합니다.	때문에 First Paint / First Meaningful Paing / Time to Interactive(TTI) / Longtasks 등의 측정 항목과 그 의미에 대해 소개합니다.
+## Web 프론트엔드 하이 퍼포먼트 튜닝 | 쿠보타 미츠노리 | 책 | 통신판매 | Amazon(일본어)	## Web 프론트엔드 하이 퍼포먼스 튜닝 | 쿠보타 미츠노리 | 책 | 통신판매 | Amazon(일본어)
+<img src="/files/oid-andrew.jpeg" style="width:120px; border-radius:50%; border: 1px solid #ccc; margin-left: 20px;" class="pull-right" /> 공용준(Andrew)은 카카오에서 클라우드 컴퓨팅 파트에서 클라우드 기술 리딩을 맡고 있으며, 프라이빗/퍼블릭 클라우드 서비스와 그에 필요한 기술들을 연구, 개발해서 실제 서비스에 적용하고 있다. 중소기업 발전을 위해 한국정보화진흥원에서 중소기업 기술 자문위원, 한국 데이터베이스 진흥원 자문위원으로도 활동하고 있다. 2011년에 정통부 산하의 클라우드 정책 연구단 기술고문을 역임했으며, 주요 저서로는 『카프카: 테이터 플랫폼의 최강자』(책만,2018),『클라우드 API를 활용한 빅데이터분석』(에이콘,2015), 『실전 클라우드 인프라 구축기술(한빛, 2014)』이 있다.	<img src="/files/oid-andrew.jpeg" style="width:120px; border-radius:50%; border: 1px solid #ccc; margin-left: 20px;" class="pull-right" /> 공용준(Andrew)은 카카오에서 클라우드 컴퓨팅 파트에서 클라우드 기술 리딩을 맡고 있으며, 프라이빗/퍼블릭 클라우드 서비스와 그에 필요한 기술들을 연구, 개발해서 실제 서비스에 적용하고 있다. 중소기업 발전을 위해 한국정보화진흥원에서 중소기업 기술 자문위원, 한국 데이터베이스 진흥원 자문위원으로도 활동하고 있다. 2011년에 정통부 산하의 클라우드 정책 연구단 기술고문을 역임했으며, 주요 저서로는 『카프카: 데이터 플랫폼의 최강자』(책만,2018),『클라우드 API를 활용한 빅데이터분석』(에이콘,2015), 『실전 클라우드 인프라 구축기술(한빛, 2014)』이 있다.
+예선에서 3문제 이상을 맞힌 상위 147명의 참가자에 대한 순위표를 공개합니다. 본선에 참가하시는 분들께는 축하의 말씀을, 아쉽게 참가 대상자가 되지 못하신 분들께는 위로의 말씀을 드립니다.	예선에서 3문제 이상을 맞힌 상위 153명의 참가자에 대한 순위표를 공개합니다. 본선에 참가하시는 분들께는 축하의 말씀을, 아쉽게 참가 대상자가 되지 못하신 분들께는 위로의 말씀을 드립니다.
+> [CMUX](https://github.com/kakao/cmux)는 [Cloudera Manager](https://www.cloudera.com/products/product-components/cloudera-manager.html?) 기반의 하둡 클러스터를 관리하는데 필요한 대화형 커멘드라인 인터페이스 도구들을 제공합니다.	> [CMUX](https://github.com/kakao/cmux)는 [Cloudera Manager](https://www.cloudera.com/products/product-components/cloudera-manager.html?) 기반의 하둡 클러스터를 관리하는데 필요한 대화형 커맨드라인 인터페이스 도구들을 제공합니다.
+> CMUX의 아이디어를 참고해 보세요. 여러분의 커멘드라인에 날개를 달 수 있을 것입니다.	> CMUX의 아이디어를 참고해 보세요. 여러분의 커맨드라인에 날개를 달 수 있을 것입니다.
+생성한 명령어 또는 명령어 집합을 실행합니다. 이 때 명령어 집합을 병렬로 실행할 수 있는 인터페이스가 필요할 수 있는데, CMUX는 이를 위해 [TMUX](https://github.com/tmux/tmux/wiki)를 사용합니다.	생성한 명령어 또는 명령어 집합을 실행합니다. 이때 명령어 집합을 병렬로 실행할 수 있는 인터페이스가 필요할 수 있는데, CMUX는 이를 위해 [TMUX](https://github.com/tmux/tmux/wiki)를 사용합니다.
+Over-provisioning은 단순히 논리적인 블록보다 물리적인 블록이 더 만도록 해주는 것인데,	Over-provisioning은 단순히 논리적인 블록보다 물리적인 블록의 수가 더 많도록 해주는 것인데,
+소스(주로 [Markdown])를 깃헙에 올리면 [Jekyll]을 실행해서 정적 사이트를 생성하는 과정을 깃헙 서버가 자동으로 수행합니다.	소스(주로 [Markdown])를 깃헙에 올리면 [Jekyll]을 실행해서 정적 사이트를 생성하는 과정을 깃헙 서버가 자동으로 수행하고,
+하고, 그것을 웹 페이지로 서비스합니다.	그것을 웹 페이지로 서비스합니다.
+2. `_tags` 디렉토리 아래의 파일들(예: `_tags/opensource.md` 등)을 처리해서 html 을 생성한다.(`_config.yml`의 `collections` 설정에 `output: true` 이므로)	2. `_tags` 디렉토리 아래의 파일들(예: `_tags/opensource.md` 등)을 처리해서 HTML 파일을 생성한다.(`_config.yml`의 `collections` 설정에 `output: true` 이므로)
+단순무식한 `O(포스트개수 x 태그개수` 풀스캔이지만,	단순무식한 `O(포스트개수 x 태그개수)` 풀스캔이지만,
+`author.html`[소스](https://raw.githubusercontent.com/kakao/kakao.github.io/master/_layouts/author.html)을 만듭니다:	[`author.html`](https://raw.githubusercontent.com/kakao/kakao.github.io/master/_layouts/author.html)을 만듭니다:
+기업의 기술 블로그에 이런 가벼운 내용이 올라가도 될까~~라는 잠시했었지만...	기업의 기술 블로그에 이런 가벼운 내용이 올라가도 될까...라는 고민을 잠시했지만...
+### 성능: 실시간으로 연결된 데이터에 대한 너비 우선 탐색	### 성능: 실시간으로 연결된 데이터에 대한 [너비 우선 탐색]
+RDB로 너비 우선 탐색을 구현하려면 대규모의 "JOIN"과 "GROUP BY"가 불가피합니다. 시간 내에 한 개의 응답을 내는 - OLAP에서 OLTP의 성능을 뽑아내는 - 것만 해도 쉽지 않은 일인데, 동시에 2000개의 응답을 내야 합니다.  카카오가 그랬던 것처럼 규모의 한계를 극복하기 위해 수동 샤딩을 했다면 쿼리도 상당 부분 수동으로 해야 합니다.	RDB로 [너비 우선 탐색]을 구현하려면 대규모의 "JOIN"과 "GROUP BY"가 불가피합니다. 시간 내에 한 개의 응답을 내는 - OLAP에서 OLTP의 성능을 뽑아내는 - 것만 해도 쉽지 않은 일인데, 동시에 2000개의 응답을 내야 합니다.  카카오가 그랬던 것처럼 규모의 한계를 극복하기 위해 수동 샤딩을 했다면 쿼리도 상당 부분 수동으로 해야 합니다.
+기존의 그래프DB들은 **전체 데이터를 대상으로 하는 [깊이 우선 탐색](Depth First Search; DFS)**에 최적화되어 있고, **부분 데이터를 대상으로 하는 [너비 우선 탐색](breadth First Search; BFS)**에는 상대적으로 취약합니다. 카카오를 비롯한 대부분의 소셜 서비스에게 필요한 것은 몇시간 걸려서 나오는 수학적인 최단 경로(Shortest Path)가 아닙니다.	기존의 그래프DB들은 **전체 데이터를 대상으로 하는 [깊이 우선 탐색] (Depth First Search; DFS)**에 최적화되어 있고, **부분 데이터를 대상으로 하는 [너비 우선 탐색] (breadth First Search; BFS)**에는 상대적으로 취약합니다. 카카오를 비롯한 대부분의 소셜 서비스에게 필요한 것은 몇시간 걸려서 나오는 수학적인 최단 경로(Shortest Path)가 아닙니다.
+즉, 실시간 너비 우선 탐색을 위한 **그래프 데이터 저장소**와 **그래프 API 서버**입니다.	즉, 실시간 [너비 우선 탐색]을 위한 **그래프 데이터 저장소**와 **그래프 API 서버**입니다.
+[HBase]를 그래프 데이터 저장소로  사용합니다. HBase/HDFS/Hadoop이 가진 성능, 확장성, 가용성을 그대로 흡수하면서, 실시간 너비 우선 탐색에 최적화된 형태로 그래프 데이터를 저장합니다. 저장소 레이어는 물리적 구현체에 독립적으로 설계되어 MySQL을 저장소로 사용할 수도 있습니다.	[HBase]를 그래프 데이터 저장소로  사용합니다. HBase/HDFS/Hadoop이 가진 성능, 확장성, 가용성을 그대로 흡수하면서, 실시간 [너비 우선 탐색]에 최적화된 형태로 그래프 데이터를 저장합니다. 저장소 레이어는 물리적 구현체에 독립적으로 설계되어 MySQL을 저장소로 사용할 수도 있습니다.
+Spring 3.2버전 부터 [비동기 프로그래밍][13]을 지원하고 있고 [`AsyncRestTemplate.java`][37] API을 통해서 비동기 HTTP 프로그래밍을 지원하고 있지만 실제 개발 환경에서 여러개의 `Future` 효율적으로 조합(`flatMap`, [Monad Transformers][38]) 할수 없다면 이를 효과적으로 사용할수 없습니다. 이로 인해 부분적으로만 비동기 프로그래밍으로 구현한다면 블록킹 IO로 인해 스레드 waiting현상, `thread pool hell`은 피할수 없게 됩니다.	Spring 3.2버전 부터 [비동기 프로그래밍][13]을 지원하고 있고 [`AsyncRestTemplate.java`][37] API을 통해서 비동기 HTTP 프로그래밍을 지원하고 있지만 실제 개발 환경에서 여러개의 `Future`를 효율적으로 조합(`flatMap`, [Monad Transformers][38]) 할수 없다면 이를 효과적으로 사용할수 없습니다. 이로 인해 부분적으로만 비동기 프로그래밍으로 구현한다면 블록킹 IO로 인해 스레드 waiting현상, `thread pool hell`은 피할수 없게 됩니다.
+        <p>여러분에게 필요한 웹기술들을 선택하면 학습을 통해 좀 더 자세한 사항을 알아보세요.</p>	        <p>여러분에게 필요한 웹기술들을 선택한 후, 학습을 통해 좀 더 자세한 사항을 알아보세요.</p>
+### What we've Learnd	### What we've learned
+- Out-dated tech (chrom extention, react, mobx, ...)	- Out-dated tech (Chrome extension, react, mobx, ...)
+개발자가 Code 를 공유할 때 또는 Code 에 대해 질문할 때, Facebook 에 Code 를 평문으로 붙여 넣는 일은 너무 끔찍하죠. 그렇다고 Gist 나 Codepen 등의 서비스를 이용하는 것은 복잡합니다. 이 문제를 다양한 Open-source 기술과 Github Gist 를 이용하여 멋지게 해킹해 봅시다. 개발자들의 Code Share 와 토론이 가능하고, 원하는 Code 검색을 도와주는 Static Web service 를 Open-source 로 개발합니다.	개발자가 Code 를 공유할 때 또는 Code 에 대해 질문할 때, Facebook 에 Code 를 평문으로 붙여 넣는 일은 너무 끔찍하죠. 그렇다고 Gist 나 Codepen 등의 서비스를 이용하는 것은 복잡합니다. 이 문제를 다양한 Open-source 기술과 GitHub Gist 를 이용하여 멋지게 해킹해 봅시다. 개발자들의 Code Share 와 토론이 가능하고, 원하는 Code 검색을 도와주는 Static Web service 를 Open-source 로 개발합니다.
+5. If you contributed something new, run `npm run contributors:add <your GitHub username> <contirbution type>` to add yourself [below](#contributors)	5. If you contributed something new, run `npm run contributors:add <your GitHub username> <contribution type>` to add yourself [below](#contributors)
+기존의 모든 파드는 `.spec.strategy.type==Recreate` 일면 새 파드가 생성되기 전에 죽는다.	기존의 모든 파드는 `.spec.strategy.type==Recreate` 이면 새 파드가 생성되기 전에 죽는다.
+컨테이너들 안의 파드는 IP주소와 포트 공간을 공유하고,	파드 안의 컨테이너들은 IP주소와 포트 공간을 공유하고,
+    "core:undo": "실행취소"	    "core:undo": "실행 취소"
+    "core:redo": "다시실행"	    "core:redo": "다시 실행"
+        desc: "프로제긑 다시 열기 메뉴 (Reopen Project menu)에서 최근 열린 프로젝트를 몇개까지 표시할지 지정합니다."	        desc: "프로젝트 다시 열기 메뉴 (Reopen Project menu)에서 최근 열린 프로젝트를 몇개까지 표시할지 지정합니다."
+        desc: "윈도우가 탭이나 패널을 하나도 열고 있지 않을 때, '탭 닫기 (Close Tab)' 커맨드가 입력되면 윈도우를 닫습니다."	        desc: "현재 창이 탭이나 패널을 하나도 열고 있지 않을 때, '탭 닫기 (Close Tab)' 커맨드가 입력되면 현재 창을 그대로 닫습니다."
+전입신고 (이하 안멜둥 : *Anmeldung*)은 독일생활에서 제일 중요하고, 또 빨리 처리해야 하는 일 중 하나입니다. 베를린에 길게 묵을 예정인 그 누구던(아파트 전체를 빌리던 플랫쉐어를 하던) 법에 따라 전입신고를 전입 등록소 (독어 : *Bürgeramt*)에 가서 입국 2주 안에 해야합니다. 그래서 베를린의 전임 등록소는 항상 미친듯이 바쁩니다. 그래서 저것보다 조금 일정이 늦어지는 것이 큰 문제를 야기하지는 않습니다.	전입신고(이하 안멜둥 : *Anmeldung*)는 독일생활에서 제일 중요하고, 또 빨리 처리해야 하는 일 중 하나입니다. 베를린에 길게 묵을 예정인 그 누구던(아파트 전체를 빌리던 플랫쉐어를 하던) 법에 따라 전입신고를 전입 등록소 (독어 : *Bürgeramt*)에 가서 입국 2주 안에 해야합니다. 그래서 베를린의 전임 등록소는 항상 미친듯이 바쁩니다. 그래서 저것보다 조금 일정이 늦어지는 것이 큰 문제를 야기하지는 않습니다.
+아래를 잘 읽어보시면 은행 계좌를 여러가지 방법으로 여는 법을 알 수 있습니다. 물론 아래에 있는 은행이 독일 내 은행의 전부가 아니라는 걸 유념하시고, 어떤 은행을 고르실 지는 개인의 취향껏 해주시면 됩니다.a	아래를 잘 읽어보시면 은행 계좌를 여러가지 방법으로 여는 법을 알 수 있습니다. 물론 아래에 있는 은행이 독일 내 은행의 전부가 아니라는 걸 유념하시고, 어떤 은행을 고르실 지는 개인의 취향껏 해주시면 됩니다.
+여권하고 거주등록증(전입신고 하고 나서 받은거)을 들고 지점에 가면 영어를 할 줄 아는 매니저가 붙어서 안내를 해 줄 겁니다. 계약서에 사인하고 난 후, 계좌를 받기까지는 며칠 걸립니다.	여권하고 거주등록증(전입신고 하고 나서 받은 문서)을 들고 지점에 가면 영어를 할 줄 아는 매니저가 붙어서 안내를 해 줄 겁니다. 계약서에 사인하고 난 후, 계좌를 받기까지는 며칠 걸립니다.
+경험 공유 : 독일은행을 주은행으로 쓰고있는데 정말 괜찮습니다. 사이트에 "customer area"가 영어로 되어있고, 온라인으로 거의 모든 작업을 할 수 있기 때문이죠. 가끔 질문이 있을 땐 이메일로 물어보면 되는데 몇분내로 답장을 줍니다.	경험 공유 : 도이치방크를 주은행으로 쓰고있는데 정말 괜찮습니다. 사이트에 "customer area"가 영어로 되어있고, 온라인으로 거의 모든 작업을 할 수 있기 때문이죠. 가끔 질문이 있을 땐 이메일로 물어보면 되는데 몇분내로 답장을 줍니다.
+독일은행의 고객이라면 아래와 같은 ATM에서 자신의 독일은행 계좌를 수수료 없이 이용할 수 있습니다. : Deutsche Bank, Commerzbank, Postbank, HVB (HypoVerinsbank). 다른 ATM 이용 시, 수수료가 대강 €3,50 에서 €4,50정도 나옵니다.	도이치방크의 고객이라면 다음에 언급된 은행의 ATM에서 자신의 계좌를 수수료 없이 이용할 수 있습니다. : 도이치방크(Deutsche Bank), 코메르츠방크(Commerzbank), 포스트방크(Postbank), HVB (HypoVerinsbank). 다른 ATM 이용 시, 수수료가 대강 €3,50 에서 €4,50정도 나옵니다.
+영어를 제공하는 일반 은행이 독일은행 뿐인걸로 압니다. 그렇지만 아직도 일정 부분은 독일어입니다.	영어를 제공하는 일반 은행이 도이치방크 뿐인걸로 압니다. 그렇지만 아직도 일정 부분은 독일어입니다.
+    "description": "어플리케이션 설명"	    "description": "애플리케이션 설명"
+    "description": "어플리케이션 이름"	    "description": "애플리케이션 이름"
+    "message": "다음 주소로 BTC를 입급해주세요."	    "message": "다음 주소로 BTC를 입금해주세요."
+    "message": "로딩중..."	    "message": "로딩 중..."
+    "message": "토큰 로딩중..."	    "message": "토큰 로딩 중..."
+    "message": "너무 오래걸리나요?"	    "message": "너무 오래 걸리나요?"
+    "message": "토큰 잔액을 가져오는데에 문제가 생겼습니다. 링크에서 상세내용을 볼 수 있습니다.",	    "message": "토큰 잔액을 가져오는 데에 문제가 생겼습니다. 링크에서 상세내용을 볼 수 있습니다.",
+    "NO_MODIFICATION_ALLOWED_ERR_FILE": "파일을 수정할 수있는 권한이 없습니다.",	    "NO_MODIFICATION_ALLOWED_ERR_FILE": "파일을 수정할 수 있는 권한이 없습니다.",
+    "FILE_EXISTS_ERR": "파일 또는 디렉터리가 이미 있습니다.",	    "FILE_EXISTS_ERR": "파일 또는 디렉토리가 이미 있습니다.",
+    "DONT_SAVE": "저장하지 않",	    "DONT_SAVE": "저장하지 않음",
+    "SAVE_FILE_AS": "다른이름으로 저장",	    "SAVE_FILE_AS": "다른 이름으로 저장",
+    "BASEURL_ERROR_UNKNOWN_ERROR": "기본 URL 구문 분석하는 동안 알 수없는 오류가 발생했습니다",	    "BASEURL_ERROR_UNKNOWN_ERROR": "기본 URL의 구문을 분석하는 동안 알 수 없는 오류가 발생했습니다",
+    "CANT_REMOVE_DEV": "dev 폴더 기능은 수동으로 제거해야합니다.",	    "CANT_REMOVE_DEV": "dev 폴더 기능은 수동으로 제거해야 합니다.",
+	      <li>FireFox에서 이미지를 저장하려면 Ctrl+S를 누르세요. 오른쪽 클릭 > "이미지 저장"는 정상적으로 동작하지 않습니다.</li>		      <li>FireFox에서 이미지를 저장하려면 Ctrl+S를 누르세요. 오른쪽 클릭 > "이미지 저장"을 이용하면 정상적으로 동작하지 않습니다.</li>
+  - "FireFox에서 이미지를 저장하려면 Ctrl+S를 누르세요. 오른쪽 클릭 > \"이미지 저장\"는 정상적으로 동작하지 않습니다."	  - "FireFox에서 이미지를 저장하려면 Ctrl+S를 누르세요. 오른쪽 클릭 > \"이미지 저장\"을 이용하면 정상적으로 동작하지 않습니다."
+description: 2차원 이미지를 위한 초 고해상도 심층 합성곱 신경망 시스템. 사진에도 대응.	description: 2차원 이미지를 위한 초고해상도 합성곱 심층 신경망 시스템. 사진에도 대응합니다.
+choose_file: 또는 파일 업로드하기:	choose_file: 또는 파일 업로드
+description: 2차원 이미지를 위한 초고해상도 심층 합성곱 신경망 시스템. 사진에도 대응.	description: 2차원 이미지를 위한 초 고해상도 심층 합성곱 신경망 시스템. 사진에도 대응.
+  <p>El SqlSessionFactoryBuilder tiene cinco métodos build(), cada cual permite construir una SqlSession desde un origen distinto.</p>	  <p>El SqlSessionFactoryBuilder tiene cinco métodos build(), cada cual permite construir una SqlSessionFactory desde un origen distinto.</p>
+  <p>SqlSessionFactoryBuilder には５つの build() メソッドがあり、それぞれ異なるソースから SqlSession をビルドすることができるようになっています。</p>	  <p>SqlSessionFactoryBuilder には５つの build() メソッドがあり、それぞれ異なるソースから SqlSessionFactory をビルドすることができるようになっています。</p>
+  각각은 서로 다른 소스에서 SqlSession을 빌드한다.</p>	  각각은 서로 다른 소스에서 SqlSessionFactory을 빌드한다.</p>
+  <p>SqlSessionFactoryBuilder 有五个 build() 方法，每一种都允许你从不同的资源中创建一个 SqlSession 实例。</p>	  <p>SqlSessionFactoryBuilder 有五个 build() 方法，每一种都允许你从不同的资源中创建一个 SqlSessionFactory 实例。</p>
+* **네이티브-스크립트 CLI로 작업하기**: 네이티브-스크립트는 웹앱이 아닌 iOS와 안드로이드 앱을 만들기 위한 프레임워크입니다. 여러분은 네이티브-스클비트 CLI 의 몇가지 명령어와 iOS 시뮬레이터, 안드로이드 가상장치의 작동방식에 대해서 배울 필요가 있습니다.	* **네이티브-스크립트 CLI로 작업하기**: 네이티브-스크립트는 웹앱이 아닌 iOS와 안드로이드 앱을 만들기 위한 프레임워크입니다. 여러분은 네이티브-스크립트 CLI 의 몇가지 명령어와 iOS 시뮬레이터, 안드로이드 가상장치의 작동방식에 대해서 배울 필요가 있습니다.
+* **예제앱**: 우리는 사람들이 이 플러긴을 사용해 보고 피드백을 주기를 바랍니다. 관심이 있으시면 [네이티브-스크립트 커뮤니티 슬랙](https://developer.telerik.com/wp-login.php?action=slack-invitation) 에 참여하시고 #vue 채널에서 알려주세요.	* **예제앱**: 우리는 사람들이 이 플러그인을 사용해 보고 피드백을 주기를 바랍니다. 관심이 있으시면 [네이티브-스크립트 커뮤니티 슬랙](https://developer.telerik.com/wp-login.php?action=slack-invitation) 에 참여하시고 #vue 채널에서 알려주세요.
+	그래고 매일매일, 저 사람이 친구들에게 루머를 퍼뜨립니다. 바이러스 처럼요.		그리고 매일매일, 저 사람이 친구들에게 루머를 퍼뜨립니다. 바이러스 처럼요.
+Pinpoint에서는 log message를 request 단위로 구분할 수 있도록 log message 에 추가정보를 저장 해준다.	Pinpoint에서는 log message를 request 단위로 구분할 수 있도록 log message 에 추가정보를 저장해준다.
+예를 들어 로그에서 exception message가 출력됐을때 그 exception이 발생한 request의 모든 log를 확인 하기 힘들다.	예를 들어 로그에서 exception message가 출력됐을 때 그 exception이 발생한 request의 모든 log를 확인하기 힘들다.
+Pinpoint는 로그 메세지 마다 request와 연관된 정보(transactionId, spanId)를 MDC에 넣어줘서 request 단위로 log message를 구분할 수 있도록 해준다.	Pinpoint는 log message 마다 request와 연관된 정보(transactionId, spanId)를 MDC에 넣어줘서 request 단위로 log message를 구분할 수 있도록 해준다.
+로그에 출력된 transactionId는 pinpoint web의 transaction List 화면에 출려된 transactionId와 일치한다.	로그에 출력된 transactionId는 pinpoint web의 transaction List 화면에 출력된 transactionId와 일치한다.
+Pinpoint를 사용하지 않았을때 exception이 발생했을 경우 로그 메시지를 살펴 보자.	Pinpoint를 사용하지 않았을 때 exception이 발생했을 경우 로그 메시지를 살펴 보자.
+요청된 다수의 request 각각을 구분하여 로그를 확인 할 수가 없다.	요청된 다수의 request 각각을 구분하여 로그를 확인할 수가 없다.
+Pinpoint를 사용하려면 Pinpoint agent 설정파일(Pinpoint.config)의 logging 설정 값을 true로 변경해야한다.	Pinpoint를 사용하려면 Pinpoint agent 설정파일(Pinpoint.config)의 logging 설정 값을 true로 변경해야 한다.
+플러그인 개발 방법은 다음 링크를 참고하면 된다([Link](https://github.com/naver/pinpoint-plugin-sample)). interceptor 로직이 추가되야 하는 위치는 appender class 내에 LoggingEvent 객체의 데이터를 이용하여 로깅을 하는 메소드다.	플러그인 개발 방법은 다음 링크를 참고하면 된다([Link](https://github.com/naver/pinpoint-plugin-sample)). interceptor 로직이 추가돼야 하는 위치는 appender class 내에 LoggingEvent 객체의 데이터를 이용하여 로깅을 하는 메소드다.
+자무 문의하는 내용을 확인해 보세요! [FAQ.md](FAQ.md)	자주 문의하는 내용을 확인해 보세요! [FAQ.md](FAQ.md)
+  - 기존 2018년 4월 10일(화) 오전 11시 ~ 2018년 4월 16일(월) 오전 11시	  - 변경 2018년 4월 10일(화) 오전 11시 ~ 2018년 4월 16일(월) 오전 11시
+자무 문의하는 내용을 확인해 보세요! [FAQ.md](FAQ.md)	자주 문의하는 내용을 확인해 보세요! [FAQ.md](FAQ.md)
+for storing/retreiving multiple values as a structrued form	for storing/retrieving multiple values as a structured form
+It has been tested on the following OS platfroms.	It has been tested on the following OS platforms.
+> 1. Preparation - clone and build this Arcus code, and deploy Arucs code/binary package.	> 1. Preparation - clone and build this Arcus code, and deploy Arcus code/binary package.
+  <service_code>  Arcus cache cloud name that identify each cache cloud uniqually.	  <service_code>  Arcus cache cloud name that identify each cache cloud uniquely.
+`memcached register/unregister`는 새로은 cache cloud 사용/제거 시에 한번만 수행하면 되는 명령이다.	`memcached register/unregister`는 새로운 cache cloud 사용/제거 시에 한번만 수행하면 되는 명령이다.
+Arucs configuration 파일은 Arcus cache cloud의 구성 및 설정 정보를 저장한다.	Arcus configuration 파일은 Arcus cache cloud의 구성 및 설정 정보를 저장한다.
+`memcached unregiser` 명령으로 ZooKeeper에서 해당 cache cloud 정보를 제거하면 된다.	`memcached unregister` 명령으로 ZooKeeper에서 해당 cache cloud 정보를 제거하면 된다.
+# stop all ZooKeeepr processes	# stop all ZooKeeper processes
+expite time 은 아래와 같은 기준으로 설정되는데, 30일이 넘을 경우 1970년 이후 절대 시간으로 인식하기 때문에, 일반적으로 현재시간보다 과거의 시간으로 설정되어 바로 invalid 되기 때문이다.	expire time 은 아래와 같은 기준으로 설정되는데, 30일이 넘을 경우 1970년 이후 절대 시간으로 인식하기 때문에, 일반적으로 현재시간보다 과거의 시간으로 설정되어 바로 invalid 되기 때문이다.
+  - **컨센서스 노드** 아래를 시스템에 뿌립니다(broadcast):	- **컨센서스 노드** 아래를 시스템에 뿌립니다(broadcast):
+1. Copy the contents of the program directory under the `protocal.testnet.json` into ` protocol.json` as shown.	1. Copy the contents of the program directory under the `protocol.testnet.json` into ` protocol.json` as shown.
+1. 아래 나오는 것처럼 `protocal.testnet.json` 폴더 아래 있는 프로그램 폴더의 내용물들을 복사 해서 ` protocol.json`아래 붙여넣기 합니다. 	1. 아래 나오는 것처럼 `protocol.testnet.json` 폴더 아래 있는 프로그램 폴더의 내용물들을 복사 해서 ` protocol.json`아래 붙여넣기 합니다. 
+1、将程序目录下的 `protocal.testnet.json` 里的内容复制到 `protocol.json`（替换原有配置文件），如图。	1、将程序目录下的 `protocol.testnet.json` 里的内容复制到 `protocol.json`（替换原有配置文件），如图。
+대략 4배가 빨리진 것입니다. 게다가 평균 지연시간이 이전의 4초에서 1초 정도로 줄어들었습니다.	대략 4배가 빨라진 것입니다. 게다가 평균 지연시간이 이전의 4초에서 1초 정도로 줄어들었습니다.
+app_id=어플리케이션 아아디	app_id=애플리케이션 아이디
+vendor=벤더	vendor=제조사
+* `bundled`는 Parcel이 한 번 성공적으로 번들링을 마친 후 발생되어 메인 [번들](#번들)을 callback에 전달됩니다.	* `bundled` 이벤트는 **처음 한 번만**, Parcel이 성공적으로 번들링을 마친 후 발생되어, 메인 [번들](#번들)을 callback에 전달합니다.
+* `buildEnd`는 매 빌드 후 발생됩니다. 에러가 발생한 경우에도 발생합니다.	* `buildEnd` 이벤트는 **재빌드를 포함한** 빌드 후 매번 발생됩니다. 에러가 발생한 경우에도 발생합니다.
+HTML 애셋은 주로 Parcel 진입 파일로 사용됩니다. 그렇지만 JavaScript 파일에 의해서, 예로 다른 페이지로의 링크를 제공하기위해 참조 될 수도 있습니다. 스크립트, 스타일, 미디어, 그리고 다른 HTML 파일의 URL은 위에서 설명한것 처럼 추출되고 컴파일됩니다. 참조는 HTML 안에서 재작성 됨으로써 적확한 출력 파일로 연결 됩니다. 모든 파일 이름은 현재의 HTML 파일과 관련 있어야 합니다.	HTML 애셋은 주로 Parcel 진입 파일로 사용됩니다. 그렇지만 JavaScript 파일에 의해서, 예로 다른 페이지로의 링크를 제공하기위해 참조 될 수도 있습니다. 스크립트, 스타일, 미디어, 그리고 다른 HTML 파일의 URL은 위에서 설명한것 처럼 추출되고 컴파일됩니다. 참조는 HTML 안에서 재작성 됨으로써 정확한 출력 파일로 연결 됩니다. 모든 파일 이름은 현재의 HTML 파일과 관련 있어야 합니다.
+Parcel`[파설, /parsəl/]`은 개발 경험에서 차이를 느낄수 있는 웹 애플리케이션 번들러 입니다. 멀티코어 프로세싱으로 불꽃 튀게 빠른 성능을 제공하고 그 어떤 설정을 요구하지 않습니다.	Parcel`[파설, /parsəl/]`은 개발 경험에서 차이를 느낄수 있는 웹 애플리케이션 번들러 입니다. 멀티코어 프로세싱으로 불꽃 튀게 빠른 성능을 제공하고 그 어떤 설정도 요구하지 않습니다.
+    <h2>불꽃 튀게 빠른, 설정 없는 웹 애플리케이션 번들러</h2>	    <h2>불꽃 튀게 빠르고 설정이 필요 없는 웹 애플리케이션 번들러</h2>
+        <p>Parcel은 JS, CSS, HTML, 파일 애셋, 그 외 많은 것들에 대한 지원을 즉시 제공합니다 - 플러그인 없이요.</p>	        <p>Parcel은 JS, CSS, HTML, 파일 애셋, 그 외 많은 것들에 대한 지원을 즉시 제공합니다. 플러그인 없이요.</p>
+        <p>필요하다면 Babel, PostCSS, PostHTML을 사용하는 코드는 자동으로 변환됩니다 - 심지어	        <p>필요하다면 Babel, PostCSS, PostHTML을 사용하는 코드는 자동으로 변환됩니다. 심지어
+            <strong>parcel - 캐시</strong>	            <strong>parcel - 캐시 사용</strong>
+# 또는 -d 단축 표현:	# 또는 -d 단축 표현
+감시(watch) 모드와 핫 모듈 리플레이스먼트가 비활성화 되기 때문에 한 번 만 빌드 됩니다. 또한 출력 번들의 용량을 줄이기 위한 미니파이어(minifier)가 활성화 됩니다. Parcel에서 사용되는 미니파이어는 다음과 같습니다. JavaScript를 위한 [uglify-js](https://github.com/mishoo/UglifyJS2/), CSS를 위한 [cssnano](http://cssnano.co), HTML을 위한 [htmlnano](https://github.com/posthtml/htmlnano).	감시(watch) 모드와 핫 모듈 리플레이스먼트가 비활성화 되기 때문에 한 번 만 빌드 됩니다. 또한 출력 번들의 용량을 줄이기 위한 미니파이어(minifier)가 활성화 됩니다. Parcel은 JavaScript를 위해 [uglify-js](https://github.com/mishoo/UglifyJS2/), CSS를 위해 [cssnano](http://cssnano.co), HTML을 위해 [htmlnano](https://github.com/posthtml/htmlnano)를 미니파이어로 사용합니다.
+parcel은 대부분의 도구들과는 조금 다른 접근 방식을 취하고 있습니다. 추가적인 플러그인 설치나 설정 없이 다양한 일반적인 포맷을 즉시 지원할 수 있도록 포함하고 있습니다. 그러나 표준적이지 않은 방법으로 Parcel을 확장하고 싶은 경우가 있을것이며, 그런 경우를 위해 플러그인이 지원됩니다. 설치된 플러그인은 `package.json` 의존성(dependencies)을 기반으로 자동 감지되고 로드됩니다.	Parcel은 대부분의 도구들과는 조금 다른 접근 방식을 취하고 있습니다. 추가적인 플러그인 설치나 설정 없이 다양한 일반적인 포맷을 즉시 지원할 수 있도록 포함하고 있습니다. 그러나 표준적이지 않은 방법으로 Parcel을 확장하고 싶은 경우가 있을것이며, 그런 경우를 위해 플러그인이 지원됩니다. 설치된 플러그인은 `package.json` 의존성(dependencies)을 기반으로 자동 감지되고 로드됩니다.
+Parcel 플러그인 사용은 더 이상 쉬울 수가 없을 정도로 쉽습니다. 그저 패키지를 설치하여 `package.json`에 저장만 하면 됩니다. 플러그인은 `parcel-plugin-` 접두어를 써서 이름지어야 합니다. 예를 들면, `parcel-plugin-foo` 같이요. 어떤 의존 요소라도 이 접두어로 `package.json`에 리스트되어 있으면 초기화중에 자동으로 로드 됩니다.	Parcel 플러그인 사용은 더 이상 쉬울 수가 없을만큼 쉽습니다. 그저 패키지를 설치하여 `package.json`에 저장만 하면 됩니다. 플러그인은 `parcel-plugin-` 접두어를 써서 이름지어야 합니다. 예를 들면, `parcel-plugin-foo` 같이요. 어떤 의존 요소라도 이 접두어로 `package.json`에 리스트되어 있으면 초기화중에 자동으로 로드 됩니다.
+Parcel은 **애셋** 트리를 **번들** 트리fh 변환합니다. 다른 대부분의 번들러는 근본적으로 JavaScript 애셋에 기반하고 다른 포맷들이 여기에 붙습니다 - 문자열로 JS 파일에 인라인 됩니다. Parcel은 파일형에 구속력이 없습니다 - 어떤 유형의 애셋도 설정없이 작동합니다. Parcel 번들 과정에는 세 단계가 있습니다.	Parcel은 **애셋** 트리를 **번들** 트리로 변환합니다. 다른 대부분의 번들러는 근본적으로 JavaScript 애셋에 기반하고 다른 포맷들이 여기에 붙어서 문자열로 JS 파일에 인라인 됩니다. Parcel은 파일형에 구속력이 없어서 어떤 유형의 애셋도 설정없이 작동합니다. Parcel 번들 과정에는 세 단계가 있습니다.
+HTML 애셋은 주로 Pacel 진입 파일로 사용합니다. 그렇지만 JavaScript 파일에 의해서, 예로 다른 페이지로의 링크를 제공하기위해 참조 될 수도 있습니다. 스크립트, 스타일, 미디어, 그리고 다른 HTML 파일의 URL은 위에서 설명한것 처럼 추출되고 컴파일됩니다. 참조는 HTML 안에서 재작성 됨으로써 적확한 출력 파일로 연결 됩니다. 모든 파일 이름은 현재의 HTML 파일과 관련 있어야 합니다.	HTML 애셋은 주로 Parcel 진입 파일로 사용됩니다. 그렇지만 JavaScript 파일에 의해서, 예로 다른 페이지로의 링크를 제공하기위해 참조 될 수도 있습니다. 스크립트, 스타일, 미디어, 그리고 다른 HTML 파일의 URL은 위에서 설명한것 처럼 추출되고 컴파일됩니다. 참조는 HTML 안에서 재작성 됨으로써 적확한 출력 파일로 연결 됩니다. 모든 파일 이름은 현재의 HTML 파일과 관련 있어야 합니다.
+  // 요청 페이지 로드 지연 	  // 요청 페이지 로드 지연
+**주의:** 만약 브라우저에서 async/await를 사용하고 싶다면, `babel-polyfill`을 앱에 포함시키거나 `babel-runtime` + `babel-plugin-transform-runtime`이 라이브러리에 있어야 합니다. 그냥 사용하려고 마세요.	**주의:** 만약 브라우저에서 async/await를 사용하고 싶다면, `babel-polyfill`을 앱에 포함시키거나 `babel-runtime` + `babel-plugin-transform-runtime`이 라이브러리에 있어야 합니다. 그냥 사용하려고 하지 마세요.
+먼저 Yarn이나 npm으로 Parcel을 설치하세요:	먼저 Yarn이나 npm으로 Parcel을 설치하세요.
+package.json파일을 프로젝트 디렉토리에 만드세요:	그 다음, package.json파일을 프로젝트 디렉토리에 만드세요.
+Parcel은 어떤 유형의 파일이라도 진입점으로 취할 수 있습니다만, HTML이나 JavaScript 파일이 좋습니다. 만약 HTML 파일 내에 상대경로로 메인 JavaScript 파일을 연결 했다면, Parcel은 이 또한 처리 할 것이고, 출력 파일로의 URL 참조를 교체할 겁니다.	Parcel은 어떤 유형의 파일이라도 진입점으로 취할 수 있지만 HTML이나 JavaScript 파일이 좋습니다. 만약 HTML 파일 내에 상대경로로 메인 JavaScript 파일을 연결 했다면, Parcel은 이 또한 처리 할 것이고, 출력 파일로의 URL 참조를 교체할 겁니다.
+              "조금 어려게 느껴질 수 있지만, 리베이스를 하면 커밋들의 흐름을 보기 좋게 한 줄로 만들 수 있다는 장점이 있습니다. 리베이스를 쓰면 저장소의 커밋 로그와 이력이 한결 깨끗해집니다.",	              "조금 어렵게 느껴질 수 있지만, 리베이스를 하면 커밋들의 흐름을 보기 좋게 한 줄로 만들 수 있다는 장점이 있습니다. 리베이스를 쓰면 저장소의 커밋 로그와 이력이 한결 깨끗해집니다.",
+  "Game resoultion": "Game resoultion",	  "Game resolution": "Game resolution",
+  "Game resoultion": "해상도",	  "Game resolution": "해상도",
+  "Game resoultion": "游戏分辨率",	  "Game resolution": "游戏分辨率",
+  "Game resoultion": "遊戲解析度",	  "Game resolution": "遊戲解析度",
+`GorillaDB` 는 key-value로 바나나들을 저장하고 있습니다. 우리는 바바나를 다음과 같이 저장할 수 있습니다 :	`GorillaDB` 는 key-value로 바나나들을 저장하고 있습니다. 우리는 바나나를 다음과 같이 저장할 수 있습니다 :
+너무 어렵다고 생각하신다면, 기본적인 구현은 [jupyter notebook](examples/keras/standalone_simple_example.ipynb) 의 각 줄에서 확인하실 수 있습니다.	필요없는 내용이 너무 많다고 생각하신다면, 기본적인 구현은 [jupyter notebook](examples/keras/standalone_simple_example.ipynb) 의 각 줄에서 확인하실 수 있습니다.
+일종의 트릭으로, TTE 자체를 예측하는 대신 기계 학습 모델이 *확률 분포의 매개 변수* 를 출력하도록 해 봅시다. 어떤 확률 분포도 가능합니다만, 그 [굉장함](https://ragulpr.github.io/2016/12/22/WTTE-RNN-Hackless-churn-modeling/#embrace-the-Weibull-euphoria) 때문에 *Weibull 분포* 를 좋아하므로 사용했습니다. 기계 학습 알고리즘또한 그래디언트 기반의 임의의 알고리즘이 될 수 있습니다만, 우리가 그 [굉장함](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)때문에 RNN을 좋아하므로 RNN을 선택했습니다.	일종의 트릭으로, TTE 자체를 예측하는 대신 기계 학습 모델이 *확률 분포의 매개 변수* 를 출력하도록 해 봅시다. 어떤 확률 분포도 가능합니다만, 그 [굉장함](https://ragulpr.github.io/2016/12/22/WTTE-RNN-Hackless-churn-modeling/#embrace-the-Weibull-euphoria) 때문에 *Weibull 분포* 를 좋아하므로 사용했습니다. 기계 학습 알고리즘 또한 그래디언트 기반의 임의의 알고리즘이 될 수 있습니다만, 우리가 그 [굉장함](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)때문에 RNN을 좋아하므로 RNN을 선택했습니다.
+![WTTE-RNN 구조 예제](./readme_figs/fig_rnn_Weibull.png)	![WTTE-RNN 구조 예제](./readme_figs/fig_rnn_weibull.png)
+다른 재미있는 결과는, 예측된 매개 변수들이 이벤트 *얼마나 빨리* (알파, alpha) 일어나고, *얼마나 확실하게* (베타, beta) 일어날지에 대한 예측을 시각화하고 그룹화하는 데 사용할 수있는 2차원 임베딩이라는 것입니다. 예측한 알파 (왼쪽)와 베타 (오른쪽)의 시간축을 쌓으면 다음과 같습니다.	다른 재미있는 결과는, 예측된 매개 변수들이 이벤트 *얼마나 빨리* (알파, alpha) 일어나고, *얼마나 확실하게* (베타, beta) 일어날 지에 대한 예측을 시각화하고 그룹화하는 데 사용할 수 있는 2차원 임베딩이라는 것입니다. 예측한 알파 (왼쪽)와 베타 (오른쪽)의 시간축을 쌓으면 다음과 같습니다.
+React DevTools를 설치한 후에 페이지의 모든 엘리먼트에 오른쪽 클릭을 하고 "요소 검사"를 클릭하여 개발자 도구를 열면 탭의 오른쪽 끝에 React 탭("⚛️ Components"와 "⚛️ Profiler")을 확인하실 수 있습니다. 컴포넌트 트리를 검사하고 싶다면 "⚛️ Components"을 사용해주세요.	React DevTools를 설치한 후에 페이지의 모든 엘리먼트에 오른쪽 클릭을 하고 "요소 검사"를 클릭하여 개발자 도구를 열면 탭의 오른쪽 끝에 React 탭("⚛️ Components"와 "⚛️ Profiler")을 확인하실 수 있습니다. 컴포넌트 트리를 검사하고 싶다면 "⚛️ Components"를 사용해주세요.
+- **React를 배우고 있거나** 아니면 **새로운 [싱글 페이지](/docs/glossary.html#single-page-application) 앱**을 만들고 싶다면 Create React App](#create-react-app).	- **React를 배우고 있거나** 아니면 **새로운 [싱글 페이지](/docs/glossary.html#single-page-application) 앱**을 만들고 싶다면 [Create React App](#create-react-app).
+나중에 board를 채우면 `this.state.squares` 배열은 아래와 같은 보일 것입니다.	나중에 board를 채우면 `this.state.squares` 배열은 아래와 같이 보일 것입니다.
+Square 컴포넌트가 더 이상 state를 유지하지 않기 때문에 Square 컴포넌트는 Board 컴포넌트에서 값을 받아 클릭됳 때 Board 컴포넌트로 정보를 전달합니다. React 용어로 Square 컴포넌트는 이제 **제어되는 컴포넌트**입니다. Board는 이들을 완전히 제어합니다.	Square 컴포넌트가 더 이상 state를 유지하지 않기 때문에 Square 컴포넌트는 Board 컴포넌트에서 값을 받아 클릭될 때 Board 컴포넌트로 정보를 전달합니다. React 용어로 Square 컴포넌트는 이제 **제어되는 컴포넌트**입니다. Board는 이들을 완전히 제어합니다.
+React Conf 2018에서 Sophie Alpert와 Dan Abramov는 Hook를 소개했었습니다. 이어서 Ryan Florence가 Hook를 사용하여 어떻게 어플리케이션을 리팩토링 할 것인지 보여주었습니다. 아래 영상에서 확인해보세요.	React Conf 2018에서 Sophie Alpert와 Dan Abramov는 Hook를 소개했었습니다. 이어서 Ryan Florence가 Hook를 사용하여 어떻게 애플리케이션을 리팩토링 할 것인지 보여주었습니다. 아래 영상에서 확인해보세요.
+우리는 때론 간단하게 시작했지만 유지하기 힘든 상태 관련 로직들과 사이드 이펙트가 있는 컴포넌트들을 유지해야합니다. 각 라이프사이클 메서드는 자주 관련 없는 로직이 섞여 있습니다. 예를 들어, 컴포넌트들은 `componentDidMount` 그리고 `componentDidUpdate`로 데이터를 가져오는 것을 수행할 수도 있습니다. 그러나, 같은 `componentDidMount` 메서드라도 이벤트 리스너를 설정하는 것과 같은 관계없는 일부 로직이 포함될 수도 있으며, `componentWillUnmount`에서 cleanup을 수행하기도 합니다. 함께 변경되는 상호 관련 코드는 분리되지만 완벽하게 연관 없는 코드들은 단일 메소드로 결합합니다. 이로 인해 버그와 무결성을 너무나 쉽게 발생합니다.	우리는 때론 간단하게 시작했지만 유지하기 힘든 상태 관련 로직들과 사이드 이펙트가 있는 컴포넌트들을 유지해야합니다. 각 생명주기 메서드는 자주 관련 없는 로직이 섞여 있습니다. 예를 들어, 컴포넌트들은 `componentDidMount` 그리고 `componentDidUpdate`로 데이터를 가져오는 것을 수행할 수도 있습니다. 그러나, 같은 `componentDidMount` 메서드라도 이벤트 리스너를 설정하는 것과 같은 관계없는 일부 로직이 포함될 수도 있으며, `componentWillUnmount`에서 cleanup을 수행하기도 합니다. 함께 변경되는 상호 관련 코드는 분리되지만 완벽하게 연관 없는 코드들은 단일 메서드로 결합합니다. 이로 인해 버그와 무결성을 너무나 쉽게 발생합니다.
+이것을 해결하기 위해, 라이프사이클 메서드를 기반으로 쪼개는 데 초점을 맞추기 보다는, **Hook를 통해 로직에 기반을 둔 작은 함수로 컴포넌트를 나눌 수 있습니다. (구독 설정 및 데이터를 불러오는 것과 같은 로직)** 조금 더 예측 가능하도록 하기 위해 리듀서를 활용해 컴포넌트의 지역 상태 값을 관리하도록 할 수 있습니다.	이것을 해결하기 위해, 생명주기 메서드를 기반으로 쪼개는 데 초점을 맞추기 보다는, **Hook를 통해 로직에 기반을 둔 작은 함수로 컴포넌트를 나눌 수 있습니다. (구독 설정 및 데이터를 불러오는 것과 같은 로직)** 조금 더 예측 가능하도록 하기 위해 리듀서를 활용해 컴포넌트의 지역 상태 값을 관리하도록 할 수 있습니다.
+부모 컴포넌트나 자식 컴포넌트 모두 특정 컴포넌트가 유상태인지 또는 무상태인지 알 수 없고, 그들이 함수이나 클래스로 정의되었는지에 대해서 관심을 가질 필요가 없습니다.	부모 컴포넌트나 자식 컴포넌트 모두 특정 컴포넌트가 유상태인지 또는 무상태인지 알 수 없고, 그들이 함수나 클래스로 정의되었는지에 대해서 관심을 가질 필요가 없습니다.
+## 자식에 대한 재귀적 처리 {#recursing-on-children}	## 자식에 대한 재귀적 처리 {#recursing-on-children}
+재조정 알고리즘은 구현상의 세부사항이라는 것을 명심하세요. React는 항상 전체 앱을 재렌더링할 수도 있지만, 최종적으로 출력되는 결과는 항상 같을 것입니다. 좀 더 정확히 말하자면, 여기서 말하는 재렌더링은 모든 컴포넌트의 `render`를 호출하는 것이지 React가 언마운트시키고 다시 마운트하는 것은 아닙니다. 	재조정 알고리즘은 구현상의 세부사항이라는 것을 명심하세요. React는 항상 전체 앱을 재렌더링할 수도 있지만, 최종적으로 출력되는 결과는 항상 같을 것입니다. 좀 더 정확히 말하자면, 여기서 말하는 재렌더링은 모든 컴포넌트의 `render`를 호출하는 것이지 React가 언마운트시키고 다시 마운트하는 것은 아닙니다.
+`this.state.value`를 생성자에서 초기화하므로 textare는 일부 텍스트를 가진채 시작되는 점을 주의해주세요.	`this.state.value`를 생성자에서 초기화하므로 textarea는 일부 텍스트를 가진채 시작되는 점을 주의해주세요.
+외부 링크가 [MDN]이나 [Wikepedia]같은 참고 문헌의 문서에 연결되어 있고 해당 문서가 자국어로 잘 번역되어 있다면 번역 문서를 링크하는 것도 고려해보세요.	외부 링크가 [MDN]이나 [Wikipedia]같은 참고 문헌의 문서에 연결되어 있고 해당 문서가 자국어로 잘 번역되어 있다면 번역 문서를 링크하는 것도 고려해보세요.
+어렵습니다. 처음으로 뭔가를 하는 것은 언제나 어렵습니다. 특히 공동 작업을 할 때 실수를 하기라도 하면 마음이 편치 않습니다. 그러나 협업과 협력은 오픈 소스의 전부입니다. 우리는 새로운 오픈 소스 기여자가 처음 배우고 기여하는 방식을 단순화하고자 했습니다.	어렵습니다. 처음으로 뭔가를 하는 것은 언제나 어렵습니다. 특히 공동 작업을 할 때 실수를 하기라도 하면 마음이 편치 않습니다. 그러나 협업과 협력은 오픈 소스의 전부입니다. 우리는 새로운 오픈 소스 기여자가 처음 배우고 기여하는 방식을 단순화하고자했습니다.
+관련 글을 읽거나 튜토리얼을 보는 것이 도움이 될 수 있습니다. 하지만 연습 삼아 직접 시도해보는 것보다 나을 수는 없을 겁니다. 이 프로젝트는 초보자가 처음으로 기여하는 방법을 안내하고 단순화하는 것을 목표로 합니다. 기억하십시오: 편안하게 임할수록 더 잘 배울 수 있습니다. 첫 번째 기여를 하려면 그저 아래의 간단한 단계를 따르면 됩니다.	관련 글을 읽거나 투토리얼을 보는 것이 도움이 될 수 있습니다. 하지만 연습삼아 직접 시도해보는 것보다 나을 수는 없을 겁니다. 이 프로젝트는 초보자가 처음으로 기여하는 방법을 안내하고 단순화하는 것을 목표로 합니다. 기억하십시오: 편안하게 임할수록 더 잘 배울 수 있습니다. 첫 번째 기여를 하려면 그저 아래의 간단한 단계를 따르면 됩니다.
+`this-is-you`는 당신의 깃허브 계정입니다. 여기서 깃허브에 있는	`this-is-you` 는 당신의 깃허브 계정입니다. 여기서 깃허브에 있는
+아직 저장소 디렉터리에 있지 않다면 그곳으로 변경합니다.	아직 저장소 디렉토리에 있지 않다면 그곳으로 변경합니다.
+프로젝트 디렉터리에서 `git status` 명령을 실행하면 변경사항을 볼 수 있습니다. 변경사항을 아래 `git add` 명령으로 추가합니다.	프로젝트 디렉토리에서 `git status` 명령을 실행하면 변경사항을 볼 수 있습니다. 변경사항을 아래 `git add` 명령으로 추가합니다.
+이제 여러분의 변경사항을 제가 확인 후에  마스터 브랜치에 머지 하게 되면 알림 메일을 받으실 수 있습니다.	이제 여러분의 변경사항을 제가 확인 후에  마스터 브랜치에 머지하게되면 알림메일을 받으실 수 있습니다.
+이제 다른 프로젝트에 기여해보십시오. 시작하기 쉬운 문제가 있는 프로젝트 목록을 작성했습니다. [웹 앱에 있는 프로젝트 목록](https://roshanjossey.github.io/first-contributions/#project-list)을 확인하세요.	이제 다른 프로젝트에 기여해보십시오. 시작하기 쉬운 문제가있는 프로젝트 목록을 작성했습니다. [웹 앱에 있는 프로젝트 목록](https://roshanjossey.github.io/first-contributions/#project-list)을 확인하세요.
+## 다른 도구를 이용하는 튜토리얼	## 다른 도구를 이용하는 투토리얼
+특히 도움이 되고자 하신다면 [Twitter](https://twitter.com/sudo__bangbang)와 [GitHub](https://github.com/roshanjossey)의 [Roshan](https://roshanjossey.github.io/)을 팔로우해주세요.	특히 도움이 되고자하신다면 [Twitter](https://twitter.com/sudo__bangbang)와 [GitHub](https://github.com/roshanjossey)의 [Roshan](https://roshanjossey.github.io/)을 팔로우해주세요.
+어렵습니다. 처음으로 뭔가를 하는 것은 언제나 어렵습니다. 특히 공동 작업을 할 때 실수를 하기라도 하면 마음이 편치 않습니다. 그러나 협업과 협력은 오픈 소스의 전부입니다. 우리는 새로운 오픈 소스 기여자가 처음 배우고 기여하는 방식을 단순화하고자했습니다.	어렵습니다. 처음으로 뭔가를 하는 것은 언제나 어렵습니다. 특히 공동 작업을 할 때 실수를 하기라도 하면 마음이 편치 않습니다. 그러나 협업과 협력은 오픈 소스의 전부입니다. 우리는 새로운 오픈 소스 기여자가 처음 배우고 기여하는 방식을 단순화하고자 했습니다.
+관련 글을 읽거나 투토리얼을 보는 것이 도움이 될 수 있습니다. 하지만 연습삼아 직접 시도해보는 것보다 나을 수는 없을 겁니다. 이 프로젝트는 초보자가 처음으로 기여하는 방법을 안내하고 단순화하는 것을 목표로 합니다. 기억하십시오: 편안하게 임할수록 더 잘 배울 수 있습니다. 첫 번째 기여를 하려면 그저 아래의 간단한 단계를 따르면 됩니다.	관련 글을 읽거나 튜토리얼을 보는 것이 도움이 될 수 있습니다. 하지만 연습 삼아 직접 시도해보는 것보다 나을 수는 없을 겁니다. 이 프로젝트는 초보자가 처음으로 기여하는 방법을 안내하고 단순화하는 것을 목표로 합니다. 기억하십시오: 편안하게 임할수록 더 잘 배울 수 있습니다. 첫 번째 기여를 하려면 그저 아래의 간단한 단계를 따르면 됩니다.
+`this-is-you` 는 당신의 깃허브 계정입니다. 여기서 깃허브에 있는	`this-is-you`는 당신의 깃허브 계정입니다. 여기서 깃허브에 있는
+아직 저장소 디렉토리에 있지 않다면 그곳으로 변경합니다.	아직 저장소 디렉터리에 있지 않다면 그곳으로 변경합니다.
+프로젝트 디렉토리에서 `git status` 명령을 실행하면 변경사항을 볼 수 있습니다. 변경사항을 아래 `git add` 명령으로 추가합니다.	프로젝트 디렉터리에서 `git status` 명령을 실행하면 변경사항을 볼 수 있습니다. 변경사항을 아래 `git add` 명령으로 추가합니다.
+이제 여러분의 변경사항을 제가 확인 후에  마스터 브랜치에 머지하게되면 알림메일을 받으실 수 있습니다.	이제 여러분의 변경사항을 제가 확인 후에  마스터 브랜치에 머지 하게 되면 알림 메일을 받으실 수 있습니다.
+이제 다른 프로젝트에 기여해보십시오. 시작하기 쉬운 문제가있는 프로젝트 목록을 작성했습니다. [웹 앱에 있는 프로젝트 목록](https://roshanjossey.github.io/first-contributions/#project-list)을 확인하세요.	이제 다른 프로젝트에 기여해보십시오. 시작하기 쉬운 문제가 있는 프로젝트 목록을 작성했습니다. [웹 앱에 있는 프로젝트 목록](https://roshanjossey.github.io/first-contributions/#project-list)을 확인하세요.
+## 다른 도구를 이용하는 투토리얼	## 다른 도구를 이용하는 튜토리얼
+특히 도움이 되고자하신다면 [Twitter](https://twitter.com/sudo__bangbang)와 [GitHub](https://github.com/roshanjossey)의 [Roshan](https://roshanjossey.github.io/)을 팔로우해주세요.	특히 도움이 되고자 하신다면 [Twitter](https://twitter.com/sudo__bangbang)와 [GitHub](https://github.com/roshanjossey)의 [Roshan](https://roshanjossey.github.io/)을 팔로우해주세요.
+setAutoCommit가 true로 setting되면 매 SQL만다 자동으로 Commit이 DB에 전달된다. 	setAutoCommit가 true로 setting되면 매 SQL마다 자동으로 Commit이 DB에 전달된다. 
+[Trace Non-Servlet Java application](./use-case/NON-HTTP-Service-Trace.md)    | how to monitoring Non-Servlet Java application like socket deamons.	[Trace Non-Servlet Java application](../use-case/NON-HTTP-Service-Trace.md)    | how to monitoring Non-Servlet Java application like socket deamons.
+[Servlet이 아닌 Java 프로그램 추적](./use-case/NON-HTTP-Service-Trace_kr.md)    | WEB Servlet이 아닌 Java Deamon 프로그램 모니터링 방법	[Servlet이 아닌 Java 프로그램 추적](../use-case/NON-HTTP-Service-Trace_kr.md)    | WEB Servlet이 아닌 Java Deamon 프로그램 모니터링 방법
+소켓스트림은 웹소켓과 http사이의 세션이 비슷한api를 사용해 쉽게 공유할수있도록 보장하기위해 커넥트의 세션스토어를 사용합니다.	소켓스트림은 웹소켓과 http사이의 세션이 비슷한 api를 사용해 쉽게 공유 할수 있도록 하기 위해 커넥트의 세션스토어를 사용합니다.
+이것은 소켓스트림에서 적은 데이터를 익스프레스나 커넥트를 사용했다면 어떤 페이지 기반의 프레임 워크에서도 사용할수 있다는 이야기가 됩니다. 특히나 인증을 구현할떄 유용하죠.	이것은 소켓스트림에서 적은 데이터를 익스프레스나 커넥트를 사용했다면 어떤 페이지 기반의 프레임 워크에서도 사용할수 있다는 이야기가 됩니다. 특히나 인증을 구현할 때 유용하죠.
+속도 최적화와 유연성을 위해, 웹소켓 요청이 처리될때 세션 데이터는 기본적으로 검색하지 않도록 되어있습니다. 세션으로 무엇을 하고싶으시면 [Request Middleware](https://github.com/socketstream/socketstream/blob/master/doc/guide/en/request_middleware.md)의 설명에 따라 내부 `session`을 활성화 할 필요가있습니다.	속도 최적화와 유연성을 위해, 웹소켓 요청이 처리될 때 세션 데이터는 기본적으로 검색하지 않도록 되어있습니다. 세션으로 무언가 하고 싶으시면 [Request Middleware](https://github.com/socketstream/socketstream/blob/master/doc/guide/en/request_middleware.md)의 설명에 따라 내부 `session`을 활성화 할 필요가 있습니다.
+      console.log('이 요청은 이제 세션을 사용할수 있습니다:', req.session);	      console.log('이 요청은 이제 세션을 사용할 수 있습니다:', req.session);
+메모리에 저장되는 커넥트 세션 스토어는 개발 편의성을 위해 기본값으로 재공 됩니다. 하지만 실버서를 운영한다면 **반드시** 메모리 누수를 막기위해 영속적인 백엔드를 사용해야 합니다.	메모리에 저장되는 커넥트 세션 스토어는 개발 편의성을 위해 기본값으로 재공 됩니다. 하지만 실서버를 운영한다면 **반드시** 메모리 누수를 막기위해 영속적인 백엔드를 사용해야 합니다.
+기본적으로 세션은 30일 이후에 만료됩니다. 그전에 세션이 만료되지않으면 말이죠(뭐 브라우져를 닫는다던가). 다른 세션 만료 시간을 설정 하고 싶으시면 밑에 코드를 `app.js` 파일에 추가하세요.	기본적으로 세션은 30일 이후에 만료됩니다. 그전에 세션이 만료되지 않으면 말이죠(뭐 브라우져를 닫는다던가). 다른 세션 만료 시간을 설정하고 싶으시면 밑에 코드를 `app.js` 파일에 추가하세요.
+조금 시간이 지나 테스크가 끝나면 브라우져 콘설에서 다음 출력을 볼수있습니다:	조금 시간이 지나 테스크가 끝나면 브라우져 콘솔에서 다음 출력을 볼수있습니다:
+하지만, 이 솔루션은 큰 템플릿일경우 좋지 않을 뿐아니라 HTML과 표현 로직을 을 함께 섞어 쓰는 것은 나쁜 관행입니다. 이제 클라이언트측 템플릿들을 살펴봅시다.	하지만, 이 방법은 큰 템플릿일 경우 좋지 않을 뿐 아니라 HTML과 표현 로직을 을 함께 섞어 쓰는 것은 나쁜 관행입니다. 이제 클라이언트측 템플릿들을 살펴봅시다.
+내장된 템플릿 엔진은 정말 단순한 래퍼이기 때문에, 당신은 대부분의 시간을 NPM에 선택적 모듈을 통해 지원되는 몇가지 템플릿 언어 중에 한가지를 이용하기를 원할 겁니다.	내장된 템플릿 엔진은 정말 단순한 래퍼이기 때문에, 대부분은 NPM에 선택적 모듈을 통해 지원되는 몇가지 템플릿 언어 중에 한가지를 이용하기를 원할 겁니다.
+당신이 선호하는 템플릿라이브러리를 찾을수 없다면 쉽게 [자신의 것](https://github.com/socketstream/socketstream/blob/master/doc/guide/en/template_engine_wrappers.md) 을 생성 할 수 있습니다.	당신이 선호하는 템플릿라이브러리를 위한 모듈을 찾을 수 없다면 쉽게 [자신의 것](https://github.com/socketstream/socketstream/blob/master/doc/guide/en/template_engine_wrappers.md) 을 생성 할 수 있습니다.
+### 다른 템플릿 엔진들과 섞기 그리고 매치(일치) 시키기	### 다른 템플릿 엔진들과 같이 쓰기
+SocketStream 당신이 다른 템플릿들을 동시에 사용하고 매치(일치)시키는 것을 허용합니다, Ember.js처럼 존재하는 당신의 모든 템플릿들의 변환 종료 없이 시도하는 것에 알맞다. ???? 엉???	SocketStream 당신이 다른 템플릿들을 같이 쓰는 것을 허용합니다, 예를들어 Ember.js같은 것을 시도해 볼때 기존에 짜놓은 템플릿들을 한꺼번에 변환하지 않아도 되게 해줍니다.
+**메모:** 만약 완벽하게 하고 싶다면, 당신의 HTML 템믈릿들을 구성하기 위한 포매터를 사용하시오. 예로 Jade 사용할 경우 당신의 템플릿 파일들의 확장자를 `.jade` 대신 `.html` 사용하세요.	**메모:** 혹시, HTML 템플릿을 쓰기 원한다면. Jade라면 `.html` 대신 `.jade`를 파일 확장자로 하세요.
+`templates` 폴더 안에 `person.html`파일은 이제  `ss.tmpl['person']`을 통해 접근할 수 있습니다. 파일이 `model/person.html` 처럼 서브디렉토리에 있다면 `ss.tmpl['model-person']로 접근 할 수 있습니다.	`templates` 폴더 안에 `person.html`파일은 이제  `ss.tmpl['person']`을 통해 접근할 수 있습니다. 파일이 `model/person.html` 처럼 서브디렉토리에 있다면 `ss.tmpl['model-person']`로 접근 할 수 있습니다.
+      // 이 함수는 로그인 했을떄만 호출됨	      // 이 함수는 로그인 했을때만 호출됨
+msgstr "%s 개의 일정과 함께 $s 개 이벤트 생성"	msgstr "%s 개의 일정과 함께 %s 개 이벤트 생성"
+## javaScrpt와 다른 Flow 또는 typescript에서도 사용할 수 있나요?	## JavaScript와 다른 Flow 또는 TypeScript에서도 사용할 수 있나요?
+## 전역 namespace를 오염시키는 라이브러리를 사용합니다. "vaiable is not defined" 오류를 방지하려면 어떻게 해야 하나요?	## 전역 namespace를 오염시키는 라이브러리를 사용합니다. "variable is not defined" 오류를 방지하려면 어떻게 해야 하나요?
+    cameraFov: '화',	    cameraFov: '시야각',
+    replaySpeed: '리플레이 속',	    replaySpeed: '리플레이 속도',
+    topologyTitle: '토폴로',	    topologyTitle: '토폴로지',
+    multiresSelectLowest: '리버싱 하기 전에 더 낮은 해상도를 고르시오.',	    multiresSelectLowest: '리버싱 하기 전에 더 낮은 해상도를 고르세요.',
+    multiresSelectHighest: '세분화 하기 전에 더 높은 해상도를 고르시오',	    multiresSelectHighest: '세분화 하기 전에 더 높은 해상도를 고르세요',
+      return '다음 세분화 레벨은 ' + nbFacesNext + ' 면만큼 도달할 것이다.\n' +	      return '다음 세분화 레벨은 ' + nbFacesNext + ' 면만큼 도달할 것입니다.\n' +
+  "Username": "사용자 이름",	  "Username": "사용자 이름(Username)",
+  "app.components.HomePage.support.content": "티셔츠를 구매 하세요! 우리는 여러분에게 최고의 경험을 주기 위해 이 프로젝트를 계속 할 수 있습니다.",	  "app.components.HomePage.support.content": "티셔츠를 구매하세요! 이를 통해 우리는 여러분에게 최고의 경험을 주기 위한 프로젝트 개발에 전념할 수 있습니다.",
+  "app.components.InstallPluginPage.plugin.support-us.description": "티셔츠를 구매 하세요! 우리는 여러분에게 최고의 경험을 주기 위해 이 프로젝트를 계속 할 수 있습니다.",	  "app.components.InstallPluginPage.plugin.support-us.description": "티셔츠를 구매하세요! 이를 통해 우리는 여러분에게 최고의 경험을 주기 위한 프로젝트 개발에 전념할 수 있습니다.",
+  "Auth.header.register.description": "설정을 완료하고 애플리케이션 보안을 위해 첫 번째 사용자(root 관리자)를 생성하세요.",	  "Auth.header.register.description": "애플리케이션 설정 및 보안을 위해 첫 번째 사용자(root 관리자)를 생성하세요.",
+          one:    "한개의 오류가 발생해 {{model}}를 저장 안았했습니다"	          one:    "한개의 오류가 발생해 {{model}}를 저장 할 수 없습니다"
+          other:  "{{count}}개의 오류가 발생해 {{model}}를 저장 안았했습니다"	          other:  "{{count}}개의 오류가 발생해 {{model}}를 저장 할 수 없습니다"
+msgstr "역대 국회희원 선거에 출마한<br>모든 인물을 검색할 수 있습니다"	msgstr "역대 국회의원 선거에 출마한<br>모든 인물을 검색할 수 있습니다"
+"POT-Creation-Date: 2013-05-31 16:31+0900\n"	"POT-Creation-Date: 2013-05-31 17:00+0900\n"
+"POT-Creation-Date: 2013-05-31 16:31+0900\n"	"POT-Creation-Date: 2013-05-31 17:00+0900\n"
+msgstr "이름, 정당, 지역, 의안"	msgid "name, bill, party (ex: 홍길동, 미래, 무소속)"
+수정사항들을 일일히 다 반영하는 건 지루하며 실수하기 쉽습니다. 변화들을 간략하게 그리고 TF 2.0에 매끄럽게 옮겨가기 위해 또한	수정사항들을 일일이 다 반영하는 건 지루하며 실수하기 쉽습니다. 변화들을 간략하게 그리고 TF 2.0에 매끄럽게 옮겨가기 위해 또한
+수정사항들을 일일히 다 반영하는 건 지루하며 실수하기 쉽습니다. 변화들을 간략하게 그리고 가능한한 TF 2.0에 매끄럽게 옮겨가기 위해 그리고	수정사항들을 일일히 다 반영하는 건 지루하며 실수하기 쉽습니다. 변화들을 간략하게 그리고 TF 2.0에 매끄럽게 옮겨가기 위해 그리고
+디렉토리에 있는 [텐서플로 2.0 베타](https://www.tensorflow.org/beta) 문서를 번역하는데 촛점을 맞춰 주세요.	디렉토리에 있는 [텐서플로 2.0 베타](https://www.tensorflow.org/beta) 문서를 번역하는데 초점을 맞춰 주세요.
+    "텐서플로와 필요한 파이썬 모듈을 임포트합니다. 텐서플로우는 기본적으로, 텐서플로는 연산이 나중에 실행되는 [계산 그래프(computational graph)](https://www.tensorflow.org/guide/graphs)를 만드는 대신에 연산을 즉시 평가하고 구체적인 값을 반환하는 [즉시 실행](https://www.tensorflow.org/guide/eager)을 사용합니다. 만약 파이썬 대화형 창이나 상호작용 콘솔을 사용하면 더욱 익숙할 겁니다. "	    "텐서플로와 필요한 파이썬 모듈을 임포트합니다. 텐서플로는 연산이 나중에 실행되는 [계산 그래프(computational graph)](https://www.tensorflow.org/guide/graphs)를 만드는 대신에 연산을 즉시 평가하고 구체적인 값을 반환하는 [즉시 실행](https://www.tensorflow.org/guide/eager)을 사용합니다. 만약 파이썬 대화형 창이나 상호작용 콘솔을 사용하면 더욱 익숙할 겁니다. "
+    "데이터셋이 CSV 파일이므로, 적절한 형태로 데이터를 구분하기위해 [make_csv_dataset](https://www.tensorflow.org/api_docs/python/tf/data/experimental/make_csv_dataset) 함수를 사용하겠습니다. 이 함수는 훈련 모델을 위한 데이터를 생성하므로, 초기값은 셔플(`shuffle=True, shuffle_buffer_size=10000`)과 무한반복(`num_epochs=None`)으로 설정되어있습니다. 또한 [배치 사이즈(batch_size)](https://developers.google.com/machine-learning/glossary/#batch_size)를 설정해줍니다."	    "데이터셋이 CSV 파일이므로, 적절한 형태로 데이터를 구분하기 위해 [make_csv_dataset](https://www.tensorflow.org/api_docs/python/tf/data/experimental/make_csv_dataset) 함수를 사용하겠습니다. 이 함수는 훈련 모델을 위한 데이터를 생성하므로, 초기값은 셔플(`shuffle=True, shuffle_buffer_size=10000`)과 무한 반복(`num_epochs=None`)으로 설정되어있습니다. 또한 [배치 사이즈(batch_size)](https://developers.google.com/machine-learning/glossary/#batch_size)를 설정해줍니다."
+    "`make_csv_dataset` 함수는 `(features, label)` 쌍으로 구성된 `tf.data.Dataset`을 반환합니다. `features`는 딕셔너리 객체인: `{'feature_name': value}`로 주어집니다. 이 `Dataset`은 반복가능합니다. 다음은 특성(feature)을 살펴봅시다."	    "`make_csv_dataset` 함수는 `(features, label)` 쌍으로 구성된 `tf.data.Dataset`을 반환합니다. `features`는 딕셔너리 객체인: `{'feature_name': value}`로 주어집니다. 이 데이터셋은 반복가능합니다. 다음은 특성(feature)을 살펴봅시다."
+    "그 후 각 `(features,label)`쌍의 특성을 훈련 데이터셋에 쌓기위해 [tf.data.Dataset.map](https://www.tensorflow.org/api_docs/python/tf/data/dataset/map) 메서드를 사용합니다. "	    "그 후 각 `(features,label)`쌍의 특성을 훈련 데이터 세트에 쌓기위해 [tf.data.Dataset.map](https://www.tensorflow.org/api_docs/python/tf/data/dataset/map) 메서드를 사용합니다. "
+    "*[훈련 단계](https://developers.google.com/machine-learning/crash-course/glossary#training)* 는 모델이 점진적으로 최적화되거나 데이터셋을 학습하는 머신러닝의 과정입니다. 훈련의 목적은 미지의 데이터를 예측하기 위해, 훈련 데이터셋의 구조에 대해서 충분히 학습하는 것입니다. 만약 모델이 훈련 데이터셋에 대해서 과하게 학습된다면 오직 훈련 데이터셋에 대해서 작동할 것이며, 일반화되기 힘들 것입니다. 이러한 문제를 *[과대적합(overfitting)](https://developers.google.com/machine-learning/crash-course/glossary#overfitting)* 이라고 합니다. 이는 마치 문제를 이해하고 해결한다기보다는 답을 기억하는 것이라고 생각할 수 있습니다. \n",	    "*[훈련 단계](https://developers.google.com/machine-learning/crash-course/glossary#training)* 는 모델이 점진적으로 최적화되거나 데이터셋을 학습하는 머신러닝의 과정입니다. 훈련의 목적은 미지의 데이터를 예측하기 위해, 훈련 데이터 세트의 구조에 대해서 충분히 학습하는 것입니다. 만약 모델이 훈련 데이터 세트에 대해서 과하게 학습된다면 오직 훈련 데이터 세트에 대해서 작동할 것이며, 일반화되기 힘들 것입니다. 이러한 문제를 *[과대적합(overfitting)](https://developers.google.com/machine-learning/crash-course/glossary#overfitting)* 이라고 합니다. 이는 마치 문제를 이해하고 해결한다기보다는 답을 기억하는 것이라고 생각할 수 있습니다. \n",
+    "2. 에포크 내에서, *특성* (`x`)와 *레이블* (`y`)가 포함된 훈련 `데이터셋`에 있는 샘플을 반복합니다.\n",	    "2. 에포크 내에서, *특성* (`x`)와 *레이블* (`y`)가 포함된 훈련 데이터 세트에 있는 샘플을 반복합니다.\n",
+# 매번 음수 라벨링 된 셈플을 이용한 NCE loos 계산	# 매번 음수 라벨링 된 셈플을 이용한 NCE loss 계산
+# 시퀸스-투-시퀸스(Sequenc-to-Sequenc) 모델	# 시퀸스-투-시퀸스(Sequence-to-Sequence) 모델
+이 튜토리얼은 그런 앤드-투-앤드 (end-to-end)시스템을 만들고 학습하는 방법 보여줄 것이다.  pip를 통해 tensorflow를 이미 설치했고 tensorflow git 저장소를 클론(clone)했고, git tree의 root에 있다고 가정한다.	이 튜토리얼은 그런 앤드-투-앤드 (end-to-end)시스템을 만들고 학습하는 방법 보여줄 것이다. pip를 통해 tensorflow를 이미 설치했고 tensorflow git 저장소를 클론(clone)했고, git tree의 root에 있다고 가정한다.
+러커런트 뉴럴 네트워크는  [RNN 튜토리얼](../../tutorials/recurrent/index.md)에서 이미 이야기 했던것 처럼 언어를 모델화하는 것을 학습할 수 있다.	리커런트 뉴럴 네트워크는  [RNN 튜토리얼](../../tutorials/recurrent/index.md)에서 이미 이야기 했던것 처럼 언어를 모델화하는 것을 학습할 수 있다.
+신경 확률 언어 모델들(Neural probabilistic language models) 은 일반적으로 [*softmax* function](https://en.wikipedia.org/wiki/Softmax_function) 에 대해 이전에 주어진 단어들 \\(h'\\) (for "history") 에서 다음 단어(\\(w_t\\)(for "target") 에 대한 확률을 최대화하는 [maximum likelihood](https://en.wikipedia.org/wiki/Maximum_likelihood) (ML) 원리를 이용하여 학습되어 진다.	신경 확률 언어 모델들(Neural probabilistic language models) 은 일반적으로 [*softmax* function](https://en.wikipedia.org/wiki/Softmax_function) 에 대해 이전에 주어진 단어들 \\(h\\) (for "history") 에서 다음 단어(\\(w_t\\)(for "target") 에 대한 확률을 최대화하는 [maximum likelihood](https://en.wikipedia.org/wiki/Maximum_likelihood) (ML) 원리를 이용하여 학습되어 진다.
+텐서플로우(TensorFlow&#8482;)는 데이터 플로우 그래프(Data flow graph)를 사용하여 수치 연산을 하는 오픈소스 소프트웨어 라이브러리입니다. 그래프의 노드(Node)는 수치 연산을 나타내고 엣지(edge)는 노드 사이드를 이동하는 다차원 데이터 배열(텐서,tensor)를 나타냅니다. 유연한 아키텍처로 구성되어 있어 코드 수정없이 데스크탑, 서버 혹은 모바일 디바이스에서 CPU나 GPU를 사용하여 연산을 구동시킬 수 있습니다. 텐서플로우는 원래 머신러닝과 딥 뉴럴 네트워크 연구를 목적으로 구글의 인공지능 연구 조직인 구글 브레인 팀의 연구자와 엔지어들에 의해 개발되었습니다. 하지만 이 시스템은 여러 다른 분야에도 충분히 적용될 수 있습니다. 다음 문서에서 어떻게 텐서플로우를 설치하고 사용하는지에 대해 설명하겠습니다.	텐서플로우(TensorFlow&#8482;)는 데이터 플로우 그래프(Data flow graph)를 사용하여 수치 연산을 하는 오픈소스 소프트웨어 라이브러리입니다. 그래프의 노드(Node)는 수치 연산을 나타내고 엣지(edge)는 노드 사이를 이동하는 다차원 데이터 배열(텐서,tensor)를 나타냅니다. 유연한 아키텍처로 구성되어 있어 코드 수정없이 데스크탑, 서버 혹은 모바일 디바이스에서 CPU나 GPU를 사용하여 연산을 구동시킬 수 있습니다. 텐서플로우는 원래 머신러닝과 딥 뉴럴 네트워크 연구를 목적으로 구글의 인공지능 연구 조직인 구글 브레인 팀의 연구자와 엔지니어들에 의해 개발되었습니다. 하지만 이 시스템은 여러 다른 분야에도 충분히 적용될 수 있습니다. 다음 문서에서 어떻게 텐서플로우를 설치하고 사용하는지에 대해 설명하겠습니다.
+*이 튜토리얼은 머신러닝과 텐서플로우을 처음 접해본 독자들을 위해서 구성되어 있습니다. 만약 MNIST가 무엇인지 알고 소프트맥스(다변량 로지스틱) 회귀가 무엇인지 이미 알고 계신다면, [더 깊이 있는 튜토리얼](../pros/index.md)을 선호하실 것이라고 생각합니다. 튜토리얼을 진행하시기 전에, 자신의 머신에 [텐서플로우가 설치](../../../get_started/os_setup.md)되어 있는지 확인해주세요.*	*이 튜토리얼은 머신러닝과 텐서플로우를 처음 접해본 독자들을 위해서 구성되어 있습니다. 만약 MNIST가 무엇인지 알고 소프트맥스(다변량 로지스틱) 회귀가 무엇인지 이미 알고 계신다면, [더 깊이 있는 튜토리얼](../pros/index.md)을 선호하실 것이라고 생각합니다. 튜토리얼을 진행하시기 전에, 자신의 머신에 [텐서플로우가 설치](../../../get_started/os_setup.md)되어 있는지 확인해주세요.*
+    "텐서플로 1.x 코드를 텐서플로 2.0으로 변환하는 몇 가지 예를 소개하겠습니다. 이 작업을 통해 성능을 최적화하고 간소화된 API의 잇점을 사용할 수 있습니다.\n",	    "텐서플로 1.x 코드를 텐서플로 2.0으로 변환하는 몇 가지 예를 소개하겠습니다. 이 작업을 통해 성능을 최적화하고 간소화된 API의 이점을 사용할 수 있습니다.\n",
+Visual Studio와 함꼐 TypeScript를 설치하지 않았다면 [다운로드](#download-links)할 수 있습니다.	Visual Studio와 함께 TypeScript를 설치하지 않았다면 [다운로드](#download-links)할 수 있습니다.
+결과는 동일한 자바스크립트를 포함하고있는 `gretter.js` 파일이 될 것입니다.	결과는 동일한 자바스크립트를 포함하고있는 `greeter.js` 파일이 될 것입니다.
+마찬가지로, gretter를 호출할 때 모든 인수를 제거해보십시오.	마찬가지로, greeter를 호출할 때 모든 인수를 제거해보십시오.
+# 숫자형 \(Boolean\)	# 숫자형 \(Number\)
+그리고 tutorial도 아주 주의깊에 읽어보시기 바랍니다.	그리고 tutorial도 아주 주의 깊게 읽어보시기 바랍니다.
+하지만 이 달라진 픽셀 값도 여전리	하지만 이 달라진 픽셀 값도 여전히
+우리가 상상할 수 있는 어떤 객에라도 잘 다룰 수 있어야만 한다면,	우리가 상상할 수 있는 어떤 객체라도 잘 다룰 수 있어야만 한다면,
+이 문제는 아주 판타스틱하게 어려운 문제입니다.	하지만 이는 아주 어려운 문제입니다.
+Train Setp에서는 아무 일도 하지 않습니다.	Train Step에서는 아무 일도 하지 않습니다.
+앞유리 같군요. 하지막 조금 이상합니다.	앞유리 같군요. 하지만 조금 이상합니다.
+Softmas 뿐만 아니라 2-layer 신경망도 구현할 것입니다.	Softmax 뿐만 아니라 2-layer 신경망도 구현할 것입니다.
+반면 0보다 수가 짝수 개면 빨간 카테고리로 분류합니다.	반면 0보다 큰 수가 짝수 개면 빨간 카테고리로 분류합니다.
+Vu는 실제 DOM에 필요한 변경사항을 추적하기 위해 **virtual DOM**을 만듭니다. 이를 자세히 살펴보면 아래와 같습니다.	Vue는 실제 DOM에 필요한 변경사항을 추적하기 위해 **virtual DOM**을 만듭니다. 이를 자세히 살펴보면 아래와 같습니다.
+<!-- 이미 Ajax 라이브러리의 풍부한 생태계와 범용 유틸리티 메소드 컬렉션이 있기 떄문에, -->	<!-- 이미 Ajax 라이브러리의 풍부한 생태계와 범용 유틸리티 메소드 컬렉션이 있기 때문에, -->
+예를 들어, instance property인 `$myProperty`를 `string` 타입으로 선안하고자 하는 경우:	예를 들어, instance property인 `$myProperty`를 `string` 타입으로 선언하고자 하는 경우:
+써드파티 라우터를 사용하기 위해서, 예를 들어 [Page.js](https://github.com/visionmedia/page.js) 또는 [Director](https://github.com/flatiron/director)는 [쉽습니다.](https://github.com/chrisvfritz/vue-2.0-simple-routing-example/compare/master...pagejs) 여기에 Page.js를 사용하는 [완변한 예제](https://github.com/chrisvfritz/vue-2.0-simple-routing-example/tree/pagejs)가 있습니다.	써드파티 라우터를 사용하기 위해서, 예를 들어 [Page.js](https://github.com/visionmedia/page.js) 또는 [Director](https://github.com/flatiron/director)는 [쉽습니다.](https://github.com/chrisvfritz/vue-2.0-simple-routing-example/compare/master...pagejs) 여기에 Page.js를 사용하는 [완벽한 예제](https://github.com/chrisvfritz/vue-2.0-simple-routing-example/tree/pagejs)가 있습니다.
+Vue.js에서 부모-자식 컴포넌트 관계는 **props는 아래로, events 위로** 라고로 요약 할 수 있습니다. 부모는 **props** 를 통해 자식에게 데이터를 전달하고 자식은 **events** 를 통해 부모에게 메시지를 보냅니다. 어떠헥 작동하는지 보겠습니다.	Vue.js에서 부모-자식 컴포넌트 관계는 **props는 아래로, events 위로** 라고로 요약 할 수 있습니다. 부모는 **props** 를 통해 자식에게 데이터를 전달하고 자식은 **events** 를 통해 부모에게 메시지를 보냅니다. 어떻게 작동하는지 보겠습니다.
+소품은 상위 컴포넌트의 정보를 전달하기위한 사용자 지정 특성입니다. 하위 컴포넌트는`props` 옵션을 사용하여 수신 할 것으로 기대되는 소포를 명시 적으로 선언해야합니다	prop는 상위 컴포넌트의 정보를 전달하기위한 사용자 지정 특성입니다. 하위 컴포넌트는`props` 옵션을 사용하여 수신 할 것으로 기대되는 소포를 명시 적으로 선언해야합니다
+또한 상위 컴포넌트가 업데이트 될 때마다 하위 컴포넌트의 모든 소품이 최신 값으로 새로 고쳐집니다. 즉, 하위 컴포넌트 내부에서 소품을 변형하려고 시도하면 안됩니다. 그렇게하면 Vue가 콘솔에서 경고합니다.	또한 상위 컴포넌트가 업데이트 될 때마다 하위 컴포넌트의 모든 소품이 최신 값으로 새로 고쳐집니다. 즉, 하위 컴포넌트 내부에서 prop을 변형하려고 시도하면 안됩니다. 그렇게하면 Vue가 콘솔에서 경고합니다.
+컴포넌트가 받은 중인 prop에 대한 요구사항을 지정할 수 있습니다. 요구사항이 충족 되지 않으면 Vue에서 경고를 내보냅니다. 이 기능은 다른 사용자가 사용할 컴포넌트를 제작할 때 특히 유용합니다.	컴포넌트가 받는 중인 prop에 대한 요구사항을 지정할 수 있습니다. 요구사항이 충족 되지 않으면 Vue에서 경고를 내보냅니다. 이 기능은 다른 사용자가 사용할 컴포넌트를 제작할 때 특히 유용합니다.
+데이터 바인딩은 엘리먼트의 클래스 목록과 인라인 스타일을 조작하기 위해 일반적으로 사용됩니다. 이 두 속성은 `v-bind`를 사용하여 처리할 수 있습니다. 우리는 표현식으로 최종 문자열을 계산하면 됩니다. 그러나 문자열 연결에 간섭하는 것은 짜증나는 일이며 오류가 발생하기 쉽습니다. 이러한 이유로, Vue는 `class`와 `style`에 `v-bind`를 사용할ㄷ 때 특별히 향상된 기능을 제공합니다. 표현식은 문자열 이외에 객체 또는 배열을 이용할 수 있습니다.	데이터 바인딩은 엘리먼트의 클래스 목록과 인라인 스타일을 조작하기 위해 일반적으로 사용됩니다. 이 두 속성은 `v-bind`를 사용하여 처리할 수 있습니다. 우리는 표현식으로 최종 문자열을 계산하면 됩니다. 그러나 문자열 연결에 간섭하는 것은 짜증나는 일이며 오류가 발생하기 쉽습니다. 이러한 이유로, Vue는 `class`와 `style`에 `v-bind`를 사용할 때 특별히 향상된 기능을 제공합니다. 표현식은 문자열 이외에 객체 또는 배열을 이용할 수 있습니다.
+컴포넌트에 `item`을 자동으로 주입하지 않는 이요는 컴포넌트가 `v-for` 작동 방식과 밀접하게 결합되기 때문입니다. 데이터의 출처를 명시적으로 표현하면 다른 사오항에서는 컴포넌트를 재사용할 수 있습니다.	컴포넌트에 `item`을 자동으로 주입하지 않는 이유는 컴포넌트가 `v-for` 작동 방식과 밀접하게 결합되기 때문입니다. 데이터의 출처를 명시적으로 표현하면 다른 사오항에서는 컴포넌트를 재사용할 수 있습니다.
+이렇게 하면 Vue가 기존 DOM을 버리고 전체 목록을 다시 렌더링 한다고 생각할 수 있습니다. 다행히도, 그렇지는 않습니다. Vue는 DOM 요소 재사용을 극대화하기 위해 몇가지 똑똑한 구현을 하므로 배열을 겹치는 객체가 포함된 다른 배열로 대체하여 효율적입니다	이렇게 하면 Vue가 기존 DOM을 버리고 전체 목록을 다시 렌더링 한다고 생각할 수 있습니다. 다행히도, 그렇지는 않습니다. Vue는 DOM 요소 재사용을 극대화하기 위해 몇가지 똑똑한 구현을 하므로 배열을 겹치는 객체가 포함된 다른 배열로 대체하여 효율적입니다.
+JavaScript의 제한으로 인해 Vue는 배열에 대해 다음과 같은 변경 사항을 감지할수 **없습니다.**	JavaScript의 제한으로 인해 Vue는 배열에 대해 다음과 같은 변경 사항을 감지할 수 **없습니다.**
+주의 사항 중 1번을 극복하기 위해 다음 두 경우 모두 `vm.items[indexOfItem] = newValue` 와 동일하게 수행하며, 반응형 시스템을에서도 상태 변경을 트리거 합니다.	주의 사항 중 1번을 극복하기 위해 다음 두 경우 모두 `vm.items[indexOfItem] = newValue` 와 동일하게 수행하며, 반응형 시스템에서도 상태 변경을 트리거 합니다.
+    내 위에 마우스를 올리면 동적으로 바인딩 된 title을 볼 수 있습니다!	    내 위에 잠시 마우스를 올리면 동적으로 바인딩 된 title을 볼 수 있습니다!
+Vue 컴포넌트는 Vue 인스턴스이기도 합니다. 그러므로 모든 옵션 객체를 사용할 수 있습니다. (루트에만 사요하는 옵션은 제외) 그리고 같은 라이프사이클 훅을 사용할 수 있습니다.	Vue 컴포넌트는 Vue 인스턴스이기도 합니다. 그러므로 모든 옵션 객체를 사용할 수 있습니다. (루트에만 사용하는 옵션은 제외) 그리고 같은 라이프사이클 훅을 사용할 수 있습니다.
+이전 섹션에서 다음을 사용하여 새 Vue 인스턴스를 만들 수 있음을 알게되었습니다.	이전 섹션에서 다음을 사용하여 새 Vue 인스턴스를 만들 수 있음을 알게 되었습니다.
+Then:	그런 다음,
+Will be equivalent to:	이것은 다음과 같은 동작을합니다.:
+그러나 이것은 리터럴 prop이기 때문에 그 값은 실제 숫자가 아닌 일반 문자열 `"1"` 로 전달됩니다. 실제 JavScript 숫자를 전달하려면 값이 JavaScript 표현식으로 평가되도록 `v-bind`를 사용해야합니다.	그러나 이것은 리터럴 prop이기 때문에 그 값은 실제 숫자가 아닌 일반 문자열 `"1"` 로 전달됩니다. 실제 JavaScript 숫자를 전달하려면 값이 JavaScript 표현식으로 평가되도록 `v-bind`를 사용해야합니다.
+하지만 테스트를 쉽게 하기 위해서 `vue-test-utils`는 모든 업데이트를 동기적으로 반영하므로, DOM 업데이트가 반영되는것을 기다리기 위해 `Vue.nextTick`을 사용할 필요가 없습니다.	하지만 테스트를 쉽게 하기 위해 `vue-test-utils`는 모든 업데이트를 동기적으로 반영하므로, DOM 업데이트가 반영되는것을 기다리기 위해 `Vue.nextTick`을 사용할 필요가 없습니다.
+이걸 피하려면, 두가지 접근방법이 있습니다. 테스트를 시작할 때, 테스트를 시작할 때 `done`콜백을 전역 에러 핸들러로 감싸거나, 인자가 없는 `nextTick`을 호출해서 프로미스로 리턴받을 수 있습니다.:	이걸 피하려면, 두가지 접근방법이 있습니다. 테스트를 시작할 때, `done`콜백을 전역 에러 핸들러로 감싸거나, 인자가 없는 `nextTick`을 호출해서 프로미스로 리턴받을 수 있습니다.:
+  오브젝트를 반환하는 함수를 전달하면, 반환된 오브젝트가 로투 상태로 사용됩니다. 이것은 모듈 재사용을 위해 상태 객체를 재사용하고자 할 때 유용합니다. [상세](../guide/modules.md#모듈-재사용)	  오브젝트를 반환하는 함수를 전달하면, 반환된 오브젝트가 루트 상태로 사용됩니다. 이것은 모듈 재사용을 위해 상태 객체를 재사용하고자 할 때 유용합니다. [상세](../guide/modules.md#모듈-재사용)
+**Params 또는 쿼리를 변경하면 네비게이션 가드가 실행되지 않습니다**. 단순히 [`$route` 객체를 감시](../essentials/dynamic-matching.md#reacting-to-params-changes)하고 그 변화에 반응하십시오. 또는 컴포넌트 가드의 `beforeRouteUpadte`를 사용하십시오	**Params 또는 쿼리를 변경하면 네비게이션 가드가 실행되지 않습니다**. 단순히 [`$route` 객체를 감시](../essentials/dynamic-matching.md#reacting-to-params-changes)하고 그 변화에 반응하십시오. 또는 컴포넌트 가드의 `beforeRouteUpdate`를 사용하십시오
+그러나 문제는 다음과 같습니다. 우리의 앱이 적절한 서버 설정이 없는 단일 페이지 클라이언트 앱이기 때문에 사용자가 직접 `http://oursite.com/user/id` 에 접속하면 404 오류가 발생합니다. 다	그러나 문제는 다음과 같습니다. 우리의 앱이 적절한 서버 설정이 없는 단일 페이지 클라이언트 앱이기 때문에 사용자가 직접 `http://oursite.com/user/id` 에 접속하면 404 오류가 발생합니다.
+    required: 'Designates the input as required. Adds an asertisk to end of label. Does not perform any validation.',	    required: 'Designates the input as required. Adds an asterisk to end of label. Does not perform any validation.',
+    required: 'Designates the input as required. Adds an asertisk to end of label. Does not perform any validation.',	    required: 'Designates the input as required. Adds an asterisk to end of label. Does not perform any validation.',
+    required: '인풋을 필수 요소로 지정. 레이블 끝에 별표(asertisk)가 추가됨. 실제 검증은 실행되지 않음',	    required: '인풋을 필수 요소로 지정. 레이블 끝에 별표(asterisk)가 추가됨. 실제 검증은 실행되지 않음',
+대규모의 프로젝트에서는 유용하게 `.clearfix` 클래스를 만들어 필요한 곳에서 사용합니다. 자식이 부모보다 크기가 경우 `overflow: hidden`은 자식을 모두 보여줄 수 없습니다.	대규모의 프로젝트에서는 유용하게 `.clearfix` 클래스를 만들어 필요한 곳에서 사용합니다. 자식이 부모보다 크기가 큰 경우 `overflow: hidden`은 자식을 모두 보여줄 수 없습니다.
+issue.subtask.select = -- 서브 이슈로 만들고 싶으면 부모 이슈를 선택하세요 --	issue.subtask.select = — 자식 이슈(Sub-Task)로 지정하고 싶으면 부모 이슈를 선택하세요 —
+참고: [Yona 실행 및 재시작 방법](yona-run-and-restart)	참고: [Yona 실행 및 재시작 방법](yona-run-and-restart.md)
+project.members = 프로젝트 맴버	project.members = 프로젝트 멤버
+site.features.workTeam = 프로젝트별로 맴버를 자유롭게 구성할수 있는 쉽고 간편한 맴버관리 기능이 제공 됩니다.	site.features.workTeam = 프로젝트별로 멤버를 자유롭게 구성할수 있는 쉽고 간편한 멤버관리 기능이 제공 됩니다.
+     * 어떤 게시물이 등록되었을 때, 그 프로젝틑 지켜보는 사용자들에게 알림 메일을 발송한다.	     * 어떤 게시물이 등록되었을 때, 그 프로젝트를 지켜보는 사용자들에게 알림 메일을 발송한다.
+게시물의 목록과 같이 컬렉션인 리소스의 경우, 그 리소스의 전체가 아닌 일부만 보고 싶은 경우가 있다. 이러한 요구를 만족시키기 위해 N4는 pagination을 지원한다. pagination을 지원하는 리소스는 페이지들의 list로 간주되며, 페이지는 1개 이상의 element의 list이다. 클라이언트는 리소스의 특정 페이지만을 요청할 수 있으며, 서버 역시 특정 페이지만을 돌려줄 수 있다.	게시물의 목록과 같이 컬렉션인 리소스의 경우, 그 리소스의 전체가 아닌 일부만 보고 싶은 경우가 있다. 이러한 요구를 만족시키기 위해 HIVE는 pagination을 지원한다. pagination을 지원하는 리소스는 페이지들의 list로 간주되며, 페이지는 1개 이상의 element의 list이다. 클라이언트는 리소스의 특정 페이지만을 요청할 수 있으며, 서버 역시 특정 페이지만을 돌려줄 수 있다.
+N4는 pagination 레이아웃을 그려주는 자바스크립트 라이브러리인 pagination.js를 제공한다. 이 파일은 public/javascript/paginatin.js 에 위치한다.	HIVE는 pagination 레이아웃을 그려주는 자바스크립트 라이브러리인 pagination.js를 제공한다. 이 파일은 public/javascript/paginatin.js 에 위치한다.
+예를 들어 첫번째 페이지만 요청하는 응답에서의 Range 헤더는 다음과 같다.	예를 들어 첫번째 페이지만 요청하는 Range 헤더는 다음과 같다.
+게시물의 목록과 같이 컬렉션인 리소스의 경우, 그 리소스의 전체가 아닌 일부만 보고 싶은 경우가 있다. 이러한 요구를 만족시키기 위해 N4는 pagination을 지원한다. pagination을 지원하는 리소스는 페이지들의 list로 간주되며, 페이지는 1개 이상의 element의 list이다. 클라이언트는 리소스의 특정 페이지만을 요청할 수 있으며, 서버 역시 특정 페이지만을 돌려줄 수 있다.	게시물의 목록과 같이 컬렉션인 리소스의 경우, 그 리소스의 전체가 아닌 일부만 보고 싶은 경우가 있다. 이러한 요구를 만족시키기 위해 HIVE는 pagination을 지원한다. pagination을 지원하는 리소스는 페이지들의 list로 간주되며, 페이지는 1개 이상의 element의 list이다. 클라이언트는 리소스의 특정 페이지만을 요청할 수 있으며, 서버 역시 특정 페이지만을 돌려줄 수 있다.
+N4는 pagination 레이아웃을 그려주는 자바스크립트 라이브러리인 pagination.js를 제공한다. 이 파일은 public/javascript/paginatin.js 에 위치한다.	HIVE는 pagination 레이아웃을 그려주는 자바스크립트 라이브러리인 pagination.js를 제공한다. 이 파일은 public/javascript/paginatin.js 에 위치한다.
+예를 들어 첫번째 페이지만 요청하는 응답에서의 Range 헤더는 다음과 같다.	예를 들어 첫번째 페이지만 요청하는 Range 헤더는 다음과 같다.
