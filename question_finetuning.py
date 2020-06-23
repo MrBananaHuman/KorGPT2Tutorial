@@ -49,7 +49,7 @@ class QuestionDataSet(Dataset):
             
             total_tokens = []
             
-            qa_tokens = ['<answer>'] + tokenizer.tokenize(answer) + ['<answer>'] + ['<question>'] + tokenizer.tokenize(question) + ['</question>']
+            qa_tokens = ['<answer>'] + tokenizer.tokenize(answer) + ['</answer>'] + ['<question>'] + tokenizer.tokenize(question) + ['</question>']
             
             for single_line in kss.split_sentences(context):
                 tokenized_single_line = ['<s>'] + tokenizer.tokenize(single_line) + ['</s>']
