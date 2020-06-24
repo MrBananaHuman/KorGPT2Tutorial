@@ -110,13 +110,13 @@ input: 대한민국은 동아시아의 한반도 남부에 있는 민주공화�
 동아시아의 서계에 있는 국가는?  ->       대한민국의 한반도 남부에 있는 민주공화국   
 국제적으로 밝혀진 두 유지에 대해 중화인민공화국이 어느 지역에 위치한가? ->      황해   
 
-## 8. KorQuAD finetuning (on going)
+## 8. KorQuAD finetuning
 This code can also be used to generate questions and answers from the content.  
 ```python korquad_finetuning.py```   
 ```python korquad_evaluation.py```  
 ```python qa_data/evaluate-v1.0.py qa_data/KorQuAD_v1.0_dev.json qa_data/korquad_result.json```    
    
-Result is bad.. 😂
-{"exact_match": 14.132317284378248, "f1": 29.79123370568921}   
+Result is bad.. 😂   
+{"exact_match": 14.132317284378248, "f1": 29.79123370568921}    
 
 
