@@ -15,7 +15,6 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-
 ## 1. Make vocab and tokenizer from corpus
 ```python make_tokenizer.py```
 
@@ -119,4 +118,6 @@ This code can also be used to generate questions and answers from the content.
 Result is bad.. 😂   
 {"exact_match": 14.132317284378248, "f1": 29.79123370568921}    
 
+## 9. Simple chitchat finetuning (on going)   
+Dataset from https://github.com/songys/Chatbot_data   
 
