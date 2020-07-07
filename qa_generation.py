@@ -45,7 +45,7 @@ def context_tokenizer(text, tokenizer):
     sent_list = kss.split_sentences(text)
     tokens = []
     for sent in sent_list:
-        tokenized_sentence = tokenizer.tokenize(text)
+        tokenized_sentence = tokenizer.tokenize(sent)
         if len(tokens) + len(tokenized_sentence) < 912:
             tokens += ['<s>'] + tokenized_sentence + ['</s>']
         else:
